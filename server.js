@@ -7,7 +7,7 @@ const webpackMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
 const config = require('./webpack.config.js');
 const Twitter = require('twitter');
-require('dotenv').config();
+// require('dotenv').config();
 
 const twitterClient = new Twitter({
   consumer_key: 'VpsVd2g7fQvwYOAiKDlUblDJn',
@@ -77,6 +77,15 @@ if (isDeveloping) {
 
   app.get('/api/trends', function(req, res, next) {
     twitterClient.get('trends/place', {id: 455825}, function(error, dataObj, response){
+      if (!error) {
+        res.setHeader('Content-Type', 'application/json');
+        res.send(JSON.stringify(dataObj));
+      }
+    });
+  });
+
+  app.get('/api/followers', function(req, res, next) {
+    twitterClient.get('followers/list', {screen_name: 'americanascom', count: 10}, function(error, dataObj, response){
       if (!error) {
         res.setHeader('Content-Type', 'application/json');
         res.send(JSON.stringify(dataObj));
