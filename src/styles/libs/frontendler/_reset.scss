@@ -1,0 +1,94 @@
+@mixin reset (){
+    // --------------------------------------------------------
+    // GLOBAL (inheritance)
+    //---------------------------------------------------------
+
+    :root{
+        background-color: #ffffff;
+    	box-sizing: border-box;
+    	color: #000000;
+    	cursor: default;
+    	font-family: $font-family;
+        font-size: $font-size;
+    	text-rendering: optimizeLegibility;
+        text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+        margin: 0;
+        padding: 0;
+        color: inherit;
+        font: inherit;
+        -webkit-font-smoothing: inherit;
+        -moz-osx-font-smoothing: inherit;
+    }
+
+    // --------------------------------------------------------
+    // TYPOGRAPHY
+    //---------------------------------------------------------
+    // http://www.w3.org/TR/CSS21/sample.html
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.17em;
+    }
+    h4 {
+        font-size: 1.12em;
+    }
+    h5 {
+        font-size: 0.83em;
+    }
+    h6 {
+        font-size: 0.75em;
+    }
+    a {
+        cursor: pointer;
+        text-decoration: none;
+    }
+    a:active,
+    a:hover {
+        outline: 0;
+    }
+    pre {
+        overflow: auto;
+    }
+
+    // --------------------------------------------------------
+    // EMBEDDED
+    //---------------------------------------------------------
+    img {
+        border: 0;
+    }
+
+    // --------------------------------------------------------
+    // LISTS
+    //---------------------------------------------------------
+    ul {
+        list-style: none;
+    }
+
+    // --------------------------------------------------------
+    // TABLE
+    //---------------------------------------------------------
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    // --------------------------------------------------------
+    // FORM
+    //---------------------------------------------------------
+    textarea {
+        overflow: auto;
+        resize: vertical;
+    }
+}

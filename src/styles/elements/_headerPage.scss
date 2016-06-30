@@ -1,0 +1,176 @@
+.header-page {
+  height: 606px;
+  padding-top: 46px;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+
+  &.is-locked .cover-profile-pic .cover-container {
+    margin-top: -476px;
+    position: fixed;
+  }
+
+  &.is-locked .cover-profile-pic .profile-pic {
+    transform: translateY(-40%);
+  }
+
+  .cover-profile-pic {
+    height: 500px;
+
+    .wrap {
+      height: 100%;
+    }
+
+    .cover-container {
+      height: 500px;
+      overflow: hidden;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 46px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .profile-pic {
+      background: #fff;
+      border: #fff solid 4px;
+      border-radius: 15px;
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      bottom: 0;
+      overflow: hidden;
+      transition: all 300ms ease-in-out;
+      transform: translateY(40%);
+      z-index: 3;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &.is-locked .header-profile-info {
+    width: 100%;
+    position: fixed;
+    top: 70px;
+  }
+
+  .header-profile-info {
+    background: #fff;
+    border-bottom: solid 1px  #e1e8ed;
+    border-top: solid 1px rgba(0,0,0, 0.2);
+    height: 60px;
+    overflow: hidden;
+
+    .profile-mini {
+      @include grid-column(3, 12);
+      padding: 60px 15px 10px;
+      transition: padding 150ms ease-in-out;
+
+      &.is-locked {
+        padding: 10px 15px;
+      }
+
+      .mini-pic {
+        border-radius: 3px;
+        float: left;
+        margin: 0 10px 0 0;
+        overflow: hidden;
+        width: 35px;
+
+        img {
+          display: block;
+          height: auto;
+          width: 100%;
+        }
+      }
+
+      .mini-info {
+        margin: 0 0 0 45px;
+
+        .name {
+          display: block;
+          color: #292f33;
+          font-weight: 700;
+          font-size: 18px;
+        }
+
+        .icon {
+          color: #1da1f2;
+          display: inline-block;
+          font-family: 'twitter-icons';
+          font-size: 17px;
+          font-weight: normal;
+          font-style: normal;
+          position: relative;
+          height: 20px;
+          margin-left: 3px;
+          text-align: center;
+          width: 20px;
+          vertical-align: text-bottom;
+
+          &.icon-verified:before {
+            content: $icon-verified;
+          }
+        }
+
+        .screen-name {
+          display: block;
+          color: #66757f;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 1;
+        }
+      }
+    }
+
+    .infos-misc {
+      @include grid-column(9, 12);
+
+      .info-item {
+        color: $link-border-color;
+        display: inline-block;
+        height: 59px;
+        padding: 14px 15px 7px;
+        transition: all 150ms ease-in-out;
+
+        &:hover, &.active {
+          border-bottom: $link-border-color solid 4px;
+          text-decoration: none;
+        }
+
+        .title {
+          color: #66757f;
+          display: block;
+          font-size: 11px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        &:hover .title {
+          color: $link-border-color;
+        }
+
+        .count {
+          color: $link-border-color;
+          display: block;
+          font-size: 18px;
+          font-weight: 500;
+          margin: 3px 0 0;
+          text-align: center;
+        }
+      }
+
+    }
+  }
+
+}

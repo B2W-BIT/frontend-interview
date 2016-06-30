@@ -1,0 +1,49 @@
+.infos-box {
+  padding: 25px 0 0;
+
+  .user-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .screen-name {
+    color: #8899a6;
+    font-size: 14px;
+    margin: 0 0 10px;
+  }
+
+  .user-bio {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 10px;
+    word-wrap: break-word;
+  }
+
+  .icon {
+    color: #8899a6;
+    display: inline-block;
+    font-family: 'twitter-icons';
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    position: relative;
+    height: 20px;
+    margin-right: 3px;
+    text-align: center;
+    width: 20px;
+    vertical-align: text-bottom;
+
+    &.icon-location:before {
+      content: $icon-location;
+    }
+
+    &.icon-link:before {
+      content: $icon-link;
+    }
+
+    &.icon-calendar:before {
+      content: $icon-calendar;
+    }
+  }
+}
