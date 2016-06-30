@@ -10,6 +10,7 @@ import HeaderPage from './components/HeaderPage';
 import Timeline from './components/Timeline';
 import WhoFollow from './components/WhoFollow';
 import TrendsTopics from './components/TrendsTopics';
+import FollowersBox from './components/FollowersBox';
 
 class Layout extends React.Component {
 
@@ -106,7 +107,7 @@ class Layout extends React.Component {
                   Joined {dateFormat(this.state.userData.created_at, 'mmm yyyy')}
                 </p>
               </div>
-              <div className="followers-box"></div>
+              <FollowersBox />
               <div className="media-box"></div>
             </aside>
             <div className="content">
