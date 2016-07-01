@@ -24,7 +24,7 @@ class Layout extends React.Component {
   }
 
   componentDidMount() {
-    let url = 'http://ubuntu:8080/api/user';
+    let url = window.location.origin + '/api/user';
 
     this._makeRequest(url);
     this._scrollListener();

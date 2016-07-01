@@ -10,7 +10,7 @@ export default class WhoFollow extends React.Component {
   }
 
   componentDidMount() {
-    let url = 'http://ubuntu:8080/api/who-follow';
+    let url = window.location.origin + '/api/who-follow';
 
     this._makeRequest(url);
   }

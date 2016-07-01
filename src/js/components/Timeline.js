@@ -15,7 +15,7 @@ export default class Timeline extends React.Component {
   }
 
   componentDidMount() {
-    let url = 'http://ubuntu:8080/api/stream?screen_name=americanascom';
+    let url = window.location.origin + '/api/stream?screen_name=americanascom';
 
     this._makeRequest(url);
     this._scrollListener();
@@ -70,7 +70,7 @@ export default class Timeline extends React.Component {
               makeCall: false
             })
 
-            let url = 'http://ubuntu:8080/api/stream?screen_name=americanascom&count=21&max_id='+lastID;
+            let url = window.location.origin + '/api/stream?screen_name=americanascom&count=21&max_id='+lastID;
             this._makeRequest(url, this._handleCustom.bind(this));
           }
         }

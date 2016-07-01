@@ -10,7 +10,7 @@ export default class FollowersBox extends React.Component {
   }
 
   componentDidMount() {
-    let url = 'http://ubuntu:8080/api/followers';
+    let url = window.location.origin + '/api/followers';
 
     this._makeRequest(url);
   }

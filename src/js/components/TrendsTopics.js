@@ -10,7 +10,7 @@ export default class TrendsTopics extends React.Component {
   }
 
   componentDidMount() {
-    let url = 'http://ubuntu:8080/api/trends';
+    let url = window.location.origin + '/api/trends';
 
     this._makeRequest(url);
   }
