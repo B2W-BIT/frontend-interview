@@ -1,0 +1,76 @@
+.topbar {
+  background: #fff;
+  height: 46px;
+  border-bottom: #ccc solid 1px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+
+  .logo {
+    color: transparent;
+    display: block;
+    height: 20px;
+    width: 20px;
+    left: 50%;
+    text-align: center;
+    line-height: 20px;
+    top: 50%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+
+    &:before {
+      color:#1da1f2;
+      content: $icon-twitter-logo;
+      font-family: 'twitter-icons';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+    }
+  }
+}
+
+.topbar-menu {
+  height: 46px;
+
+  .item {
+    color: #8899a6;
+    float: left;
+    height: 46px;
+    list-style: none;
+    padding: 0 15px;
+
+    a {
+      color: inherit;
+      display: block;
+      padding-top: 13px;
+    }
+  }
+
+  .icon {
+    color: inherit;
+    font-family: 'twitter-icons';
+    font-size: 21px;
+    display: inline-block;
+    // height: 25px;
+    line-height: 20px;
+    margin-right: 5px;
+    // width: 25px;
+    vertical-align: text-bottom;
+
+    &.icon-home:before {
+      content: $icon-home;
+    }
+
+    &.icon-thunder:before {
+      content: $icon-thunder;
+      font-size: 25px;
+    }
+    &.icon-bell:before {
+      content: $icon-bell;
+    }
+    &.icon-message:before {
+      content: $icon-message;
+    }
+  }
+}

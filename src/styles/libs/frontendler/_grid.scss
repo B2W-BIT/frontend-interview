@@ -1,0 +1,87 @@
+@mixin grid-row() {
+	@include clearfix();
+	margin: 0 auto;
+	display: block;
+
+	//looping para incluir breakpoints
+	@each $break in map-keys($grid-breakpoints) {
+		@include grid-breakpoint($break) {
+			width: nth(map-get($grid-breakpoints,$break), 1);
+		}
+	}
+}
+
+@mixin grid-column($column, $columns: 12, $gutter: $grid-gutter) {
+	@include clearfix();
+	$width: 100% * $column / $columns;
+	width: $width;
+	box-sizing:border-box;
+
+	@if $width != 100% {
+		float: left;
+	}
+
+	//include gutter
+	@if $gutter != false {
+		padding-left: $gutter / 2;
+		padding-right: $gutter / 2;
+	}
+}
+
+@mixin grid-breakpoint($breakpoints...) {
+	@if ($grid-breakpoints != false) {
+		@each $breakpoint in $breakpoints {
+			@if (map-get($grid-breakpoints,$breakpoint) != null) {
+				$break:map-get($grid-breakpoints,$breakpoint);
+				@if (length($break) > 3) {
+					@media only screen and (#{nth($break, 2)}-width: nth($break, 3)) and (#{nth($break, 4)}-width: nth($break, 5)) {
+						@content;
+					}
+				}
+				@else{
+					@media only screen and (#{nth($break, 2)}-width: nth($break, 3)) {
+						@content;
+					}
+				}
+			}
+			@else{
+				@error $breakpoint "is not a valid grid breakpoint";
+			}
+		}
+	}
+}
+
+@mixin grid-column-breakpoint($breakpoint, $column, $columns: 12, $gutter: false) {
+	@include grid-breakpoint($breakpoint) {
+		$width: 100% * $column / $columns;
+		width: $width;
+		box-sizing:border-box;
+
+		@if $width != 100% {
+			float: left;
+		}
+
+		//include gutter
+		@if $gutter != false {
+			padding-left: $gutter / 2;
+			padding-right: $gutter / 2;
+		}
+		@content;
+	}
+}
+
+@mixin grid-breakpoint-hide($breakpoints...) {
+	@each $breakpoint in $breakpoints {
+		@include grid-breakpoint($breakpoint) {
+			display: none;
+		}
+	}
+}
+
+@mixin grid-breakpoint-show($breakpoints...) {
+	@each $breakpoint in $breakpoints {
+		@include grid-breakpoint($breakpoint) {
+			display: block;
+		}
+	}
+}
