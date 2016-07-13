@@ -1,0 +1,16 @@
+<section class="widgetTrends">
+  <header class="widgetTrends-header">
+    <h3 class="widgetTrends-header-title">Trends</h3>
+    <button class="widgetTrends-header-link" type="button">Change</button>
+  </header><!-- /header -->
+  <div class="widgetTrends-body">
+    <ul class="widgetTrends-list">
+      <li class="widgetTrends-item" ng-repeat="trend in $ctrl.trends | limitTo: 10">
+        <a class="widgetTrends-link" href="">
+          <strong class="widgetTrends-name">{{trend.name}}</strong>
+          <span class="widgetTrends-stats" ng-if="trend.tweet_volume">{{trend.tweet_volume}} Tweets</span>
+        </a>
+      </li>
+    </ul>
+  </div><!-- /widgetTrends-body -->
+</section><!-- /widgetTrends -->

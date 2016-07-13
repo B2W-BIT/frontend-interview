@@ -1,0 +1,40 @@
+// ----------------------------------------------------------------------
+
+  // User actions
+
+// ----------------------------------------------------------------------
+
+////
+/// @author Hemerson Vianna
+/// @group components
+///
+
+/// User actions
+.userActions {
+  @include x-column(3);
+}
+.userActions-list {
+  float: right;
+  padding: 12px 0;
+}
+
+.userActions-item { float: left; }
+.userActions-button {
+  background: none;
+  border: none;
+  height: 35px;
+  margin-top: 1px;
+  margin-right: 4px;
+  width: 35px;
+}
+
+.userActions-icon { fill: $color-typography; }
+.userActions-button:hover .userActions-icon { fill: $color-typography-link; }
+
+.userActions-buttonLight {
+  @include x-rem-fallback(font-size, 1.4);
+  @extend %button-light;
+  @extend %button-medium;
+}
+
+

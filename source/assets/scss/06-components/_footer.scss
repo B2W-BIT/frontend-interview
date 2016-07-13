@@ -1,0 +1,45 @@
+// ----------------------------------------------------------------------
+
+  // Footer
+
+// ----------------------------------------------------------------------
+
+////
+/// @author Hemerson Vianna
+/// @group components
+///
+
+/// Footer
+.footer {
+  @include x-clearfix;
+  margin-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.footer-copyright {
+  @include x-rem-fallback(font-size, 1.2);
+  color: #ccd6dd;
+  float: left;
+  line-height: 1.4;
+  padding-right: 8px;
+}
+
+.footer-mainMenu {}
+.footer-mainMenu-list {}
+.footer-mainMenu-item {
+  float: left;
+  padding-right: 8px;
+}
+.footer-mainMenu-link {
+  @include x-rem-fallback(font-size, 1.2);
+  color: #ccd6dd;
+  line-height: 1.4;
+  text-decoration: none;
+
+  &:hover { text-decoration: underline; }
+}
+
+.footer-mainMenu-list:hover .footer-mainMenu-link {
+  color: #3b94d9;
+}

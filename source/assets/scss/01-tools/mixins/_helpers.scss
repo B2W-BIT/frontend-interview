@@ -1,0 +1,59 @@
+// ----------------------------------------------------------------------
+
+  // Helpers
+
+// ----------------------------------------------------------------------
+
+////
+/// @author Hemerson Vianna
+/// @group tools
+////
+
+// Text hide
+///
+@mixin x-text-hide() {
+  font-size:0;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+// Clearfix
+///
+@mixin x-clearfix() {
+  &:before, &:after { content: " "; display: table; }
+  &:after { clear: both; }
+}
+
+// REM Fallback
+/// @param {string} $property
+/// @param {} $values
+///
+@mixin x-rem-fallback($property, $values...) {
+  // html {font-size: 62.5%;}
+  $max: length($values);
+  $pxValues: '';
+  $remValues: '';
+
+  @for $i from 1 through $max {
+    $value: x-strip-unit(nth($values, $i));
+    $pxValues: #{$pxValues + $value*10}px;
+
+    @if $i < $max {
+      $pxValues: #{$pxValues + " "};
+    }
+  }
+
+  @for $i from 1 through $max {
+    $value: x-strip-unit(nth($values, $i));
+    $remValues: #{$remValues + $value}rem;
+
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  }
+
+  #{$property}: $pxValues;
+  #{$property}: $remValues;
+}

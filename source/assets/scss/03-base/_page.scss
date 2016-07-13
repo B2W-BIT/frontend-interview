@@ -1,0 +1,32 @@
+// ----------------------------------------------------------------------
+
+  // Page
+
+// ----------------------------------------------------------------------
+
+////
+/// @author Hemerson Vianna
+/// @group base
+///
+
+/// Page
+html {
+  line-height: $base-line-height;
+  color: $base-text-color;
+  font-size: $base-font-size;
+  overflow-y: scroll;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: $base-background-color;
+  font-family: $base-font-family;
+}
+
+
+a,
+button { cursor: pointer; }

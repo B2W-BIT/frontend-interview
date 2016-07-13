@@ -1,0 +1,77 @@
+// ----------------------------------------------------------------------
+
+  // Sidebar
+
+// ----------------------------------------------------------------------
+
+////
+/// @author Hemerson Vianna
+/// @group components
+///
+
+/// Sidebar profile
+.sidebarProfile {
+  @include x-column(12);
+
+  @media(min-width:$screen-desktop) {
+    width: x-gridsystem-width(3);
+  }
+}
+
+.sidebarProfile-box {
+  display: none;
+
+  @media(min-width:$screen-desktop) {
+    display: block;
+    margin-top: 20px;
+    padding: 0 15px;
+
+    &:first-child { margin-top: 0; }
+  }
+}
+
+.sidebarProfile-title {
+  @include x-clearfix;
+  @include x-rem-fallback(font-size, 1.4);
+  color: $color-typography-link;
+  display: block;
+  margin-bottom: 10px;
+
+  & > a {
+    color: $color-typography-link;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
+}
+
+.sidebarProfile-title-icon {
+  float: left;
+  fill: $color-typography--lighter;
+  margin-right: 5px;
+}
+
+.sidebarProfile-list { @include x-clearfix; }
+.sidebarProfile-item {
+  float: left;
+  line-height: 1;
+  margin-left: 3.6px;
+  margin-top: 5px;
+}
+
+.sidebarProfile-link {
+  border-radius: 5px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.sidebarProfile-image { display: inline-block; }
+
+
+.sidebarWidgets {
+  display: none;
+
+  @media(min-width:$screen-desktop) {
+    @include x-column(3);
+  }
+}

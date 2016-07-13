@@ -1,0 +1,52 @@
+// ----------------------------------------------------------------------
+
+  // Default
+
+// ----------------------------------------------------------------------
+
+////
+/// @author Hemerson Vianna
+/// @group pages
+///
+
+/// Row
+%row {
+  @media(min-width:$screen-desktop) {
+    max-width: $screen-desktop;
+  }
+
+  @media(min-width:$screen-wide) {
+    max-width: $screen-wide;
+  }
+}
+
+/// Wrapper
+.wrapper {
+  overflow: hidden;
+  padding-top: 46px;
+  width: 100%;
+}
+
+/// Container
+.container {
+  @include x-clearfix;
+  @extend %row;
+  margin: 0 auto;
+  overflow: inherit;
+  padding-left: $padding-width;
+  padding-right: $padding-width;
+  position: relative;
+
+  @media(min-width:$screen-desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.containerWithGutter { margin: 0 -$padding-width; }
+
+/// Content
+.content {
+  padding: 10px 0;
+  width: 100%;
+}

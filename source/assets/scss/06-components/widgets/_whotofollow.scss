@@ -1,0 +1,91 @@
+// ----------------------------------------------------------------------
+
+  // Widget Who To Follow
+
+// ----------------------------------------------------------------------
+
+////
+/// @author Hemerson Vianna
+/// @group components
+///
+
+/// Widget Who To Follow
+.widgetWhoToFollow { @extend %panel; }
+
+.widgetWhoToFollow-header { @extend %panel-header; }
+.widgetWhoToFollow-header-title { @extend %panel-header-title; }
+.widgetWhoToFollow-header-link { @extend %panel-header-link; }
+
+.widgetWhoToFollow-body {}
+
+.widgetWhoToFollow-list {}
+.widgetWhoToFollow-item {
+  @include x-clearfix;
+  margin-top: 15px;
+  position: relative;
+
+  &:first-child { margin-top: 0; }
+}
+
+.widgetWhoToFollow-image {
+  border-radius: 5px;
+  float: left;
+  margin-right: 10px;
+}
+
+.widgetWhoToFollow-link {
+  display: block;
+  margin-bottom: 3px;
+  text-decoration: none;
+}
+
+.widgetWhoToFollow-fullname {
+  @include x-rem-fallback(font-size, 1.3);
+  color: $color-typography--dark;
+  font-weight: 700;
+}
+
+.widgetWhoToFollow-link:hover .widgetWhoToFollow-fullname {
+  color: $color-typography-link;
+  text-decoration: underline;
+}
+
+.widgetWhoToFollow-username {
+  @include x-rem-fallback(font-size, 1.3);
+  color: $color-typography;
+}
+
+.widgetWhoToFollow-follow {
+  @extend %button-light;
+  @extend %button-small;
+}
+.widgetWhoToFollow-close {
+  background: none;
+  border: none;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: -2px;
+}
+.widgetWhoToFollow-close-icon { fill: $color-typography--light; }
+
+.widgetWhoToFollow-followed {
+  @include x-rem-fallback(font-size, 1.3);
+  color: $color-typography;
+  margin-bottom: 3px;
+}
+
+.widgetWhoToFollow-followed-link {
+  color: $color-typography-link;
+  text-decoration: none;
+
+  &:hover { text-decoration: underline;}
+}
+
+.widgetWhoToFollow-footer { margin-top: 15px; }
+.widgetWhoToFollow-footer-link {
+  @include x-rem-fallback(font-size, 1.2);
+  color: $color-typography-link;
+
+  &:hover { text-decoration: underline; }
+}

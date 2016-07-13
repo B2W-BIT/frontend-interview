@@ -1,0 +1,52 @@
+// ----------------------------------------------------------------------
+
+  // Panels
+
+// ----------------------------------------------------------------------
+
+////
+/// @author Hemerson Vianna
+/// @group objects
+///
+
+/// Panel
+%panel {
+  background: #fff;
+  border: 1px solid #e1e8ed;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 15px;
+
+  &:first-child { margin-top: 0; }
+}
+
+%panel-header {
+  @include x-clearfix;
+  margin-bottom: 15px;
+}
+
+%panel-header-title {
+  @include x-rem-fallback(font-size, 1.8);
+  color: #66757f;
+  display: inline-block;
+  font-weight: 300;
+  line-height: 1;
+}
+
+%panel-header-link {
+  @include x-rem-fallback(font-size, 1.2);
+  background: none;
+  border: none;
+  color: $color-typography-link;
+  padding: 0;
+  text-decoration: none;
+
+  &:before {
+    content: '\2022';
+    display: inline-block;
+    font-size: 10px;
+    margin: 0 5px;
+  }
+
+  &:hover { text-decoration: underline; }
+}

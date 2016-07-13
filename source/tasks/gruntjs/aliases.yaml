@@ -1,0 +1,22 @@
+default:
+  - 'sass'
+  - 'autoprefixer'
+  - 'cmq'
+  - 'cssmin'
+  - 'eslint'
+  - 'htmlmin'
+#  - 'imagemin'
+  - 'webpack'
+
+dev:
+  - 'sass'
+  - 'autoprefixer'
+  - 'cmq'
+  - 'cssmin'
+  - 'eslint'
+  - 'htmlmin'
+#  - 'imagemin'
+  - 'webpack'
+
+test:
+  - 'karma'

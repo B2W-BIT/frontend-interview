@@ -1,0 +1,176 @@
+// ----------------------------------------------------------------------
+
+  // Timeline
+
+// ----------------------------------------------------------------------
+
+////
+/// @author Hemerson Vianna
+/// @group components
+///
+
+/// Timeline
+.timeline {
+  @include x-column(12);
+
+  @media(min-width:$screen-desktop) {
+    width: x-gridsystem-width(6);
+  }
+}
+
+.timeline-header {
+  background: #fff;
+  border: 1px solid #e1e8ed;
+  border-radius: 5px 5px 0 0;
+}
+
+.timeline-body {
+  margin-bottom: 40px;
+  padding-bottom: 80px;
+}
+
+/// Timeline navigation
+.navTimeline {}
+.navTimeline-list { @include x-clearfix; }
+.navTimeline-item {
+  float: left;
+  line-height: 1;
+  padding: 15px 10px 12px;
+
+  @media(min-width:$screen-desktop) {
+    padding: 15px 15px 12px;
+  }
+}
+.navTimeline-link {
+  @include x-rem-fallback(font-size, 1.8);
+  color: $color-typography-link;
+  font-weight: 500;
+  text-decoration: none;
+
+  &:hover { text-decoration: underline; }
+}
+
+/// Tweet
+.tweet {
+  @include x-clearfix;
+  background: #fff;
+  border: 1px solid #e1e8ed;
+  border-top: 0;
+  cursor: pointer;
+  min-height: 51px;
+  padding: 10px 12px 10px 70px;
+
+  &:hover { background: $base-background-color; }
+}
+
+.tweet-avatar {
+  border-radius: 5px;
+  position: absolute;
+  left: -58px;
+}
+
+.tweet-header {
+  @include x-clearfix;
+  position: relative;
+}
+
+.tweet-link {
+  float: left;
+  text-decoration: none;
+}
+
+.tweet-fullname {
+  @include x-rem-fallback(font-size, 1.4);
+  color: $color-typography--dark;
+  display: block;
+  font-weight: 700;
+
+  @media(min-width:$screen-desktop) {
+    display: inline-block;
+  }
+}
+
+.tweet-link:hover .tweet-fullname {
+  color: $color-typography-link;
+  text-decoration: underline;
+}
+
+.tweet-username,
+.tweet-time {
+  @include x-rem-fallback(font-size, 1.3);
+  color: $color-typography;
+}
+
+.tweet-time {
+  &:before {
+    content: '\2022';
+    display: inline-block;
+    font-size: 10px;
+    margin: 0 5px;
+  }
+}
+
+.tweet-translateButton {
+  background: none;
+  border: none;
+  display: none;
+  float: right;
+  padding: 0;
+
+  @media(min-width:$screen-desktop) {
+    display: block;
+  }
+}
+
+.tweet-translateButton-text { visibility: hidden; }
+.tweet-translateButton-svg { fill: #ccd6dd; }
+
+.tweet-translateButton:hover {
+  .tweet-translateButton-text { visibility: visible; }
+
+  .tweet-translateButton-text,
+  .tweet-translateButton-svg {
+    color: $color-typography--lighter;
+    fill: $color-typography--lighter;
+  }
+}
+
+.tweet-content {
+  @include x-rem-fallback(font-size, 1.4);
+  color: $color-typography--dark;
+  line-height: 1.2;
+  margin-top: 5px;
+
+  & > a {
+    color: $color-typography-link;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
+
+  @media(min-width:$screen-desktop) {
+    @include x-rem-fallback(font-size, 2.6);
+    margin-top: 0;
+  }
+}
+
+.tweet-footer {}
+
+.tweet-action { margin-top: 10px; }
+.tweet-action-list {}
+.tweet-action-item {
+  display: inline-block;
+  width: 50px;
+
+  @media(min-width:$screen-desktop) {
+    width: 80px;
+  }
+}
+
+.tweet-action-button {
+  background: none;
+  border: none;
+}
+
+.tweet-action-icon { fill: #aab8c2; }
+

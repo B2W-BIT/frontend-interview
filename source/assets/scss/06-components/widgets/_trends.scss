@@ -1,0 +1,44 @@
+// ----------------------------------------------------------------------
+
+  // Widget Trends
+
+// ----------------------------------------------------------------------
+
+////
+/// @author Hemerson Vianna
+/// @group components
+///
+
+/// Widget Trends
+.widgetTrends { @extend %panel; }
+
+.widgetTrends-header { @extend %panel-header; }
+.widgetTrends-header-title { @extend %panel-header-title; }
+.widgetTrends-header-link { @extend %panel-header-link; }
+
+.widgetTrends-body {}
+
+.widgetTrends-list {}
+.widgetTrends-item {
+  margin-top: 10px;
+
+  &:first-child { margin-top: 0; }
+}
+
+.widgetTrends-link {
+  @include x-rem-fallback(font-size, 1.3);
+  text-decoration: none;
+}
+
+.widgetTrends-name {
+  color: $color-typography-link;
+  display: block;
+  font-weight: 700;
+}
+
+.widgetTrends-stats {
+  color: $color-typography;
+  display: block;
+}
+
+.widgetTrends-link:hover .widgetTrends-name { text-decoration: underline; }

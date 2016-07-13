@@ -1,0 +1,38 @@
+// ----------------------------------------------------------------------
+
+  // Global support
+
+// ----------------------------------------------------------------------
+
+////
+/// @author Hemerson Vianna
+/// @group components
+///
+
+/// Global support
+.globalSupport-list { @include x-clearfix; }
+.globalSupport-item {
+  float: left;
+  margin-left: 15px;
+}
+
+.globalSupport-image { border-radius: 5px; }
+
+.globalSupport-button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.globalSupport-button--tweet {
+  @extend %button-default;
+}
+
+.globalSupport-button-icon {
+  fill: #fff;
+  float: left;
+  margin-right: 4px;
+}
+
+.globalSupport-button-text { line-height: 24px; }
+
+

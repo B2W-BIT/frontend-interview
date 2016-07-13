@@ -1,0 +1,53 @@
+// ----------------------------------------------------------------------
+
+  // Profile numbers
+
+// ----------------------------------------------------------------------
+
+////
+/// @author Hemerson Vianna
+/// @group components
+///
+
+/// Profile numbers
+.profileNumbers {
+  @include x-column(6);
+  margin-left: x-gridsystem-width(3);
+}
+
+.profileNumbers-list { @include x-clearfix; }
+
+.profileNumbers-item { float: left; }
+
+.profileNumbers-link {
+  border-bottom: 5px solid transparent;
+  display: inline-block;
+  padding: 14px 15px 7px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s ease-in-out;
+}
+
+.profileNumbers-title {
+  @include x-rem-fallback(font-size, 1.1);
+  color: $color-typography;
+  display: block;
+  text-transform: uppercase;
+}
+
+.profileNumbers-amount {
+  @include x-rem-fallback(font-size, 1.8);
+  color: $color-typography-link;
+}
+
+.profileNumbers-link:hover {
+  border-bottom-color: $color-typography-link;
+
+  .profileNumbers-title { color: $color-typography-link; }
+  .profileNumbers-amount { color: $color-typography-link; }
+}
+
+.profileNumbers-link.on {
+  border-bottom-color: $color-typography-link;
+  .profileNumbers-amount { color: $color-typography--dark; }
+}

@@ -1,0 +1,13 @@
+{
+  "display": {
+    "access": ["public", "private"],
+    "alias": false,
+    "watermark": false
+  },
+  "groups": {
+    "undefined": "general"
+  },
+  "package": "package.json",
+  "theme": "default",
+  "dest": "./public/doc-scss"
+}

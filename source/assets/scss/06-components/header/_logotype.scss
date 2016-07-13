@@ -1,0 +1,27 @@
+// ----------------------------------------------------------------------
+
+  // Logotype
+
+// ----------------------------------------------------------------------
+
+////
+/// @author Hemerson Vianna
+/// @group components
+///
+
+/// Logotype
+.logotype {
+  float: right;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+
+  @media(min-width:$screen-desktop) {
+    float: none;
+    margin-left: -10px;
+    left: 50%;
+    right: 0;
+  }
+}
+
+.logotype-svg { fill: $color-primary; }

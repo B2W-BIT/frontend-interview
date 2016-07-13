@@ -1,0 +1,40 @@
+// ----------------------------------------------------------------------
+
+  // Default
+
+// ----------------------------------------------------------------------
+
+////
+/// @author Hemerson Vianna
+/// @group settings
+///
+
+/// Base
+$base-font-size         : 62.5% !default;
+$base-font-size-px      : 10px !default;
+$base-line-height       : 1.2 !default;
+$base-text-color        : #333 !default;
+$base-background-color  : #f5f8fa !default;
+$base-font-family       : Arial, sans-serif;
+
+/// Colors
+$color-primary : #1da1f2;
+
+/// Typography colors
+$color-typography--dark: #292f33;
+$color-typography: #66757f;
+$color-typography--light: #ccd6dd;
+$color-typography--lighter: #8899a6;
+$color-typography-link: #a8a1a2;
+
+/// Buttons
+$button-font-color: #000;
+$button-font-weight: 400;
+$button-font-family: $base-font-family;
+
+/// Semantic grid
+$total-width : 100%;
+$total-columns : 12;
+$padding-width : 5px;
+$columns : 12;
+$push : 0 !default;
