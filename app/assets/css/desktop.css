@@ -516,6 +516,15 @@ a, .navbar-items .button:hover, .users-tabs li .count, .users-tabs li:hover,
     .column-1 {
         display: none;
     }
+
+    .profile-banner .profile-picture {
+        bottom: -5.5rem;
+    }
+
+    .column-2 {
+        width: 100%;
+        right: 0;
+    }
 }
 
 @media (max-width: 380px) {

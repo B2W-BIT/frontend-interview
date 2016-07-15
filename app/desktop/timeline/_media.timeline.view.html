@@ -2,7 +2,7 @@
     <div infinite-scroll="timeline.nextPage()" infinite-scroll-disabled="timeline.busy" infinite-scroll-distance="1">
         <div class="tweets-list" ng-repeat="tweet in timeline.items">
             <div class="user-container">
-                <a ng-href="https://twitter.com/{{tweet.user.screen_name}}" target="_blank">
+                <a class="user-link" ng-href="https://twitter.com/{{tweet.user.screen_name}}" target="_blank">
                     <img class="user-profile-image" ng-src="{{tweet.user.profile_image_url.replace('_normal', '_reasonably_small')}}" alt="{{tweet.user.name}} Photo">
                 </a>
                 <div class="text-block">

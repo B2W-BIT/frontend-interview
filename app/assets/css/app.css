@@ -162,8 +162,11 @@ p {
 }
 
 .user-container a {
-    vertical-align: top;
     text-decoration: none;
+}
+
+.user-container .user-link {
+    vertical-align: top;
 }
 
 .user-container .user-profile-image {

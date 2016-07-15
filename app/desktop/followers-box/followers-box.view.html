@@ -7,7 +7,7 @@
     <div ng-repeat="user in users | limitTo: 3">
         <div class="user-container">
             <i class="icon icon-times"></i>
-            <a ng-href="https://twitter.com/{{user.screen_name}}" target="_blank">
+            <a class="user-link" ng-href="https://twitter.com/{{user.screen_name}}" target="_blank">
                 <img class="user-profile-image" ng-src="{{user.profile_image_url.replace('_normal', '_reasonably_small')}}" alt="{{user.name}} Photo">
             </a>
             <a class="profile-link" ng-href="https://twitter.com/{{user.screen_name}}" target="_blank">
