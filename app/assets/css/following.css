@@ -137,4 +137,13 @@
     .column-1 {
         display: none;
     }
+
+    .column-2 {
+        width: 100%;
+        right: 0;
+    }
+
+    .panel {
+        margin: 0;
+    }
 }
