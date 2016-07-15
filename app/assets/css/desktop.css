@@ -232,10 +232,10 @@ a, .navbar-items .button:hover, .users-tabs li .count, .users-tabs li:hover,
 
 .users-tabs li .count, .tabs li, .timeline-title, .followers-box .who-to-follow,
 .trends-box .trends {
-    font-size: 1.8rem;;
+    font-size: 1.8rem;
 }
 
-.users-tabs li .count {;
+.users-tabs li .count {
     margin-top: -0.3rem;
     font-weight: 500;
 }
