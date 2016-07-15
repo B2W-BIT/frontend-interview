@@ -1,0 +1,43 @@
+<div ng-controller="TweetsRepliesCtrl">
+    <div infinite-scroll="timeline.nextPage()" infinite-scroll-disabled="timeline.busy" infinite-scroll-distance="1">
+        <div class="tweets-list" ng-repeat="tweet in timeline.items">
+            <div class="user-container">
+                <a ng-href="https://twitter.com/{{tweet.user.screen_name}}" target="_blank">
+                    <img class="user-profile-image" ng-src="{{tweet.user.profile_image_url.replace('_normal', '_reasonably_small')}}" alt="{{tweet.user.name}} Photo">
+                </a>
+                <div class="text-block">
+                    <a class="user-link" ng-href="https://twitter.com/{{tweet.user.screen_name}}" target="_blank">
+                        <span class="user-name">{{tweet.user.name}}</span>
+                        <span class="user-screen-name screen-name">@{{tweet.user.screen_name}}</span>
+                    </a>
+                    <span class="tweet-date"><span class="division-point">•</span>{{tweet.created_at | toDate}}</span>
+                    <p class="tweet-text" ng-bind-html="tweet.text.indexOf('http') !== -1 || tweet.text.indexOf('#') !== -1 ? (tweet | toMediaTweet) : tweet.text"></p>
+                    <div class="icons">
+                        <div class="icon-item">
+                            <span class="sr-only">Responder</span>
+                            <i class="icon icon-reply"></i>
+                        </div>
+                        <div class="icon-item">
+                            <span class="sr-only" ng-if="tweet.favorite_count > 0">{{tweet.retweet_count}} retweets</span>
+                            <span class="sr-only">Retweetar</span>
+                            <i class="icon icon-retweet"></i>
+                            <span ng-if="tweet.retweet_count > 0">{{tweet.retweet_count}}</span>
+                        </div>
+                        <div class="icon-item">
+                            <span class="sr-only" ng-if="tweet.favorite_count > 0">{{tweet.favorite_count}} curtiram</span>
+                            <span class="sr-only">Curtir</span>
+                            <i class="icon icon-heart"></i>
+                            <span ng-if="tweet.favorite_count > 0">{{tweet.favorite_count}}</span>
+                        </div>
+                        <div class="icon-item">
+                            <span class="sr-only">More</span>
+                            <i class="icon icon-more"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="loading-spinner" ng-show="timeline.busy"></div>
+    </div>
+</div>

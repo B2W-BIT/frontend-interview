@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Americanas Twitter Clone</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://abs.twimg.com/favicons/favicon.ico">
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-sanitize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-i18n/1.5.7/angular-locale_pt-br.js"></script>
+    <script src="bower_components/angular-css/angular-css.min.js"></script>
+    <!-- ngInfiniteScroll -->
+    <script src="node_modules/ng-infinite-scroll/build/ng-infinite-scroll.min.js"></script>
+    <!-- Toaster -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/1.1.0/toaster.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/1.1.0/toaster.min.js"></script>
+    <!-- Icons -->
+    <link rel="stylesheet" href="app/assets/css/icons.css">
+    <!-- App CSS -->
+    <link rel="stylesheet" href="app/assets/css/app.css">
+    <!-- App JS -->
+    <script src="app/app.js"></script>
+    <script src="app/app.mobile.routes.js"></script>
+    <script src="app/app.desktop.routes.js"></script>
+    <script src="app/mobile/home/home.controller.js"></script>
+    <script src="app/mobile/tabs/tabs.controller.js"></script>
+    <script src="app/mobile/timeline/timeline.controller.js"></script>
+    <script src="app/mobile/timeline/timeline.service.js"></script>
+    <script src="app/desktop/home/home.controller.js"></script>
+    <script src="app/desktop/users-tabs/users-tabs.controller.js"></script>
+    <script src="app/desktop/timeline-tabs/timeline-tabs.controller.js"></script>
+    <script src="app/desktop/timeline/timeline.controller.js"></script>
+    <script src="app/desktop/timeline/timeline.service.js"></script>
+    <script src="app/desktop/followers-box/followers-box.controller.js"></script>
+    <script src="app/desktop/media-box/media-box.controller.js"></script>
+    <script src="app/desktop/trends-box/trends-box.controller.js"></script>
+    <script src="app/filters/filters.js"></script>
+</head>
+<body ng-view></body>
+</html>

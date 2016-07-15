@@ -1,0 +1,259 @@
+* {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    list-style: none;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    box-shadow: none;
+    vertical-align: baseline;
+    z-index: 1;
+    box-sizing: border-box;
+    letter-spacing: 0.01rem;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    color: #292f33;
+}
+
+a {
+    color: #1da1f2;
+    text-decoration: none;
+}
+
+a:hover, .text-block .tweet-text a:hover, .user-container a:hover .user-name {
+    text-decoration: underline;
+}
+
+p {
+    line-height: 2.15rem;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.navbar, .profile-banner, .tabs, .text-block .tweet-media,
+.text-block .tweet-media img, .tweets-list .user-container .icons,
+.loading-screen {
+    width: 100%;
+}
+
+.navbar, .tabs, hr {
+    border-bottom: 1px solid #e1e8ed;
+}
+
+.navbar, .loading-screen {
+    position: fixed;
+}
+
+.navbar {
+    min-height: 5.2rem;
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+.profile-banner, .text-block .tweet-media {
+    position: relative;
+}
+
+.profile-banner, .profile-picture img {
+    background-color: #a8a1a2;
+}
+
+.profile-banner {
+    min-height: 12.8rem;
+    height: 33vw;
+    max-height: 45rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-picture, .user-container a, .text-block,
+.tweets-list .user-container .icons,
+.tweets-list .user-container .icons .icon-item {
+    display: inline-block;
+}
+
+.profile-picture, .profile-picture img , .user-container .user-profile-image {
+    border-radius: 0.6rem;
+}
+
+.profile-picture {
+    width: auto;
+    height: auto;
+    border: 0.4rem solid #ffffff;
+    margin: 0 0 -0.4rem -0.4rem;
+}
+
+.profile-picture img, .tabs li, .text-block .user-screen-name {
+    vertical-align: bottom;
+}
+
+.profile-picture img, .tabs li, .tweets-list .user-container .icons .icon-item {
+    cursor: pointer;
+}
+
+.profile-picture img {
+    min-width: 7rem;
+    width: 22.4vw;
+    max-width: 14rem;
+    min-height: 7rem;
+    height: 22.4vw;
+    max-height: 14rem;
+}
+
+.profile-lookup {
+    padding-top: 1rem;
+}
+
+.profile-lookup .description {
+    margin: 1rem 0;
+}
+
+.profile-lookup .location {
+    margin-bottom: 1rem;
+}
+
+.name, .user-container .user-name {
+    font-weight: bold;
+}
+
+.name {
+    font-size: 2rem;
+}
+
+.screen-name, .tweet-date, .text-block .user-link,
+.tweets-list .user-container .icons .icon-item .icon,
+.tweets-list .user-container .icons .icon-item span {
+    color: #8899a6;
+}
+
+.tabs {
+    display: table;
+    min-height: 4.2rem;
+}
+
+.tabs li, .loading-screen .icon-twitter, .not-found-message {
+    text-align: center;
+}
+
+.tabs li {
+    display: table-cell;
+    width: 33.33%;
+    min-height: 4.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 0.5rem solid #ffffff;
+}
+
+.user-container {
+    padding: 2rem 1rem 1.6rem 1rem;
+}
+
+.user-container .user-name {
+    color: #292f33;
+}
+
+.user-container a {
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.user-container .user-profile-image {
+    min-width: 3.4rem;
+    width: 11.28vw;
+    max-width: 7rem;
+    min-height: 3.4rem;
+    height: 11.28vw;
+    max-height: 7rem;
+    margin-right: 0.6rem;
+}
+
+.user-container .button, .tweet-date {
+    float: right;
+}
+
+.text-block {
+    width: 84.9%;
+    width: calc(100% - 8.1rem);
+}
+
+.text-block .user-link {
+    width: 72%;
+    width: calc(100% - 7rem);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-block .user-screen-name {
+    display: inline;
+}
+
+.text-block .tweet-media, .text-block .tweet-media img {
+    border: 1px solid #e1e8ed;
+    border-radius: 0.45rem;
+}
+
+.text-block .tweet-media {
+    height: 100vw;
+    max-height: 28rem;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.text-block .tweet-media img {
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -1px;
+    margin: auto;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    box-sizing: content-box;
+}
+
+.tweets-list .user-container .icons {
+    margin-top: 1.6rem;
+}
+
+.tweets-list .user-container .icons .icon-item {
+    margin-right: 10%;
+}
+
+.tweets-list .user-container .icons .icon-item .icon {
+    font-size: 1.6rem;
+}
+
+.tweets-list .user-container .icons .icon-item:last-of-type {
+    margin: 0;
+}
+
+.loading-screen {
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #1da1f2;
+    z-index: 9;
+}
+
+.loading-screen .icon-twitter {
+    font-size: 7rem;
+    color: #ffffff;
+    display: block;
+    line-height: 100vh;
+}
+
+.not-found-message {
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin-top: 5%;
+}

@@ -1,0 +1,35 @@
+<!-- Mobile CSS -->
+<link rel="stylesheet" href="../../app/assets/css/mobile.css">
+<toaster-container></toaster-container>
+<nav class="navbar">
+    <div class="container">
+        <a href="/" class="button a-button">
+            <span class="sr-only">Fechar</span>
+            <i class="icon icon-times"></i>
+        </a>
+        <h1 class="title">Seguidores</h1>
+    </div>
+</nav>
+<div class="content" ng-controller="FollowersCtrl">
+    <div class="container">
+        <div infinite-scroll="timeline.nextPage()" infinite-scroll-disabled="timeline.busy" infinite-scroll-distance="1">
+            <div class="users-list" ng-repeat="user in timeline.items">
+                <div class="user-container">
+                    <a ng-href="https://twitter.com/{{user.screen_name}}" target="_blank">
+                        <img class="user-profile-image" ng-src="{{user.profile_image_url.replace('_normal', '_reasonably_small')}}" alt="{{user.name}} Photo">
+                    </a>
+                    <a ng-href="https://twitter.com/{{user.screen_name}}" target="_blank">
+                        <p class="user-name">{{user.name}}</p>
+                        <p class="user-screen-name screen-name">@{{user.screen_name}}</p>
+                    </a>
+                    <button class="button button-primary">
+                        <span class="sr-only">Seguir</span>
+                        <i class="icon icon-user-plus"></i>
+                    </button>
+                </div>
+                <hr>
+            </div>
+            <div class="loading-spinner" ng-show="timeline.busy"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,140 @@
+.timeline {
+    background-color: transparent;
+    border: 0;
+}
+
+.column-1, .column-3 {
+    float: left;
+    clear: both;
+}
+
+.column-3, .panel .banner {
+    display: block;
+}
+
+.column-3 {
+    width: 19%;
+    margin: 1rem 0 0 6.7%;
+}
+
+.column-2 {
+    width: 67.5%;
+    left: inherit;
+    right: 5.4%;
+    right: calc(6.7% - 1rem);
+    margin: 0;
+}
+
+.user-container {
+    padding: 0;
+}
+
+.user-container:hover, .panel {
+    background-color: #ffffff;
+}
+
+.panel-user-profile-image {
+    border: 0.3rem solid #ffffff;
+    border-radius: 0.6rem;
+    margin: -3.2rem 0 1rem 1.2rem;
+}
+
+.panel-user-profile-image img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 0.3rem;
+}
+
+.panel {
+    width: 28.6rem;
+    height: 28.1rem;
+    margin: 0 0 1rem 1rem;
+    border: 1px solid #e1e8ed;
+    border-radius: 0.5rem;
+}
+
+.panel .banner {
+    height: 9.6rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid #e1e8ed;
+    border-radius: 0.4rem 0.4rem 0 0;
+}
+
+.panel .button {
+    padding: 0.2rem 1.3rem;
+    margin-top: 1.13rem;
+    margin-right: 1.13rem;
+}
+
+.panel .settings {
+    margin-right: 0;
+    color: #8899a6;
+}
+
+.panel .settings:hover {
+    color: #a8a1a2;
+}
+
+.panel .user-names {
+    margin: -1.2rem 0 0 1.6rem;
+}
+
+.panel .user-names p {
+    display: inline-block;
+}
+
+.panel .user-name {
+    font-size: 1.8rem;
+}
+
+.panel .user-screen-name {
+    font-size: 1.2rem;
+}
+
+.panel .user-screen-name:hover {
+    text-decoration: underline;
+}
+
+.panel .user-description {
+    font-size: 1.4rem;
+    color: #66757f;
+    width: 100%;
+    height: 8rem;
+    overflow: hidden;
+    float: left;
+    padding: 0.2rem 1.6rem 0 1.6rem;
+}
+
+.panel .user-container {
+    cursor: auto;
+}
+
+@media (max-width: 860px) {
+    .column-3 {
+        display: none;
+    }
+
+    .panel {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column-1 {
+        margin: 3rem 0 0 2.7%;
+    }
+
+    .column-2 {
+        width: 75.5%;
+        right: 1.4%;
+        right: calc(2.7% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .column-1 {
+        display: none;
+    }
+}

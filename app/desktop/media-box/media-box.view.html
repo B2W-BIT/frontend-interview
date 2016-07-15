@@ -1,0 +1,6 @@
+<div class="media-box" ng-controller="MediaBoxCtrl">
+<a class="media-title"><i class="icon icon-camera"></i> Photos and videos</a>
+    <div class="images">
+        <div ng-repeat="image in images | limitTo: 6" style="background-image: url('{{image.entities.media[0].media_url_https}}')"></div>
+    </div>
+</div>

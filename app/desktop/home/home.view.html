@@ -1,0 +1,86 @@
+<toaster-container></toaster-container>
+<nav class="navbar">
+    <div class="navbar-items">
+        <button class="button">
+            <i class="icon icon-home"></i>
+            <span>Home</span>
+        </button>
+        <button class="button">
+            <i class="icon icon-bolt"></i>
+            <span>Moments</span>
+        </button>
+        <button class="button">
+            <i class="icon icon-bell"></i>
+            <span>Notifications</span>
+        </button>
+        <button class="button">
+            <i class="icon icon-envelope"></i>
+            <span>Messages</span>
+        </button>
+    </div>
+    <i class="icon icon-twitter"></i>
+    <div class="navbar-column-right">
+        <input class="search" type="text" placeholder="Search Twitter">
+        <span class="sr-only">Search</span>
+        <i class="icon icon-search"></i>
+        <button class="user button">
+            <span class="sr-only">Account</span>
+            <i class="icon icon-user"></i>
+        </button>
+        <button class="button tweet-button">
+            <i class="icon icon-tweet"></i>
+            <span>Tweet</span>
+        </button>
+    </div>
+</nav>
+<div class="content" ng-controller="ProfileLookupCtrl">
+    <div class="loading-screen" ng-show="loading_screen"></div>
+    <div class="profile-banner" style="background-image: url('{{profile_banner}}');">
+        <div class="container">
+            <div class="profile-picture">
+                <img ng-src="{{profile_picture}}" alt="Americanas.com Logo">
+            </div>
+        </div>
+    </div>
+    <div class="profile-options">
+        <div class="container">
+            <div class="options">
+                <!-- Users Tabs Component -->
+                <users-tabs users-tabs="usersTabs"></users-tabs>
+                <div class="buttons">
+                    <button class="button">
+                        <span class="sr-only">Settings</span>
+                        <i class="icon icon-cog"></i>
+                    </button>
+                    <button class="button follow-button">
+                        <i class="icon icon-user-plus"></i>
+                        <span>Follow</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column-1">
+        <div class="profile-lookup">
+            <p class="name">{{name}} <i class="icon icon-verified"></i></p>
+            <p class="screen-name">{{screen_name}}</p>
+            <p class="description" ng-bind-html="description"></p>
+            <p class="location"><i class="icon icon-marker"></i>{{location}}</p>
+            <p class="site"><i class="icon icon-chain"></i><a href="{{expanded_url}}" target="_blank">{{display_url}}</a></p>
+            <p class="joined"><i class="icon icon-calendar"></i>Joined {{created_at}}</p>
+            <button class="button tweet-button"><i class="icon icon-tweet"></i><span>Tweet to {{name}}</span></button>
+        </div>
+        <!-- Media Box Component -->
+        <media-box></media-box>
+    </div>
+    <div class="column-2">
+        <!-- Timeline Component -->
+        <timeline current-users-tab="currentUsersTab"></timeline>
+    </div>
+    <div class="column-3">
+        <!-- Followers Box Component -->
+        <followers-box></followers-box>
+        <!-- Trends Box Component -->
+        <trends-box></trends-box>
+    </div>
+</div>

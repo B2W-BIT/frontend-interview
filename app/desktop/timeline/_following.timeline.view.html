@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="app/assets/css/following.css">
+<div ng-controller="FollowingCtrl">
+    <div infinite-scroll="timeline.nextPage()" infinite-scroll-disabled="timeline.busy" infinite-scroll-distance="1">
+        <div class="users-list panel" ng-repeat="user in timeline.items">
+            <div class="user-container">
+                <a ng-href="https://twitter.com/{{user.screen_name}}" class="banner" style="background-color: #{{user.profile_link_color}};
+                    background-image: url('{{user.profile_banner_url}}/300x100');" target="_blank"></a>
+                <a ng-href="https://twitter.com/{{user.screen_name}}" target="_blank">
+                    <div class="panel-user-profile-image">
+                        <img ng-src="{{user.profile_image_url.replace('_normal', '_reasonably_small')}}" alt="{{user.name}} Photo">
+                    </div>
+                </a>
+                <button class="button follow-button">
+                    <i class="icon icon-user-plus"></i>
+                    <span>Follow</span>
+                </button>
+                <button class="button settings">
+                    <span class="sr-only">Settings</span>
+                    <i class="icon icon-cog"></i>
+                </button>
+                <a class="user-names" ng-href="https://twitter.com/{{user.screen_name}}" target="_blank">
+                    <p class="user-name">{{user.name}}</p><br>
+                    <p class="user-screen-name screen-name">@{{user.screen_name}}</p>
+                </a>
+                <p class="user-description">{{user.description}}</p>
+            </div>
+        </div>
+        <div class="loading-spinner" ng-show="timeline.busy"></div>
+    </div>
+</div>

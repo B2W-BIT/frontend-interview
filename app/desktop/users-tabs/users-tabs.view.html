@@ -1,0 +1,6 @@
+<ul class="users-tabs">
+    <li ng-repeat="usersTab in $ctrl.usersTabs" ng-class="{active:isActiveUsersTab(usersTab.url)}" ng-click="onClickUsersTab(usersTab)">
+        <p>{{usersTab.title}}</p>
+        <p class="count">{{usersTab.count}}</p>
+    </li>
+</ul>
