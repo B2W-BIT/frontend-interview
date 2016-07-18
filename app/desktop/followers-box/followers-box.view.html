@@ -1,0 +1,24 @@
+<div class="followers-box" ng-controller="FollowersBoxCtrl">
+    <span class="who-to-follow">Who to follow</span>
+    <span class="division-point">•</span>
+    <a class="refresh">Refresh</a>
+    <span class="division-point">•</span>
+    <a class="view-all">View all</a>
+    <div ng-repeat="user in users | limitTo: 3">
+        <div class="user-container">
+            <i class="icon icon-times"></i>
+            <a class="user-link" ng-href="https://twitter.com/{{user.screen_name}}" target="_blank">
+                <img class="user-profile-image" ng-src="{{user.profile_image_url.replace('_normal', '_reasonably_small')}}" alt="{{user.name}} Photo">
+            </a>
+            <a class="profile-link" ng-href="https://twitter.com/{{user.screen_name}}" target="_blank">
+                <span class="user-name">{{user.name}}</span>
+                <span class="user-screen-name screen-name">@{{user.screen_name}}</span>
+            </a>
+            <button class="button follow-button">
+                <i class="icon icon-user-plus"></i>
+                <span>Follow</span>
+            </button>
+        </div>
+    </div>
+    <a class="find-all">Find friends</a>
+</div>

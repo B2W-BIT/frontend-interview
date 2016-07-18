@@ -1,0 +1,538 @@
+body, .navbar .search, .follow-button, .user-container:hover {
+    background-color: #f5f8fa;
+}
+
+a, .navbar-items .button:hover, .users-tabs li .count, .users-tabs li:hover,
+.profile-options .options .buttons button:first-of-type:hover,
+.tabs li, .timeline-title, .user-container .user-link:hover .user-name,
+.followers-box a:hover .user-name {
+    color: #a8a1a2;
+}
+
+.button, .navbar .icon-search, .users-tabs li, .profile-lookup .name:hover,
+.profile-lookup .screen-name:hover, .user-container:hover, .followers-box .refresh,
+.followers-box .view-all, .followers-box .find-all, .trends-box .change,
+.followers-box .icon-times, .trends-box .topic a, .media-box .media-title,
+.media-box .images div {
+    cursor: pointer;
+}
+
+.button .icon {
+    font-size: 2rem;
+}
+
+.button span, .navbar .search, .follow-button span {
+    vertical-align: super;
+}
+
+.button span {
+    margin-left: 0.2rem;
+}
+
+.navbar {
+    min-height: 4.6rem;
+    border-bottom: 1px solid #e1e8ed;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.navbar-items, .users-tabs, .column-1, .column-2, .column-3, .media-box .images div {
+    float: left;
+}
+
+.navbar-items {
+    height: 4.5rem;
+    margin-left: 5.7%;
+}
+
+.navbar-items .button, .tabs li, .timeline-title {
+    border: 0;
+}
+
+.navbar-items .button, .navbar .icon-search, .text-block .user-screen-name,
+.tweet-date, .followers-box .user-name, .followers-box .screen-name, .trends-box {
+    font-size: 1.3rem;
+}
+
+.navbar-items .button, .navbar .icon-search, .users-tabs li, .timeline-title,
+.followers-box .who-to-follow, .trends-box .trends {
+    color: #66757f;
+}
+
+.navbar-items .button, .navbar .search, .users-tabs li {
+    transition: all 0.2s;
+}
+
+.navbar-items .button {
+    height: 4.6rem;
+    padding: 1rem 1.2rem;
+}
+
+.navbar .button .icon-bolt {
+    width: 2.1rem;
+    height: 2.1rem;
+}
+
+.navbar-items .button:hover, .users-tabs li:hover, .users-tabs .active {
+    box-shadow: inset 0 -0.4rem 0 0 #a8a1a2;
+}
+
+.navbar .icon-twitter, .follow-button .icon {
+    color: #1da1f2;
+}
+
+.navbar .icon-twitter, .profile-lookup .tweet-button, .trends-box {
+    margin-top: 1rem;
+}
+
+.navbar .icon-twitter, .profile-picture, .column-2, .followers-box .follow-button {
+    position: absolute;
+}
+
+.navbar .icon-twitter {
+    font-size: 2.1rem;
+    left: 50%;
+    margin-left: -1.2rem;
+}
+
+.navbar-column-right, .profile-options .options .buttons, .column-3,
+.followers-box .icon-times {
+    float: right;
+}
+
+.navbar-column-right {
+    margin-right: 6.7%;
+}
+
+.navbar .search, .users-tabs .active .count, .follow-button span, .tabs .active {
+    color: #292f33;
+}
+
+.navbar .search, .follow-button, .timeline, .followers-box, .trends-box {
+    border: 1px solid #e1e8ed;
+}
+
+.navbar .search, .followers-box .refresh, .followers-box .view-all,
+.followers-box .find-all, .trends-box .change, .followers-box .icon-times {
+    font-size: 1.2rem;
+}
+
+.navbar .search {
+    width: 16.1vw;
+    padding: 0.5rem 2.7rem 0.6rem 1.2rem;
+    border-radius: 2.1rem;
+}
+
+.navbar .search:focus, .profile-options, .timeline, .followers-box, .trends-box , .followers-box .user-container:hover {
+    background-color: #ffffff;
+}
+
+.navbar .user, .column-1, .column-2, .column-3, .users-tabs, .users-tabs li, .tabs,
+.tabs li, .timeline-title, .panel, .followers-box .who-to-follow, .trends-box .trends {
+    display: inline-block;
+}
+
+.navbar .icon-search, .followers-box .user-container {
+    position: relative;
+}
+
+.navbar .icon-search {
+    top: -0.4rem;
+    left: -2.8rem;
+}
+
+.navbar .user, .tweet-button {
+    color: #ffffff;
+}
+
+.navbar .user, .profile-lookup .location, .tabs li:last-of-type {
+    margin: 0;
+}
+
+.navbar .user, .tweet-button, .follow-button, .media-box .images div {
+    border-radius: 0.4rem;
+}
+
+.navbar .user, .navbar .search, .navbar .tweet-button {
+    margin-top: 0.7rem;
+    height: 3rem;
+}
+
+.navbar .user {
+    background-color: #337ab7;
+    width: 3rem;
+    padding: 0;
+    margin-left: -1rem;
+}
+
+.tweet-button {
+    background-color: #a8a1a2;
+    background-color: rgba(168, 161, 162, 0.8);
+    padding: 0.3rem 1.3rem;
+    box-shadow: inset 0 0.1rem 0 rgba(255, 255, 255, 0.15);
+}
+
+.navbar .tweet-button {
+    margin-left: 1rem;
+}
+
+.tweet-button:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+    box-shadow: inset 0 0.1rem 0 rgba(255, 255, 255, 0.2);
+}
+
+.content {
+    padding-top: 4.6rem;
+}
+
+.profile-banner, .profile-options .options, .profile-lookup .tweet-button, .panel .banner {
+    width: 100%;
+}
+
+.profile-banner {
+    min-height: 12.8rem;
+    height: 23.5vw;
+    max-height: 32rem;
+}
+
+.container, .column-2 {
+    margin: 0 auto;
+}
+
+.container {
+    width: 86.5%;
+}
+
+.profile-picture {
+    bottom: -8.7rem;
+    border-width: 0.5rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 0.1rem 0.1rem rgba(136, 153, 166, 0.15);
+}
+
+.profile-picture img {
+    max-width: 20rem;
+    width: 14.65vw;
+    min-width: 10rem;
+    max-height: 20rem;
+    height: 14.65vw;
+    min-height: 10rem;
+    border-radius: 0.8rem;
+}
+
+.users-tabs li, .profile-options, .profile-options .options {
+    height: 6rem;
+}
+
+.users-tabs li {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+}
+
+.users-tabs li .count, .tabs li, .timeline-title, .followers-box .who-to-follow,
+.trends-box .trends {
+    font-size: 1.8rem;
+}
+
+.users-tabs li .count {
+    margin-top: -0.3rem;
+    font-weight: 500;
+}
+
+.profile-options {
+    border-bottom: 1px solid #e1e8ed;
+}
+
+.profile-options .options {
+    padding-left: 24.1%;
+}
+
+.profile-options .options .buttons {
+    margin-top: 1.2rem;
+}
+
+.profile-options .options .buttons button:first-of-type,
+.profile-lookup .location .icon, .profile-lookup .site .icon,
+.profile-lookup .joined .icon, .trends-box .topic p {
+    color: #8899a6;
+}
+
+.profile-options .options .buttons button:first-of-type {
+    min-width: 3.6rem;
+    height: 3.6rem;
+}
+
+.follow-button {
+    padding: 0.55rem 1.2rem;
+    background-image: linear-gradient(#ffffff,#f5f8fa);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#f5f8fa)";
+}
+
+.follow-button span, .profile-lookup .tweet-button span, .trends-box .topic a {
+    font-weight: bold;
+}
+
+.follow-button:hover {
+    background-image: linear-gradient(#ffffff, rgba(0, 0, 0, 0.06));
+}
+
+.column-1 {
+    width: 20%;
+    margin: 3rem 0 0 6.7%;
+    padding-right: 1rem;
+}
+
+.column-2 {
+    width: 45.1%;
+    padding: 1rem 1rem 0 1rem;
+    left: -20px;
+    right: 0;
+}
+
+.column-3 {
+    width: 21.5%;
+    max-width: 50rem;
+    margin: 1rem 6.7% 0 0;
+}
+
+.profile-lookup, .profile-lookup .tweet-button span , .text-block .user-link {
+    font-size: 1.4rem;
+}
+
+.profile-lookup .name:hover, .profile-lookup .screen-name:hover,
+.tabs li:hover {
+    text-decoration: underline;
+}
+
+.profile-lookup .icon-verified {
+    color: #77c7f7;
+}
+
+.profile-lookup .location .icon, .profile-lookup .site .icon,
+.profile-lookup .joined .icon {
+    width: 1.3rem;
+    margin-right: 0.6rem;
+}
+
+.profile-lookup .tweet-button {
+    padding: 0.75rem;
+}
+
+.profile-lookup .tweet-button span {
+    margin-left: 0.4rem;
+}
+
+.tabs {
+    min-height: 4.5rem;
+}
+
+.tabs li, timeline-title, .text-block .user-link {
+    width: auto;
+}
+
+.tabs li, .timeline-title {
+    padding: 1.2rem;
+    margin-right: 1rem;
+}
+
+.timeline, .followers-box, .trends-box {
+    border-radius: 0.5rem;
+}
+
+.user-container {
+    padding: 1rem;
+}
+
+.user-container .user-profile-image {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+.text-block {
+    width: 85%;
+    width: calc(100% - 5.86rem);
+}
+
+.tweet-date {
+    float: none;
+    vertical-align: text-top;
+}
+
+.division-point {
+    font-size: 0.8rem;
+    vertical-align: middle;
+    margin: 0 0.5rem 0 0.2rem;
+}
+
+.followers-box, .trends-box {
+    padding: 1.6rem;
+}
+
+.followers-box .who-to-follow, .trends-box .trends, .trends-box .topic {
+    margin-bottom: 1rem;
+}
+
+.followers-box .icon-times {
+    color: #ccd6dd;
+}
+
+.followers-box .user-container {
+    padding: 1rem 0;
+}
+
+.followers-box .user-container:hover {
+    cursor: auto;
+}
+
+.followers-box .follow-button {
+    top: 3rem;
+    left: 5.8rem;
+    padding: 0.2rem 1rem;
+}
+
+.followers-box .profile-link, .trends-box .topic {
+    width: 66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.media-box {
+    margin-top: 2rem;
+}
+
+.media-box .media-title {
+    font-size: 1.5rem;
+}
+
+.media-box .images {
+    margin-top: 0.5rem;
+}
+
+.media-box .images div {
+    width: 31%;
+    height: 6vw;
+    margin: 1%;
+    background-position: center;
+    background-size: cover;
+}
+
+.loading-spinner {
+    background-image: url('../images/spinner-desktop.gif');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    margin: 1.6rem auto;
+}
+
+.loading-screen {
+    background-color: #ffffff;
+}
+
+@media (max-width: 1100px) {
+    html {
+        font-size: 9px;
+    }
+
+    .column-1, .column-3  {
+        float: left;
+        clear: both;
+    }
+
+    .column-3 {
+        display: block;
+        width: 19%;
+        margin: 1rem 0 0 6.7%;
+    }
+
+    .column-2 {
+        width: 67.5%;
+        left: inherit;
+        right: 5.4%;
+        right: calc(6.7% - 1rem);
+        margin: 0;
+    }
+
+    .followers-box {
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .button span {
+        display: none;
+    }
+}
+
+@media (max-width: 860px) {
+    html {
+        font-size: 8px;
+    }
+
+    .column-3, .media-box {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar-items {
+        margin-left: 1.7%;
+    }
+
+    .navbar-column-right {
+        margin-right: 2.7%;
+    }
+
+    .container {
+        width: 94.5%;
+    }
+
+    .column-1 {
+        margin: 3rem 0 0 2.7%;
+    }
+
+    .column-2 {
+        width: 75.5%;
+        right: 1.4%;
+        right: calc(2.7% - 1rem);
+    }
+}
+
+@media (max-width: 560px) {
+    html {
+        font-size: 7px;
+    }
+
+    .users-tabs li {
+        padding: 0.8rem 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .column-1 {
+        display: none;
+    }
+
+    .profile-banner .profile-picture {
+        bottom: -5.5rem;
+    }
+
+    .column-2 {
+        width: 100%;
+        right: 0;
+    }
+}
+
+@media (max-width: 380px) {
+    html {
+        font-size: 6px;
+    }
+
+    .users-tabs li {
+        padding: 0.8rem 0.5rem;
+    }
+}

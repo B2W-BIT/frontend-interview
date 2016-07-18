@@ -1,0 +1,6 @@
+<div ng-controller="TabsCtrl">
+    <ul class="tabs">
+        <li ng-repeat="tab in tabs" ng-class="{active:isActiveTab(tab.url)}" ng-click="onClickTab(tab)"><p>{{tab.title}}</p></li>
+    </ul>
+    <div ng-include="currentTab"></div>
+</div>

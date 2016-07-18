@@ -1,0 +1,11 @@
+<div class="trends-box" ng-controller="TrendsBoxCtrl">
+    <span class="trends">Trends</span>
+    <span class="division-point">•</span>
+    <a class="change">Change</a>
+    <div ng-repeat="trend in trends | limitTo: 10">
+        <div class="topic">
+            <a>{{trend.name}}</a>
+            <p ng-if="trend.tweet_volume > 0">{{trend.tweet_volume}} Tweets</p>
+        </div>
+    </div>
+</div>

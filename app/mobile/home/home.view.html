@@ -1,0 +1,63 @@
+<toaster-container></toaster-container>
+<nav class="navbar">
+    <div class="navbar-items">
+        <button class="button">
+            <span class="sr-only">Início</span>
+            <i class="icon icon-home"></i>
+        </button>
+        <button class="button">
+            <span class="sr-only">Notificações</span>
+            <i class="icon icon-bell"></i>
+        </button>
+        <button class="button">
+            <span class="sr-only">Mensagens</span>
+            <i class="icon icon-envelope"></i>
+        </button>
+        <button class="button">
+            <span class="sr-only">Buscar</span>
+            <i class="icon icon-search"></i>
+        </button>
+        <button class="user button">
+            <span class="sr-only">Conta</span>
+            <i class="icon icon-user"></i>
+        </button>
+    </div>
+</nav>
+<div class="content" ng-controller="ProfileLookupCtrl">
+    <div class="loading-screen" ng-show="loading_screen">
+        <i class="icon icon-twitter"></i>
+    </div>
+    <div class="profile-banner" style="background-image: url('{{profile_banner}}');">
+        <div class="container">
+            <div class="profile-picture">
+                <img ng-src="{{profile_picture}}" alt="Americanas.com Logo">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="profile-options">
+            <div class="buttons">
+                <button class="button">
+                    <span class="sr-only">Configurações</span>
+                    <i class="icon icon-cog"></i>
+                </button>
+                <button class="button button-primary">
+                    <span class="sr-only">Seguir</span>
+                    <i class="icon icon-user-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="profile-lookup">
+            <p class="name">{{name}} <i class="icon icon-verified"></i></p>
+            <p class="screen-name">{{screen_name}}</p>
+            <p class="description" ng-bind-html="description"></p>
+            <p class="location">{{location}}<span class="division-point">•</span><a href="{{expanded_url}}" target="_blank">{{display_url}}</a></p>
+            <p class="following">
+                <a href="/following" class="total-following"><span class="number">{{total_following}}</span> <span class="text">Seguindo</span></a>
+                <a href="/followers" class="total-followers"><span class="number">{{total_followers}}</span> <span class="text">Seguidores</span></a>
+            </p>
+        </div>
+    </div>
+    <!-- Tabs Component -->
+    <tabs></tabs>
+</div>

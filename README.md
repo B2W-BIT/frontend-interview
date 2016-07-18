@@ -1,3 +1,6 @@
+In order to get it working, run the following command:
+###```make start```
+
 # B2W Challenge
 
 ### Mission

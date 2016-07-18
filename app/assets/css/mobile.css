@@ -1,0 +1,200 @@
+.button {
+    min-width: 4.2rem;
+    min-height: 4.2rem;
+    padding: 0.4rem 0.7rem;
+    background-color: #ffffff;
+    border: 1px solid #8899a6;
+    border-radius: 0.6rem;
+    display: inline-block;
+}
+
+.button, .button-icon, .following a .text {
+    color: #8899a6;
+}
+
+.button, .following a {
+    cursor: pointer;
+}
+
+.button .icon {
+    font-size: 1.9rem;
+}
+
+.navbar .navbar-items, .navbar .title, .container, .profile-banner .container {
+    margin: 0 auto;
+}
+
+.navbar .navbar-items {
+    max-width: 600px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.navbar .button {
+    border: 0;
+    width: 5rem;
+    height: 5rem;
+}
+
+.navbar .button .icon {
+    font-size: 2.6rem;
+}
+
+.navbar .button:hover .icon, .button-primary, .button-primary .icon,
+.name .icon, .following a:hover .text, .tabs li p {
+    color: #1da1f2;
+}
+
+.navbar .user, .profile-options .buttons {
+    margin-top: 1rem;
+}
+
+.navbar .user {
+    min-width: 0;
+    min-height: 0;
+    width: 3rem;
+    height: 3rem;
+    background-color: #337ab7;
+    margin-right: 1.5rem;
+    border-radius: 0.2rem;
+}
+
+.navbar .user .icon, .navbar .user:hover .icon {
+    color: #ffffff;
+}
+
+.navbar .user .icon {
+    font-size: 1.8rem;
+}
+
+.navbar .a-button {
+    padding: 1rem;
+}
+
+.navbar .a-button:hover .icon {
+    color: #8899a6;
+}
+
+.navbar .title, .profile-banner .container {
+    position: absolute;
+}
+
+.navbar .title, .following a .number {
+    font-size: 1.6rem;
+}
+
+.navbar .title {
+    top: 1.7rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 20rem;
+    text-align: center;
+}
+
+.container {
+    padding: 0 0.8rem;
+}
+
+.content {
+    padding-top: 5.2rem;
+}
+
+.profile-banner .container {
+    bottom: -5.2rem;
+    left: 0;
+    right: 0;
+}
+
+.profile-options {
+    position: relative;
+    width: 70%;
+    height: 5.2rem;
+    left: 30%;
+}
+
+.profile-options .buttons {
+    float: right;
+}
+
+.buttons .button {
+    width: 5.4rem;
+    height: 4.2rem;
+}
+
+.buttons .button:first-of-type {
+    margin-right: 0.6rem;
+}
+
+.button-primary, .tabs .active {
+    border-color: #1da1f2;
+}
+
+.profile-lookup .location .division-point {
+    font-size: 0.8rem;
+    vertical-align: middle;
+    margin: 0.9rem;
+}
+
+.profile-lookup .following {
+    margin-bottom: 1rem;
+}
+
+.name .icon {
+    font-size: 2rem;
+    margin-left: 0.6rem;
+}
+
+.following a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.following a .number, .tabs .active {
+    font-weight: bold;
+}
+
+.following a .number {
+    color: #292f33;
+}
+
+.following a:first-of-type {
+    margin-right: 1.6rem;
+}
+
+.following a:hover .text {
+    text-decoration: underline;
+}
+
+.loading-spinner {
+    background-image: url('../images/spinner-mobile.gif');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    margin: 1.6rem auto;
+}
+
+@media (max-width: 599px) {
+    html {
+        font-size: 9px;
+    }
+
+    .profile-lookup {
+        padding-bottom: 1rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .container, .timeline {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .profile-lookup .description {
+        margin: 1rem 12.8rem 1rem 0;
+    }
+}
