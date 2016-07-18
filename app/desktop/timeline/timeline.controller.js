@@ -1,4 +1,4 @@
-angular.module('app.timelineController', ['ngAnimate', 'ngSanitize', 'toaster', 'infinite-scroll', 'app.timelineService', 'app.filters'])
+angular.module('app.timelineController', ['ngSanitize', 'toaster', 'infinite-scroll', 'app.timelineService', 'app.filters'])
 
 .component('timeline', {
 

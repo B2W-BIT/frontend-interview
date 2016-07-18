@@ -1,4 +1,4 @@
-angular.module('app.tabsController', ['ngAnimate', 'toaster'])
+angular.module('app.tabsController', ['toaster'])
 
 .component('tabs', {
 

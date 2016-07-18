@@ -1,4 +1,4 @@
-angular.module('app.timelineTabsController', ['ngAnimate', 'toaster'])
+angular.module('app.timelineTabsController', ['toaster'])
 
 .controller('TabsCtrl', function ($scope) {
 

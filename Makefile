@@ -1,2 +1,2 @@
 start:
-	bower install angular-css && npm install && node server.js
+	bower install angular-css && npm install && karma start && node server.js
