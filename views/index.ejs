@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" ng-app="Twitter">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= title %></title>
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel='stylesheet' href='/stylesheets/TweetList.css' />
+	
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular-resource.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular-sanitize.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+	<script src="//platform.twitter.com/widgets.js"></script>
+	<script src="/javascripts/TweetList.js"></script>
+
+</head>
+<body ng-controller="TweetList">
+	<header class="navbar navbar-default navbar-fixed-top hidden-xs">
+		<div class="container">
+			<ul class="nav navbar-nav">
+				<!-- TODO: Usar sprites nessa lista -->
+				<li><img src="/images/home.gif" width="24" height="22"> Home</li>
+				<li><img src="/images/moments.gif" width="24" height="22"> Moments</li>
+				<li><img src="/images/notifications.gif" width="24" height="22"> Notifications</li>
+				<li><img src="/images/messages.gif" width="24" height="22"> Messages</li>
+			</ul>
+			<a class="bird" href="http://www.twitter.com" target="_blank"><img src="/images/bird.gif" width="21" height="17"></a>
+			<ul class="nav navbar-nav navbar-right">
+				<li><input class="search" placeholder="Search Twitter"></li>
+				<li><img src="/images/user.gif" width="32" height="32"></li>
+				<li><button class="btn primary-btn"><img src="/images/tweet.gif" width="23" height="23"> Tweet</button></li>
+			</ul>
+		</div>
+	</header>
+	<div class="bonus hidden-xs">
+		Try another user, for example @twitterdev
+		<form class="form-horizontal input-group" ng-submit="getTweets()" name="changeUser">
+		<span class="input-group-addon input-sm">@</span>
+
+			<!-- this text input is binded to a variable in the javascript controller -->
+			<input type="text" class="form-control input-sm" placeholder="americanascom" ng-model="username">
+
+			<span class="input-group-btn">
+				<button class="btn btn-default btn-sm" type="submit">Change user</button>
+			</span>
+
+		</form>
+	</div>
+	<div class="container-fluid profile-banner hidden-xs" style="background-color:#{{userBgColor}};">
+		<img ng-src="{{userBanner}}">
+	</div>
+	<div class="rail hidden-xs" ng-if="!preventFOUC">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3">
+					<div class="counter selected">
+						<span class="text">Tweets</span>
+						<span class="value">{{userTweets}}</span>
+					</div>
+					<div class="counter">
+						<span class="text">Following</span>
+						<span class="value">{{userFriends}}</span>
+					</div>
+					<div class="counter">
+						<span class="text">Followers</span>
+						<span class="value">{{userFollowers}}</span>
+					</div>
+					<div class="counter">
+						<span class="text">Likes</span>
+						<span class="value">{{userFavs}}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row body-content" ng-if="!preventFOUC">
+
+			<div class="col-lg-3 user-data-column">
+				<img class="user-picture" ng-src="{{userPicture}}">
+				<h1 class="user-name">{{userName}} <img src="/images/verified.gif" width="18" height="18" ng-if="verified"></h1>
+				<p class="screen-name">@{{screenName}}</p>
+				<p class="user-desc">{{userDescription}}</p>
+				<p><img src="/images/pin.gif" width="16" height="16"> {{userLocation}}</p>
+				<p><img src="/images/link.gif" width="16" height="15"> <a href="{{fullURL}}" target="_blank">{{friendlyURL}}</a></p>
+				<p><img src="/images/calendar.gif" width="17" height="16"> Joined {{joinedDate | prettyDate}}</p>
+			</div>
+
+			<div class="col-lg-6">
+		    	<div id="tweet-list">
+		    		<!-- this div will repeat for every tweet object in the array using a template-expanding directive -->
+		    		<div ng-repeat="tweet in tweetsResult" class="tweet-item">
+
+		    			<!-- sanitized HTML binding -->
+						<div ng-bind-html="tweet.oEmbed.html"></div>
+		    		</div>
+		    	</div>
+				
+				<!-- this button will trigger the getMoreTweets function in the javascript controller -->
+				<button type="button" class="load-more-btn btn btn-default" ng-click="getMoreTweets()">Get More Tweets</button>
+		 	</div>
+
+			<div class="col-lg-3 sidebar">
+			</div>
+  		</div>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "twitter-timeline-viewer",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "ejs": "~0.8.5",
+    "express": "~4.2.0",
+    "qs": "^6.2.1",
+    "twit": "^1.1.18",
+    "gulp-exec": "2.1.2"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  }
+}
