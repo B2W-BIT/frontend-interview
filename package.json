@@ -1,0 +1,63 @@
+{
+  "name": "felipecastrosm-b2w-twitter-challenge",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "start": "babel-node server.js",
+    "build": "webpack --progress --colors",
+    "test": "mocha test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipecastrosm/americanascom_twitter_clone.git"
+  },
+  "author": "Felipe Castro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipecastrosm/americanascom_twitter_clone/issues"
+  },
+  "homepage": "https://github.com/felipecastrosm/americanascom_twitter_clone#readme",
+  "dependencies": {
+    "axios": "^0.7.0",
+    "babel": "^5.8.23",
+    "body-parser": "^1.12.3",
+    "express": "^4.12.3",
+    "history": "^1.9.0",
+    "lodash": "^3.10.1",
+    "react": "^0.13.3",
+    "react-redux": "^3.0.1",
+    "react-router": "^1.0.0-rc1",
+    "redux": "^3.0.0",
+    "redux-logger": "2.0.1",
+    "redux-thunk": "^1.0.0",
+    "request": "^2.55.0"
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.22",
+    "babel-eslint": "^4.0.7",
+    "babel-loader": "^5.3.2",
+    "babel-plugin-react-transform": "^1.0.1",
+    "chai": "^3.3.0",
+    "css-loader": "^0.19.0",
+    "eslint": "^1.1.0",
+    "eslint-loader": "^1.0.0",
+    "eslint-plugin-react": "^3.2.2",
+    "file-loader": "^0.8.1",
+    "less": "^2.4.0",
+    "less-loader": "^2.2.0",
+    "mocha": "^2.2.4",
+    "node-libs-browser": "^0.5.2",
+    "react-proxy-loader": "^0.3.4",
+    "react-transform-catch-errors": "^1.0.0",
+    "react-transform-hmr": "^1.0.0",
+    "redbox-react": "1.0.1",
+    "redux-devtools": "^2.1.2",
+    "proxyquire": "^1.4.0",
+    "sinon": "^1.14.1",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.5",
+    "webpack": "^1.12.0",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.0.0"
+  }
+}
