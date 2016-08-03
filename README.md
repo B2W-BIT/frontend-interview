@@ -1,3 +1,15 @@
+# felipecastrosm B2W Twitter Challenge
+
+Installing dependencies:
+`npm install`
+
+Running project:
+`npm start`
+
+View on browser:
+[Localhost](http://localhost:3000)
+
+
 # B2W Challenge
 
 ### Mission

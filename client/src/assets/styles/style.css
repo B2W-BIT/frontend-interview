@@ -1,0 +1,121 @@
+#app-container {
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+header {
+  height:480px;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+header #header-menu-container {
+  height:60px;
+  padding-top:420px;
+}
+
+header #header-menu-container .header-menu {
+  height:60px;
+  padding-left:300px;
+  padding-top: 10px;
+  border-bottom: 1px solid #e1e8ed;
+  background-color: #fff;
+}
+
+header .header-menu-item {
+  float:left;
+  width:100px;
+  text-align: center;
+}
+
+header .header-menu-item span {
+  display:block;
+}
+
+header .header-menu-item-title {
+  font-size: 11px;
+}
+
+header .header-menu-item-content {
+  font-size: 18px;
+}
+
+#profile-container {
+  width:260px;
+  float:left;
+  padding-left:10px;
+}
+
+.profile-picture {
+  border-radius: 12px;
+  border: 5px solid #fff;
+  height:210px;
+  width: 210px;
+  margin-top: -170px;
+}
+
+.profile-picture img {
+  border-radius: 8px;
+}
+
+.profile-details {
+  margin-left:5px;
+}
+
+.profile-screen-name {
+  margin-top: -12px;
+}
+
+.profile-description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#timeline-container {
+  width: 600px;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #e1e8ed;
+  border-radius: 5px 5px 0 0;
+  margin-top: 10px;
+}
+
+#timeline-container ol {
+  padding-top: 10px;
+  padding-left: 0px;
+}
+
+#timeline-container li {
+  padding-left: 10px;
+  padding-bottom: 3px;
+  list-style-type: none;
+  width:100%;
+  border-bottom: 1px solid #e1e8ed;
+  display: inline-block;
+}
+
+.tweet {
+  float:left;
+  margin-bottom:3px;
+}
+
+.tweet .context {
+  width: 50px;
+  float:left;
+}
+
+.tweet .context img{
+  border-radius: 5px;
+}
+
+.tweet .content {
+  float:right;
+  width: 500px;
+  margin-left: 8px;
+}
+
+.feedback-block {
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+}
