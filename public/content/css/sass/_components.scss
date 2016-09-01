@@ -1,0 +1,253 @@
+.search {
+	border-radius: 15px;
+	border: 1px solid #ccc;
+    padding: 5px 30px 5px 10px;
+	outline: none;
+	background: #f5f8fa;
+}
+
+.btn-tweet {
+	background: #b9b3b4;
+	border-radius: 5px;
+	height: 32px;
+	color: white;
+	padding: 2px 15px;
+
+	&:hover,
+	&:focus {
+		color: white;
+	}
+}
+
+.btn-follow {
+	background: #f6f9fb;
+	border-radius: 3px;
+	border: 1px solid #e1e8ed;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 10px;
+}
+
+.bgSection {
+	background: white;
+	height: 60px;
+	border-bottom: 1px solid #ccc;
+    padding: 0 45px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+    clear: both;
+	
+	&.usersPictures li {
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		background: red;
+		margin: 3px 2px;
+		border-radius: 5px;
+	}
+
+	&.profilePhotos {
+		li {
+			display: inline-block;
+		}
+
+		img {
+			display: inline-block;
+			width: 85px;
+			height: 85px;
+			margin: 3px;
+			border-radius: 5px;
+		}
+	}
+}
+
+.nav-tabs {
+	margin-top: 10px;
+    border-radius: 5px 5px 0 0;
+    background: white;
+    border: 1px solid #ccc;
+    height: 45px;
+
+    & > li > {
+    	a, 
+    	a:focus,
+    	a:hover {
+    		color: #aab8c2;
+		    border: 0;
+		    padding: 9px 15px;
+		    border-radius: 5px;
+		    font-size: 17px;
+		    background: none;
+		}
+	}
+
+	& > li.active > {
+		a,
+		a:focus,
+		a:hover {
+		    border: 0;
+		}
+	}
+}
+
+.tweets li {
+	background: white;
+	padding: 10px 15px;
+	border: 1px solid #ccc;
+	border-top: 0;
+
+	&:hover {
+		background: #f2f2f2;
+	}
+
+	&:last-child {
+	    border-radius: 0 0 5px 5px;
+	}
+
+	.tinyTitle {
+		margin-left: 30px;
+		display: block;
+
+		.ico.ico-reply {
+		    background: url("../img/ico_reply.png") center 4px no-repeat;
+			background-size: 16px;
+		}
+	}
+
+	&.loader {
+		background: url("../img/loader.gif") center center no-repeat;
+		display: block;
+		height: 40px;
+	}
+
+	.title {
+		font-weight: bold;
+	}
+
+	.tag {
+		color: #66757f;
+	}
+
+	.tweet {
+		display: block;
+    	font-size: 17px;
+	}
+
+	.tweetArea {
+		display: inline-block;
+		max-width: 90%;
+	}
+
+	.actionsArea {
+		margin-top: 20px;
+		display: inline-block;
+
+		a {
+		    margin-right: 30px;
+
+		    &.option {
+			    right: 25px;
+			    position: absolute;
+			    bottom: 20px;
+			    font-size: 12px;
+			    margin-right: 0;
+		    }
+
+		    span {
+			    padding-left: 40px;
+			    padding-top: 3px;
+			    color: #aab8c2;
+			}
+		}
+	}
+}
+
+.thumb {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 5px;
+	margin-right: 5px;
+	background: red;
+	border-radius: 5px;
+}
+
+.whoFollow {
+	a:hover .title {
+		text-decoration: underline;
+	}
+
+	.btn-follow {
+		display: block;
+		margin-top: 5px;
+	}
+
+	.userArea {
+		display: inline-block;
+    	font-size: 12px;
+    	margin-bottom: 15px;
+	}
+
+	.title {
+		font-weight: bold;
+	}
+
+	.tag {
+		color: #66757f;
+	}
+}
+
+.trends {
+	a:hover .title {
+		text-decoration: underline;
+	}
+
+	.title {
+		color: #66757f;
+		font-weight: bold;
+    	line-height: 13px;
+	}
+
+	.trendDesc {
+		color: #8899a6;
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+
+.boxContent {
+	margin-top: 10px;
+	background: white;
+	border-radius: 5px;
+	padding: 10px 15px;
+	border: 1px solid #ccc;
+
+	& > .title {
+		color: #667587;
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+
+	.userDesc {
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+
+.tweetImage {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.navbar-collapse {
+    border: none;
+    padding: 0;
+    margin-top: 3px;
+}
+
+.navbar-toggle {
+    margin: 0 15px 0 0;
+}

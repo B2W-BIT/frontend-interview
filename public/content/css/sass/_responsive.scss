@@ -1,0 +1,147 @@
+.responsive {
+	display: none;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 1281px) {
+	.navbar-collapse.collapse {
+		display: none !important;
+	}
+
+	.navbar-collapse.in {
+		display: block !important;
+	    position: absolute;
+	    z-index: 10;
+	    width: 100%;
+	    background: white;
+	    border-top: 1px solid #ccc;
+	    border-bottom: 1px solid #ccc;
+	    padding: 10px 5px;
+    	margin: 0 -15px;
+
+	    .ico.ico-twitter,
+	    .btn.btn-tweet,
+		.profile {
+			display: none;
+		}
+
+		a {
+		    margin-right: 15px;
+		    display: block;
+		    margin-bottom: 10px;
+		}
+	}	
+
+	.container-fluid > .navbar-header {
+	    margin-right: -15px;
+	    margin-left: -15px;
+    	margin-bottom: 8px;
+	    float: initial;
+	}
+
+    .navbar-toggle {
+	    display: block;
+	}
+
+	.artboard {
+    	max-height: 310px;
+	}
+
+	.picture {
+	    width: 140px;
+	    height: 140px;
+	    margin-top: -145px;
+	    background-size: 40%;
+	}
+
+	.groupInfo {
+    	width: 40px;
+
+    	.titleSub {
+		    font-size: 14px;
+		}
+
+		.titleInfo {
+			font-size: 9px;
+		}
+    }
+}
+
+@media screen and (max-width: 992px) {
+	.bgSection > div {
+		padding: 0 30px;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.hidded {
+		display: none;
+	}
+
+	.picture {    
+		width: 80px;
+	    height: 80px;
+	    margin-top: -89px;
+	    left: 0;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.nav-tabs > li > a,
+	.nav-tabs > li > a:hover,
+	.nav-tabs > li.active > a {
+		padding: 12px 7px;
+		font-size: 13px;
+	}
+
+	.tweets li {
+		.tinyTitle {
+			margin-left: 0;
+
+			.actionsArea a {
+			    margin-right: 20px;
+
+			    &.option {
+		    	    position: initial;
+				    display: block;
+				    margin-top: 10px;
+			    }
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 419px) {
+	.thumb {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.container-fluid {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.bgSection,
+	.container-fluid.noPadding {
+		padding: 0;
+	}
+
+	.noMargin {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+}
+@media screen and (max-width: 329px) {
+	.bgSection > div {
+		padding: 0 15px;
+	}
+
+	.boxContent > .title {
+		margin-bottom: 0;
+	}
+
+	.tinyTitle.smallFont {
+	    display: block;
+	}
+}

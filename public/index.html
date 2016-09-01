@@ -1,0 +1,340 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Twitter Timeline</title>
+
+	<link rel="shortcut icon" href="/content/img/favicon.ico" />
+
+	<!-- CSS -->
+	<link href="/modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="/modules/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+	<link href="/content/css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body ng-app="twitterApp" ng-controller="generalCtrl">
+	<!-- Header -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">	
+				<span class="ico ico-twitter responsive"></span>
+
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbar">
+				<div class="col-md-5 safe">
+					<a href="#">
+						<span class="ico ico-home"></span>
+						<span>Home</span>
+					</a>
+					<a href="#">
+						<span class="ico ico-moments"></span>
+						<span>Moments</span>
+					</a>
+					<a href="#">
+						<span class="ico ico-notify"></span>
+						<span>Notifications</span>
+					</a>
+					<a href="#">
+						<span class="ico ico-message"></span>
+						<span>Messages</span>
+					</a>
+				</div>
+
+				<div class="col-md-3">
+					<span class="ico ico-twitter center"></span>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="searchArea">
+						<input type="text" placeholder="Search Twitter" class="search" />
+						<span class="searchIcon"></span>
+					</div>
+
+					<span class="profile"></span>
+
+					<button type="button" class="btn btn-tweet">
+						<span class="ico ico-tweet"></span>
+						<span>Tweet</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Section Artboard -->
+	<div class="container-fluid noPadding">
+		<div class="row noMargin">
+			<div class="col-md-12 noPadding">
+				<img ng-src="{{user.profile_banner_url}}" class="artboard"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Section Picture -->	
+	<div class="container-fluid">
+		<div class="col-md-3">
+			<img ng-src="{{user.profile_image_url}}" class="picture"></div>
+		</div>
+	</div>
+
+	<!-- Section Details -->	
+	<div class="container-fluid noPadding">
+		<div class="col-md-12 noPadding">
+			<div class="bgSection">
+				<div class="col-md-6 col-md-offset-3 col-sm-8 col-xs-12">
+					<a href="#" class="groupInfo active">
+						<span class="titleInfo">
+							TWEETS
+						</span>
+						<span class="titleSub">
+							{{user.statuses_count | number: 0}}
+						</span>
+					</a>
+
+					<a href="#" class="groupInfo">
+						<span class="titleInfo">
+							FOLLOWING
+						</span>
+						<span class="titleSub">
+							{{user.friends_count}}
+						</span>
+					</a>
+
+					<a href="#" class="groupInfo">
+						<span class="titleInfo">
+							FOLLOWERS
+						</span>
+						<span class="titleSub">
+							{{user.followers_count | number: 0}}
+						</span>
+					</a>
+
+					<a href="#" class="groupInfo">
+						<span class="titleInfo">
+							LIKES
+						</span>
+						<span class="titleSub">
+							{{user.favourites_count}}
+						</span>
+					</a>
+				</div>
+				
+				<div class="col-md-3 col-sm-4 hidded">
+					<a href="#">
+						<span class="ico ico-config"></span>
+					</a>
+
+					<a ng-href="https://twitter.com/{{user.screen_name}}" type="button" class="btn btn-follow">
+						<span class="ico ico-person"></span>
+						<span>Follow</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Section Profile Information -->	
+	<div class="container-fluid">
+		
+		<!-- Left Sidebar - Profile Infos -->	
+		<div class="col-md-3 marginTop">
+			<div class="profileName">{{user.name}}<span class="checked"></span></div>
+			<div class="profileTag">@{{user.screen_name}}</div>
+
+			<div>{{user.description}}</div>
+
+			<div class="profileInfo">
+				<div>
+					<span class="ico ico-map"></span>
+					<span>{{user.location}}</span>
+				</div>
+
+				<div>
+					<span class="ico ico-link"></span>
+					<span><a ng-href="{{user.url}}">americanas.com</a></span>
+				</div>
+
+				<div>
+					<span class="ico ico-calendar"></span>
+					<span>Joined {{user.created_at | date:'medium'}}</span>
+				</div>
+			</div>
+
+			<a ng-href="https://twitter.com/{{user.screen_name}}" type="button" class="btn btn-tweet">
+				<span class="ico ico-tweet"></span>
+				<span>Tweet to {{user.name}}</span>
+			</a>
+
+			<div class="areaFollowersUsers">
+				<div>
+					<span class="ico ico-user"></span>
+					<span class="tinyTitle">0 Followers you know</span>
+				</div>
+
+				<ul class="usersPictures">
+				</ul>
+			</div>
+
+			<div class="areaFollowersUsers" ng-controller="flickrCtrl">
+				<div>
+					<span class="ico ico-photo"></span>
+					<span class="tinyTitle">{{totalImages}} Photos and Videos</span>
+				</div>
+
+				<ul class="profilePhotos">
+					<li ng-repeat="image in images | limitTo: 9"><img ng-src="https://farm{{image.farm}}.staticflickr.com/{{image.server}}/{{image.id}}_{{image.secret}}.jpg"></img></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Center Sidebar - General Tweets -->
+		<div class="col-md-6">
+			<ul class="nav nav-tabs">
+				<li>
+					<a data-toggle="tab" href="#tweets">Tweets</a>
+				</li>
+				<li class="active">
+					<a data-toggle="tab" href="#tweetsAndReplies">Tweets & replies</a>
+				</li>
+				<li>
+					<a data-toggle="tab" href="#media">Media</a>
+				</li>
+			</ul>
+
+			<div class="tab-content" ng-controller="timelineCtrl">
+				<ul id="tweets" class="tab-pane tweets">
+					<li ng-repeat="tweet in tweets">
+						<img ng-src="{{tweet.user.profile_image_url}}" class="thumb"></img>
+
+						<span class="tweetArea">
+							<span class="title">{{tweet.user.name}}</span>
+							<span class="tag">@{{tweet.user.screen_name}}</span>
+
+							<span class="tweet">{{tweet.text}}</span>
+
+							<img ng-src="{{tweet.entities.media[0].media_url}}" class="tweetImage"></img>
+
+							<span class="actionsArea">
+								<a href="#">
+									<span class="ico ico-reply"></span>
+								</a>
+								<a href="#">
+									<span class="ico ico-retweet"></span>
+								</a>
+								<a href="#">
+									<span class="ico ico-like"></span>
+								</a>
+								<a href="#">
+									<span class="ico ico-others"></span>
+								</a>
+							</span>
+						</span>						
+					</li>
+				</ul>
+
+				<ul id="tweetsAndReplies" class="tab-pane active tweets" infinite-scroll='loadMoreTweets()'>
+					<li ng-repeat="tweet in tweetsAndRts">
+						<span class="tinyTitle"><span class="ico ico-reply"></span> In reply to {{tweet.in_reply_to_screen_name}}</span>
+						<img ng-src="{{tweet.user.profile_image_url}}" class="thumb"></img>
+
+						<span class="tweetArea">
+							<span class="title">{{tweet.user.name}}</span>
+							<span class="tag">@{{tweet.user.screen_name}}</span>
+
+							<span class="tweet">{{tweet.text}}</span>
+
+							<img ng-src="{{tweet.entities.media[0].media_url}}" class="tweetImage"></img>
+
+							<span class="actionsArea">
+								<a href="#">
+									<span class="ico ico-reply"></span>
+								</a>
+								<a href="#">
+									<span class="ico ico-retweet">{{tweet.retweet_count}}</span>
+								</a>
+								<a href="#">
+									<span class="ico ico-like">{{tweet.favorite_count}}</span>
+								</a>
+								<a href="#">
+									<span class="ico ico-others"></span>
+								</a>
+							</span>
+						</span>						
+					</li>
+
+					<li ng-show="busyLoadingData" class="loader">			
+					</li>
+				</ul>
+
+				<ul id="media" class="tab-pane tweets">
+					<li>
+						Not developed yet					
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Right Sidebar - Misc -->
+		<div class="col-md-3">
+			<div class="boxContent" ng-controller="suggestionsCtrl">
+				<div class="title">
+					Who to follow &#183; <span class="tinyTitle smallFont">Refresh &#183; <a href="https://twitter.com/who_to_follow/suggestions">View All</a></span>	
+				</div>
+
+				<ul class="whoFollow">
+					<li ng-repeat="suggestion in suggestions | limitTo: 3">
+						<a ng-href="https://twitter.com/{{suggestion.screen_name}}">
+							<img ng-src="{{suggestion.profile_image_url}}" class="thumb"></img>
+
+							<span class="userArea">
+								<span class="title">{{suggestion.name}}</span>
+								<span class="tag">@{{suggestion.screen_name}}</span>
+
+								<button ng-href="https://twitter.com/{{suggestion.screen_name}}" type="button" class="btn btn-follow">
+									<span class="ico ico-person"></span>
+									<span>Follow</span>
+								</button>
+							</span>		
+						</a>				
+					</li>
+
+					<a href="https://twitter.com/who_to_follow/import" class="tinyTitle">Find friends</a>
+				</ul>
+			</div>
+
+			<div class="boxContent" ng-controller="trendsCtrl">
+				<div class="title">
+					Trends &#183; <span class="tinyTitle smallFont">Change</span>	
+				</div>
+
+				<ul class="trends">
+					<li ng-repeat="trend in trends | limitTo: 10">
+						<a ng-href="{{trend.url}}">
+							<span class="title">{{trend.name}}</span>
+							<span class="trendDesc">{{trend.tweet_volume | number: 0}}</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="copyright">
+				&copy; 2016 Twitter <a href="#">About</a> <a href="#">Help</a> <a href="#">Terms</a> 
+				<a href="#">Privacy</a> <a href="#">Cookies</a> <a href="#">Ads Info</a>	
+			</div>
+		</div>
+	</div>
+
+	<!-- JS -->
+	<script type="text/javascript" src="/modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="/modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="/modules/ng-infinite-scroll/build/ng-infinite-scroll.min.js"></script>
+	<script type="text/javascript" src="/content/controllers/controllers.js"></script>
+</body>
+</html>
