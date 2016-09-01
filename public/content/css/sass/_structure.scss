@@ -1,0 +1,162 @@
+a,
+a:hover,
+a:active,
+a:focus {
+	color: #66757f;
+	text-decoration: none;
+}
+
+body {
+	background: #f5f8fa;
+}
+
+.container-fluid {
+	padding-right: 45px;
+	padding-left: 45px;
+}
+
+.navbar-default {
+	background: white;
+	height: 40px;
+	box-shadow: 0 0 0;
+    padding-top: 7px;
+    margin-bottom: 0;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+
+	a {
+    	margin-right: 15px;
+	}
+}
+
+.searchArea {
+	display: inline-block;
+	width: 220px;
+
+	.searchIcon {
+		display: inline-block;
+		margin: 0 0 -2px -30px;
+		background: url("../img/ico_search.png") center center no-repeat;
+		background-size: 16px;
+		height: 16px;
+		width: 16px;
+    	pointer-events: none;
+	}
+}
+
+.safe {
+	margin-top: 2px;
+}
+
+.marginTop {
+	margin-top: 40px;
+}
+
+.noPadding {
+	padding: 0;
+}
+
+.noMargin {
+	margin: 0;
+}
+
+.artboard {
+    max-height: 500px;
+    width: 100%;
+}
+
+.picture {
+	width: 210px;
+	height: 210px;
+	border-radius: 15px;
+	border: 5px solid white;
+    display: inline-block;
+    margin-top: -120px;
+    position: absolute;
+    z-index: 9;
+}
+
+.groupInfo {
+    width: 75px;
+    display: inline-block;
+    height: 60px;
+    text-align: center;
+    margin-right: 20px;
+
+	.titleInfo {
+	    font-size: 11px;
+	    color: #6f7d87;
+	    display: block;
+	    margin-bottom: -3px;
+	    margin-top: 10px;
+	}
+
+	.titleSub {
+	    color: #6f7d87;
+	    font-weight: bold;
+	    font-size: 17px;
+	}
+
+    &.active {
+    	border-bottom: 4px solid #6f7d87;
+
+
+		.titleSub {
+	    	color: #333;
+		}
+    }
+}
+
+.profileName {
+	font-size: 23px;
+	font-weight: bold;
+}
+
+.profileTag {
+	color: #8899a6;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.profileInfo {
+	margin: 15px 0;
+}
+
+.tinyTitle {
+	color: #66757f;
+	font-size: 13px;
+}
+
+.smallFont {
+	font-size: 11px;
+}
+
+.areaFollowersUsers {
+	margin-top: 15px;
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+}
+
+.rightContent {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.copyright {
+	margin-top: 10px;
+	font-size: 12px;
+	color: #d7dfe5;
+
+	a {
+		margin-right: 15px;
+		color: #d7dfe5;
+
+		&:first-child {
+			margin-left: 10px;
+		}
+	}
+}

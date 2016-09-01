@@ -1,0 +1,138 @@
+.ico {
+	width: 24px;
+	height: 24px;
+    display: inline-block;
+	vertical-align: bottom;
+
+    &.ico-home {
+		background: url("../img/ico_home.png") center 2px no-repeat;
+		background-size: 24px;
+    }
+
+    &.ico-moments {
+		background: url("../img/ico_moments.png") center 2px no-repeat;
+		background-size: 24px;
+    }
+
+    &.ico-notify {
+		background: url("../img/ico_notify.png") center 2px no-repeat;
+		background-size: 24px;
+    }
+
+    &.ico-message {
+		background: url("../img/ico_message.png") center 2px no-repeat;
+		background-size: 24px;
+    }
+
+    &.ico-twitter {
+		background: url("../img/ico_twitter.png") 80px 2px no-repeat;
+		background-size: 24px;
+    	margin-top: 3px;
+    }
+
+    &.ico-tweet {
+		background: url("../img/ico_tweet.png") center 0 no-repeat;
+		background-size: 24px;
+    }
+
+    &.ico-config {
+		background: url("../img/ico_config.png") center 0 no-repeat;
+		background-size: 18px;
+	    margin-top: 20px;
+	    margin-right: 10px;
+    }
+
+    &.ico-person {
+		background: url("../img/ico_person.png") center center no-repeat;
+		background-size: 20px;
+    	vertical-align: middle;
+    }
+
+    &.ico-map {
+		background: url("../img/ico_map.png") center center no-repeat;
+		background-size: 16px;
+    	vertical-align: middle;
+    }
+
+    &.ico-link {
+		background: url("../img/ico_link.png") center center no-repeat;
+		background-size: 16px;
+    	vertical-align: middle;
+    }
+
+    &.ico-calendar {
+		background: url("../img/ico_calendar.png") center center no-repeat;
+		background-size: 16px;
+    	vertical-align: middle;
+    }
+
+    &.ico-user {
+		background: url("../img/ico_user.png") center center no-repeat;
+		background-size: 18px;
+    	vertical-align: middle;
+    }
+
+    &.ico-photo {
+		background: url("../img/ico_photo.png") center 2px no-repeat;
+		background-size: 20px;
+    	vertical-align: middle;
+    }
+
+    &.ico-reply {
+		background: url("../img/ico_reply.png") center center no-repeat;
+		background-size: 18px;
+    	vertical-align: middle;
+
+        &:hover {
+            background: url("../img/ico_reply_hover.png") center center no-repeat;
+            background-size: 18px;
+            vertical-align: middle;
+        }
+    }
+
+    &.ico-retweet {
+		background: url("../img/ico_retweet.png") center center no-repeat;
+		background-size: 18px;
+    	vertical-align: middle;
+
+        &:hover {
+            background: url("../img/ico_retweet_hover.png") center center no-repeat;
+            background-size: 18px;
+            vertical-align: middle;
+        }
+    }
+
+    &.ico-like {
+		background: url("../img/ico_like.png") center center no-repeat;
+		background-size: 18px;
+    	vertical-align: middle;
+
+        &:hover {
+            background: url("../img/ico_like_hover.png") center center no-repeat;
+            background-size: 18px;
+            vertical-align: middle;
+        }
+    }
+
+    &.ico-others {
+		background: url("../img/ico_others.png") center center no-repeat;
+		background-size: 18px;
+    	vertical-align: middle;
+
+        &:hover {
+            background: url("../img/ico_others_hover.png") center center no-repeat;
+            background-size: 18px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.profile {
+	width: 32px;
+	height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+	background: url("../img/ico_profile.png") center center no-repeat;
+	background-size: 32px;
+    margin: 0 15px 0 12px;
+}
