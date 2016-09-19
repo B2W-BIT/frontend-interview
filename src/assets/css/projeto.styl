@@ -1,0 +1,256 @@
+ul
+	padding 0
+	margin 0
+	li
+		display inline-block
+body
+	background-color #F5F8FA
+	
+header
+	background-color #fff
+	padding 10px 0
+	nav
+		.navigation
+			float left
+			margin 0
+			padding 0
+			li
+				padding 4px 6px
+				a
+					padding 0 4px
+					span
+						@extend .hidden-xs
+						vertical-align middle
+					&:hover
+						text-decoration none
+	input[type=text]
+		
+		border-radius 30px
+		padding 5px 27px 6px 12px
+		background-color #f5f8fa
+		border 1px solid #e1e8ed
+		&:focus
+			outline none
+	.search
+		@extend .hidden-xs
+	.icon
+		position relative
+		top 0
+		right 30px
+		
+
+.bg-image
+	width 100%
+	height 320px
+	background-size cover
+	background-position center
+	
+.infoProfile
+	width 100%
+	height 60px
+	border-bottom 1px solid #e1e8ed
+	background-color #fff
+	.site
+		a
+			color #a8a1a2
+	.geo,.site,.year
+		margin-top 10px
+	
+	&__numbers
+		@extend .col-md-4
+		@extend .hidden-xs
+		@extend .hidden-sm
+		margin 10px 0 0 50px 
+		.tweets-info,.friends,.followers,.likes
+			@extend .col-md-3
+			text-align center
+			padding 0 4px
+			.count
+				font-size 18px
+				color #a8a1a2
+	&__data
+		@extend .col-md-3
+		@extend .col-sm-3
+		@extend .col-xs-12
+		z-index 19
+		.title
+			font-size 24px
+			font-weight bold
+			color #000
+		.subtitle
+			color #8899a6
+		&__images
+			.images-content
+				@extend .col-md-4
+				padding 15px
+		&__flickr
+			&__text
+				margin 10px 0
+			&__img
+				@extend .col-md-4
+				@extend .img-responsive
+				@extend .hidden-xs
+				margin 5px 0
+				padding 1px
+
+.main
+	@extend .col-md-6
+	@extend .col-sm-9
+	z-index 9
+	padding 0
+	background-color #fff
+	border 1px solid #e1e8ed
+	border-radius 5px 5px 0 0
+	&__options
+		// @extend .hidden-xs
+		border-bottom 1px solid #e1e8ed
+		li
+			padding 20px
+		a
+			color #a8a1a2
+			font-size 18px
+	&__tweets
+		&__content
+			@extend .col-md-12
+			border-bottom 1px solid #e1e8ed
+			padding 20px 0
+			.profile
+				@extend .col-md-2
+				width 80px
+			>.text
+				@extend .col-md-10
+				span
+					font-weight bold
+				small
+					font-weight normal
+					color #8899a6
+				.img-tweet
+					@extend .col-md-12
+					// width 300px
+					margin 20px auto
+					img
+						@extend .img-responsive
+						width 100%
+				.footer-tweet
+					@extend .col-md-2
+					@extend .col-xs-3
+					margin 10px 0
+	
+
+.trends-follow
+	@extend .col-md-3
+	@extend .hidden-xs
+	@extend .hidden-sm
+	&__follow,&__trends
+		display table
+		margin-bottom 20px
+		&__content
+			background-color #fff
+			border 1px solid #e1e8ed
+			border-radius 5px 5px 0 0
+			padding 0
+			.title,.list
+				@extend .col-md-12
+				padding 15px
+				border-bottom 1px solid #e1e8ed
+				background-color #fff
+			.title
+				color #66757f
+				font-size 18px
+				font-weight 300
+			.list
+				a
+					text-decoration none
+					.name
+						color #a8a1a2
+						font-weight bold
+					.count
+						color #8899a6
+			.list-follow
+				@extend .col-md-12
+				padding 15px
+				border-bottom 1px solid #e1e8ed
+				background-color #fff
+				img
+					@extend .col-md-4
+				.name
+					@extend .col-md-8
+					font-size 14px
+					.btn-follow
+						padding 3px 30px
+						background-color #fff
+						border 1px solid #1da1f2
+						margin-top 10px
+						transition .4s
+						&:hover
+							transition .4s
+							color #fff
+							border 1px solid #fff
+							background-color #1da1f2
+
+					
+		
+			
+.imgProfile
+	@extend .col-md-6
+	padding 0
+	background #fff
+	border 5px solid #fff
+	border-radius 12px
+	box-shadow 0 1px 1px rgba(136,153,166,0.15)
+	height 210px
+	position relative
+	width 210px
+	margin-top -130px
+
+.active
+	color #000 !important
+
+/* Telefones em landscape e abaixo */
+@media (max-width: 480px)
+	header
+		border-bottom 1px solid #e1e8ed
+		a
+			padding 0 8px
+			
+	.bg-image
+		width auto
+		height 100px
+		background-size cover
+		background-position right
+		
+	.imgProfile
+		padding 0
+		background #fff
+		border 5px solid #fff
+		border-radius 12px
+		box-shadow 0 1px 1px rgba(136,153,166,0.15)
+		height 80px
+		position relative
+		width 80px
+		margin-top -47px
+		margin-left 11px
+		
+	.infoProfile
+		border-bottom 30px
+		&__data
+			margin 10px 0
+	.img-tweet
+		width 100%
+	.footer
+		padding-bottom 30px
+	.main
+		&__options
+			li
+				padding 15px 8px
+		
+			
+					
+/* Telefone em landscape a tablet em portrait */
+// @media (max-width: 767px)
+
+/* tablet em portrait a landscape e desktop */
+// @media (min-width: 768px) and (max-width: 979px)
+
+/* Desktop grande */
+// @media (min-width: 1200px)

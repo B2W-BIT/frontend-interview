@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="static/css/index.css">
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-app="app">
+	<header>
+		<div class="container">
+			<div class="row">
+				<nav>
+					<ul class="navigation">
+						<li><a href=""><img src="static/img/home.png"> <span>Inicio</span></a></li>
+						<li><a href=""><img src="static/img/flash.png"> <span>Momentos</span></a></li>
+						<li><a href=""><img src="static/img/bell.png"> <span>Notificações</span></a></li>
+						<li><a href=""><img src="static/img/message.png"> <span>Mensagens</span></a></li>
+					</ul>
+				</nav>
+				<div class="pull-right navigation-right">
+					<input type="text" placeholder="buscar" class="search
+					" name="search">
+					<img class="icon" src="static/img/search1.png">
+					<img src="static/img/avatar.png">
+				</div>
+			</div>
+		</div>
+	</header>
+	<section ng-controller="user">
+
+		<!-- bg image -->
+		<div class="bg-image" style="background-image: url('{{infos.img_background}}')" ></div>
+
+		<div class="infoProfile">
+			<div class="container">
+			
+			<!-- Profile numbers -->
+				<div class="row">
+					<img src="{{infos.profile_image_url}}" class="imgProfile">
+					<div class="infoProfile__numbers">
+						<div class="tweets-info">
+							<span><small>TWEETS</small> <br> <span class="count">{{infos.tweets}}</span></span>
+						</div>
+						<div class="friends">
+							<span><small>SEGUINDO</small> <br> <span class="count">{{infos.friends_count}}</span></span>
+						</div>
+						<div class="followers">
+							<span><small>SEGUIDORES</small> <br> <span class="count">{{infos.followers_count}}</span></span>
+						</div>
+						<div class="likes">
+							<span><small>CURTIDAS</small> <br> <span class="count">{{infos.likes}}</span></span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Profile data -->
+				<div class="row">
+					<div class="infoProfile__data">
+						<a class="title" href="">{{infos.name}}</a> <br>
+						<small><a class="subtitle" href="">{{infos.screen_name}}</a></small>
+						<p class="description">{{infos.description}}</p>
+						<div class="geo">
+							<span><img src="static/img/geo.png">{{infos.location}}</span> <br>
+						</div>
+						<div class="site">
+							<span><img src="static/img/link.png"><a href="http://{{infos.name}}">{{infos.name}}</a></span>
+						</div>
+						<div class="year"><span><img src="static/img/calendar.png"> Participa desde {{infos.month}} de {{infos.year}}</div>
+						
+						<div ng-controller="flickr" class="infoProfile__data__flickr">
+							<div class="infoProfile__data__flickr__text">
+								<span><img src="static/img/cam.png"> {{total}} Fotos e vídeos</span>
+							</div>
+							<img class="infoProfile__data__flickr__img" ng-repeat="item in flickr" src="https://farm{{item.farm}}.staticflickr.com/{{item.server}}/{{item.id}}_{{item.secret}}.jpg">
+						</div>
+					</div>
+					<div class="main" >
+						<div class="content-padd">
+							<ul class="main__options">
+								<li><a ng-click="visible(1,0,0)" ng-class="{active : visibleTweetsOnly === 1}" class="opt3" href="">Tweets</a></li>	
+								<li><a ng-click="visible(0,1,0)" ng-class="{active : visibleTweetsReply === 1}" class="opt1" href="">Tweets e respostas</a></li>
+								<li><a ng-click="visible(0,0,1)" ng-class="{active : visibleTweetsMedia === 1}" class="opt2" href="">Mídia</a></li>
+							</ul>
+
+							<!-- show tweets and reply -->
+							<div ng-show="visibleTweetsReply==1" class="main__tweets" infinite-scroll='loadTweets()' infinite-scroll-disabled="busy" infinite-scroll-distance='2' ng-controller="tweets">
+								<div ng-repeat="item in tweets" class="main__tweets__content">
+									<img class="profile" src="{{item.imgProfile}}">
+									<div class="text">
+										<div class="reply" ng-if="item.replyTo != null">Em resposta a {{item.replyTo}}</div>
+										<div class="usernames">
+											<span>{{item.name}}<span> <small>{{item.screen_name}}</small>
+										</div>
+										<div class="message">
+											{{item.text}}
+										</div>
+										<div class="reply" ng-if="item.img && item.replyTo == null"><img class="img-tweet" src="{{item.img}}"></div>
+										<div class="footer">
+											<div class="footer-tweet">
+												<a href=""><img src="static/img/reply.png"></a>
+											</div>
+											<div class="footer-tweet">
+												<a href=""><img src="static/img/retweet.png"></a>
+											</div>
+											<div class="footer-tweet">
+												<a href=""><img src="static/img/heart.png"></a>
+											</div>
+											<div class="footer-tweet">
+												<a href=""><img src="static/img/more.png"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- show tweets with media -->
+							<div ng-show="visibleTweetsMedia==1" class="main__tweets-media" infinite-scroll='loadTweets()' infinite-scroll-disabled="busy" infinite-scroll-distance='2' ng-controller="tweets-media">
+								<div ng-repeat="item in tweets" class="main__tweets__content">
+									<img class="profile" src="{{item.imgProfile}}">
+									<div class="text">
+										<div class="reply" ng-if="item.replyTo != null">Em resposta a {{item.replyTo}}</div>
+										<div class="usernames">
+											<span>{{item.name}}<span> <small>{{item.screen_name}}</small>
+										</div>
+										<div class="message">
+											{{item.text}}
+										</div>
+										<div class="reply" ng-if="item.img && item.replyTo == null"><img class="img-tweet" src="{{item.img}}"></div>
+										<div class="footer">
+											<div class="footer-tweet">
+												<a href=""><img src="static/img/reply.png"></a>
+											</div>
+											<div class="footer-tweet">
+												<a href=""><img src="static/img/retweet.png"></a>
+											</div>
+											<div class="footer-tweet">
+												<a href=""><img src="static/img/heart.png"></a>
+											</div>
+											<div class="footer-tweet">
+												<a href=""><img src="static/img/more.png"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- show only tweets -->
+							<div ng-show="visibleTweetsOnly==1" class="main__tweets-only" infinite-scroll='loadTweets()' infinite-scroll-disabled="busy" infinite-scroll-distance='2' ng-controller="tweets-only">
+								<div ng-repeat="item in tweets" class="main__tweets__content">
+									<img class="profile" src="{{item.imgProfile}}">
+									<div class="text">
+										<div class="reply" ng-if="item.replyTo != null">Em resposta a {{item.replyTo}}</div>
+										<div class="usernames">
+											<span>{{item.name}}<span> <small>{{item.screen_name}}</small>
+										</div>
+										<div class="message">
+											{{item.text}}
+										</div>
+										<div class="reply" ng-if="item.img && item.replyTo == null"><img class="img-tweet" src="{{item.img}}"></div>
+										<div class="footer">
+											<div class="footer-tweet">
+												<a href=""><img src="static/img/reply.png"></a>
+											</div>
+											<div class="footer-tweet">
+												<a href=""><img src="static/img/retweet.png"></a>
+											</div>
+											<div class="footer-tweet">
+												<a href=""><img src="static/img/heart.png"></a>
+											</div>
+											<div class="footer-tweet">
+												<a href=""><img src="static/img/more.png"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="trends-follow">
+						<div class="trends-follow__follow">
+							<div class="trends-follow__follow__content" ng-controller="who-follow">
+								<div class="title">
+									<span>Quem seguir</span>
+								</div>
+								<div ng-repeat="item in follow" class="list-follow">
+									<img src="{{item.profile_image}}">
+									<div class="name">
+										<span>{{item.name}}</span> <br>
+									 	<small>{{item.screen_name}}</small>
+								 		<button class="btn-follow">Seguir</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="trends-follow__trends" ng-controller="trends">
+							<div class="trends-follow__trends__content">
+								<div class="title">
+									<span>Assuntos do momento</span>
+								</div>
+								<div ng-repeat="item in trends" class="list">
+									<a href="">
+										<span class="name">{{item.name}}</span> <br>
+										<span class="count" ng-if="item.tweet_count != null">{{item.tweet_count}} Tweets</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+<!-- 					<div class="trends" ng-controller="trends">
+						<div class="trends__content">
+							<div class="title">
+								<span>Assuntos do momento</span>
+							</div>
+							<div ng-repeat="item in trends" class="list">
+								<a href="">
+									<span class="name">{{item.name}}</span> <br>
+									<span class="count" ng-if="item.tweet_count != null">{{item.tweet_count}} Tweets</span>
+								</a>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- load scripts -->
+	<script src="static/js/jquery-3.1.0.js"></script>
+	<script src="static/js/angular.min.js"></script>
+	<script src="static/js/ng-infinite-scroll.min.js"></script>
+	<script type="text/javascript" src="static/js/app.js"></script>
+
+</body>
+</html>
