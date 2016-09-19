@@ -1,0 +1,25 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'angular' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 error Failed to parse json
+5 error Unexpected token }
+6 error File: /var/www/html/outros/desafio/src/package.json
+7 error Failed to parse package.json data.
+7 error package.json must be actual JSON, not just JavaScript.
+7 error
+7 error This is not a bug in npm.
+7 error Tell the package author to fix their package.json file. JSON.parse
+8 error System Linux 4.4.0-36-generic
+9 error command "/usr/bin/node" "/usr/bin/npm" "install" "--save-dev" "angular"
+10 error cwd /var/www/html/outros/desafio/src
+11 error node -v v0.10.37
+12 error npm -v 1.4.28
+13 error file /var/www/html/outros/desafio/src/package.json
+14 error code EJSONPARSE
+15 verbose exit [ 1, true ]

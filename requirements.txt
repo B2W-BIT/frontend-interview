@@ -1,0 +1,5 @@
+tweepy
+demjson
+flask
+flask-cors
+flickrapi
