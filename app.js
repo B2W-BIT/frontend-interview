@@ -2,6 +2,8 @@ import express from 'express';
 
 const app = new express();
 
+app.use(express.static(__dirname + '/public'));
+
 app.route('/books')
   .get((req, res) => {
     res.json([
@@ -12,4 +14,4 @@ app.route('/books')
     ]);
   });
 
-export default app; 
+export default app;
