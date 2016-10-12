@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'rosettaIconFont';
-  src: url(../fonts/rosetta-icons-regular.eot);
-  src: url(../fonts/rosetta-icons-regular.woff),
-       url(../fonts/rosetta-icons-regular.ttf);
+  src: url('#{$icon-font-path}/rosetta-icons-regular.eot');
+  src: url('#{$icon-font-path}/rosetta-icons-regular.woff'),
+       url('#{$icon-font-path}/rosetta-icons-regular.ttf');
 }
 
 .icon {
