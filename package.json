@@ -1,7 +1,7 @@
 {
   "name": "node-enviroment-boilerplate",
   "version": "1.0.0",
-  "description": "A simple Twitter timeline build with React and NodeJS",
+  "description": "A simple Twitter timeline built with React and NodeJS",
   "main": "index.js",
   "scripts": {
     "test": "npm run test:integration && npm run test:components",
