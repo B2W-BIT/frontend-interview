@@ -1,0 +1,34 @@
+.global__nav {
+    @extend .navigation--inline--interactive;
+    @extend .navigation--icons;
+    
+    bottom: 0;
+    background-color: #fff;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+
+    .navigation__item {
+        a {
+            color: $secondary_text_color;
+            height: $global_nav_height;
+            padding-bottom: 0;
+            padding-top: 0;
+            font-weight: 500;
+        }
+    }
+
+    .navigation__item__label {
+        font-size: 13px;
+    }
+
+    @include md() {
+        box-shadow: none;
+        display: inline-block;
+        float: left;
+        position: static;
+        width: auto;
+    }
+}

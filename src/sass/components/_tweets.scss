@@ -1,0 +1,72 @@
+.tweets {
+    margin-bottom: $global_nav_height + 13px;
+
+    .app__module__content {
+        padding: 0;
+    }
+}
+
+.tweets__list {
+    @extend .styled-list;
+  
+    margin-bottom: 0;
+    will-change: height;
+
+    .tweets__list__item {
+        @extend .clearfix;
+    
+        cursor: pointer;
+        border-radius: 0;
+        padding: $base_spacing * 3;
+
+        .profile__avatar img {
+            margin-left: -58px;
+        }
+
+        &:hover {
+           background-color: #f5f8fa;
+        }
+
+        &:last-child {
+            border-bottom-width: 0;
+        }
+    }
+}
+
+.tweets__header {
+    padding: 12px 15px 9px 15px;
+    
+    .navigation {
+        font-size: 15px;
+
+        @include md() {
+            font-size: 18px;
+        }
+    }
+
+    .navigation__item a {
+        color: $theme_text_color;
+        font-weight: 300;
+    }
+
+    .navigation__item--active a {
+        color: $default_text_color;
+        font-weight: 500;
+    }
+}
+
+.tweets__list__item__content {
+    padding-left: 58px;
+}
+
+.tweets__navigation {
+    @extend .navigation--inline;
+
+    .navigation__item {
+        padding-right: 32px;
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'rosettaIconFont';
+  src: url(../fonts/rosetta-icons-regular.eot);
+  src: url(../fonts/rosetta-icons-regular.woff),
+       url(../fonts/rosetta-icons-regular.ttf);
+}
+
+.icon {
+  font-family: 'rosettaIconFont';
+  font-size: 25px;
+  display: block;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon--medium {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.icon--home:before { content: "\f053"; }
+.icon--connect:before { content: "\f050"; }
+.icon--discover:before { content: "\f052"; }
+.icon--me:before { content: "\f056"; }
+.icon--message:before { content: "\f054"; }
+.icon--setting:before { content: "\f059"; }
+.icon--lightning:before { content: "\f160"; }
+.icon--notifications:before { content: "\f055"; }
+.icon--follow:before { content: "\f175"; }
+.icon--geo:before { content: "\f031"; }
+.icon--url:before { content: "\f098"; }
+.icon--calendar:before { content: "\f203"; }
+.icon--person:before { content: "\f056"; }
+.icon--tweet:before { content: "\f029"; background: rgba(0,132,180,.8); padding: 3px 9px; border-radius: 5px;color: white;}
+.icon--bird:before { content: "\f179"; color: $twitter_branding;}

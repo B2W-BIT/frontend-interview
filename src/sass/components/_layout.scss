@@ -1,0 +1,121 @@
+body {
+    @extend .clearfix;
+    background: #f5f8fa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: $default_text_color;
+}
+
+.app__banner {
+    position: relative;
+
+    .profile__avatar {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .app__container {
+        position: relative;
+        height: 100%;
+    }
+
+    @include lg() {
+        padding-top: $topbar-height;
+    }
+}
+
+.app__banner__background {
+    background: $theme_color;
+    height: 98px;
+    overflow: hidden;
+    position: relative;
+    transition: height .3s;
+    will-change: height;
+    
+    @include xs() {
+        height: 160px;
+    }
+
+    @include md() {
+        height: 300px;
+    }
+
+    @include lg() {
+        height: 360px;
+    }
+
+    @include media-query(1370px) {
+        height: 380px;
+    };
+
+    @include media-query(1450px) {
+        height: 420px;
+    };
+
+    @include media-query(1510px) {  
+        height: 460px;
+    };
+
+    @include md() {
+        &:before {
+            display: block;
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            box-shadow: inset 0 0 1px 1px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+    }
+
+    img {
+        bottom: -9999px;
+        left: 0;
+        right: 0;
+        margin: auto 0;
+        position: absolute;
+        top: -9999px;
+        width: 100%;
+    }
+}
+
+.app__banner__navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #e1e8ed;
+    box-sizing: border-box;
+    height: 60px;
+}
+
+.app__branding {
+    font-size: 15px;
+    margin: 10px auto 10px auto;
+    width: 24px;
+    display: block;
+
+    @include md() {
+        font-size: 21px;
+    }
+}
+
+.app__container {
+    max-width: 890px;
+    margin: 0 auto;
+
+    @include lg() {
+        max-width: 1190px;
+    }
+}
+
+.topbar {
+    background: #fff;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+
+    @include lg() {
+        left: 0;
+        position: fixed;
+        z-index: 3;
+        width: 100%;
+    }
+}

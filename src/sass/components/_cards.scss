@@ -1,0 +1,35 @@
+$cards_base_spacing: $base_spacing * 3;
+$cards_border_color: $gray;
+$cards_background_color: #fff;
+
+.box {
+    background-color: $cards_background_color;
+    border: 1px solid $cards_border_color;
+    border-radius: $border_radius;
+}
+
+.app__module {
+    @extend .box;
+
+    margin-top: 10px;
+}
+
+.app__module__content {
+    padding: $cards_base_spacing;
+}
+
+.app__module__header {
+    padding: $cards_base_spacing $cards_base_spacing 0 $cards_base_spacing;
+}
+
+.app__module__header--divider {
+    border-bottom: 1px solid $cards_border_color;
+    padding-bottom: $cards_base_spacing;
+}
+
+.app__module__title {
+    margin: 0;
+    color: #66757f;
+    font-size: 20px;
+    font-weight: 300;
+}
