@@ -1,0 +1,21 @@
+ul {
+  @extend .list-unstyled;
+}
+
+.theme_text_color {
+    color: $theme_color;
+}
+
+.styled-list {
+    li {
+        border-bottom: 1px solid $gray;
+        padding: $base_spacing;
+    }
+}
+
+.truncate {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

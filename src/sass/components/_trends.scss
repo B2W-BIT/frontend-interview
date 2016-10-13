@@ -1,0 +1,15 @@
+.trends__list {
+    a:hover {
+        text-decoration: none;
+    }
+
+    &:hover {
+        .trends__list__hash {
+            text-decoration: underline;
+        }
+    }
+}
+
+.trends__list__item {
+    margin-bottom: 10px;
+}

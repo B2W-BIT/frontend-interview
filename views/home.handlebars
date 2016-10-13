@@ -1,0 +1,83 @@
+<div class="app__container main__content container">
+  <div class="row">
+    <div class="col-sm-3 col-md-3">
+      <div class="profile__card">
+          <h1 class="profile__card__name">
+            <a href="http://twitter.com/{{{screen_name}}}">{{{name}}}</a>
+          </h1>
+          <h2 class="profile__card__nickname">
+            <a href="http://twitter.com/{{{screen_name}}}">@{{{screen_name}}}</a>
+          </h2>
+
+          <p class="profile__card__bio">
+            {{{description}}}
+          </p>
+
+          <ul class="profile__card__extra__info">
+              <li>
+                <span class="icon icon--geo icon--medium"></span>
+                {{{location}}}
+              </li>
+              <li>
+                <span class="icon icon--url icon--medium"></span>
+                <a href="{{{entities.url.urls.[0].expanded_url}}}">{{{entities.url.urls.[0].display_url}}}</a>
+              </li>
+              <li>
+                <span class="icon icon--calendar icon--medium"></span>
+                Joined {{{created_at_formated}}}
+              </li>
+          </ul>
+      </div>
+
+      <div class="profile__followers hidden-xs hidden-sm"></div>
+    </div>
+    
+    <div class="col-sm-9 col-md-6">
+      <div class="tweets app__module">
+        <div class="tweets__header app__module__header app__module__header--divider hidden-xs">
+          <nav>
+            <ul class="tweets__navigation">
+              <li class="navigation__item navigation__item--active">
+                <a href="">Tweets</a>
+              </li>
+              <li class="navigation__item">
+                <a href="">Tweets & replies</a>
+              </li>
+              <li class="navigation__item">
+                <a href="">Media</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="app__module__content"></div>
+      </div>
+    </div>
+
+    <div class="col-md-3 hidden-xs hidden-sm">
+      <div class="app__module">
+        <div class="app__module__header">
+          <h3 class="app__module__title">Trends</h3>
+        </div>
+        <div class="app__module__content">
+          <ul class="trends__list">
+            <li class="trends__list__item">
+              <a href="">
+                <span class="trends__list__hash theme_text_color"><b>#DiaDoNordeste</b></span>
+                <span class="trends__list__detail">28K Tweets</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="app__module">
+        <div class="app__module__header">
+          <h3 class="app__module__title">Who to follow</h3>
+        </div>
+        <div class="app__module__content">
+          <div class="how__follow__list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

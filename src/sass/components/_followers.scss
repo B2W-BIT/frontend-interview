@@ -1,0 +1,32 @@
+.followers__list {
+    @extend .navigation--inline;
+
+    margin-top: 15px;
+
+    .followers__list__item {
+        a {
+            @include sm() {
+                padding-top: 2px;
+                padding-bottom: 2px;
+                padding-left: 2px;
+                padding-right: 2px;
+                float: right;
+            }
+        }
+    }
+}
+
+.followers__list__title {
+    color: $theme_color;
+    font-weight: 300;
+
+  .icon {
+      float: left;
+      margin-top: -3px;
+      margin-right: 5px;
+  }
+}
+
+.followers__image {
+    border-radius: 4px;
+}

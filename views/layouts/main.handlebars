@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="dist/css/main.css" media="screen">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container">
+        <div class="global__nav">
+          <nav>
+              <ul class="navigation--inline row">
+                <li class="navigation__item col-xs-3">
+                  <a href="">
+                    <span class="icon icon--home navigation__item__icon"></span>
+                    <span class="navigation__item__label">Home</span>
+                  </a>
+                </li>
+                <li class="navigation__item col-xs-3">
+                  <a href="">
+                    <span class="icon icon--lightning navigation__item__icon"></span>
+                    <span class="navigation__item__label">Moments</span>
+                  </a>
+                </li>
+                <li class="navigation__item col-xs-3">
+                  <a href="">
+                    <span class="icon icon--notifications navigation__item__icon"></span>
+                    <span class="navigation__item__label">Notifications</span>
+                  </a>
+                </li>
+                <li class="navigation__item col-xs-3">
+                  <a href="">
+                    <span class="icon icon--message navigation__item__icon"></span>
+                    <span class="navigation__item__label">Messages</span>
+                  </a>
+                </li>
+              </ul>
+          </nav>
+        </div>
+
+        <h1 class="icon icon--bird app__branding">
+          <span class="hidden">Twitter</span>
+        </h1>
+      </div>
+    </div>
+
+    <div class="app__banner">
+      <div class="app__banner__background">
+        <img src="{{{profile_banner_url}}}" alt="">
+      </div>
+      <div class="app__container container">
+        <div class="app__banner__avatar">
+          <a href="">
+            <img src="{{{profile_image_url_bigger}}}" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="app__banner__navbar hidden-xs">
+        <div class="app__container container">
+          <div class="row">
+            <div class="col-md-9 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+              <ul class="profile__nav__list">
+                <li class="profile__nav__list__item navigation__item profile__nav__list__item__active">
+                  <a href="">
+                    <span class="profile__nave__item__label">tweets</span>
+                    <span class="profile__nave__item__value">{{{statuses_count_formated}}}</span>
+                  </a>
+                </li>
+                <li class="profile__nav__list__item navigation__item">
+                  <a href="">
+                    <span class="profile__nave__item__label">following</span>
+                    <span class="profile__nave__item__value">{{{friends_count_formated}}}</span>
+                  </a>
+                </li>
+                <li class="profile__nav__list__item navigation__item">
+                  <a href="">
+                    <span class="profile__nave__item__label">followers</span>
+                    <span class="profile__nave__item__value">{{{followers_count_formated}}}</span>
+                  </a>
+                </li>
+                <li class="profile__nav__list__item navigation__item">
+                  <a href="">
+                    <span class="profile__nave__item__label">likes</span>
+                    <span class="profile__nave__item__value">{{{favourites_count_formated}}}</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{{body}}}
+  </body>
+  <script src="/dist/app.js" charset="utf-8"></script>
+</html>
