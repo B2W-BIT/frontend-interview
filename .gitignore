@@ -42,4 +42,7 @@ jspm_packages
 .node_repl_history
 
 # Production files
-public/dist
+public/dist/**/*
+
+# Snapshots
+**/*.snap
