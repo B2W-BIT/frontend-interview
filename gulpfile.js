@@ -11,9 +11,6 @@ gulp.task('sass', () => {
  
 gulp.task('sass:watch', () => {
   gulp.watch('./src/sass/**/*.scss', ['sass']);
-
-  gulp.src("./node_modules/bootstrap-sass/assets/fonts/bootstrap/**.*")
-      .pipe(gulp.dest('./public/dist/fonts/'));
 });
 
 gulp.task('default', ['sass', 'sass:watch']);
