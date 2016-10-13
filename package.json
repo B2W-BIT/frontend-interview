@@ -25,6 +25,7 @@
     "enzyme": "^2.4.1",
     "expect": "^1.20.2",
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
     "gulp-sass": "^2.3.2",
     "gulp-watch": "^4.3.10",
     "jest": "^16.0.1",
