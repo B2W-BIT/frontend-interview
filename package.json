@@ -4,6 +4,7 @@
   "description": "A simple Twitter timeline built with React and NodeJS",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm start",
     "test": "npm run test:integration && npm run test:components",
     "start": "babel-node index.js",
     "test:integration": "mocha --opts test/integration/mocha.opts test/integration/*.js",
