@@ -1,0 +1,99 @@
+/* global */ 
+ul { list-style: none; padding: 0 }
+li a:hover { text-decoration: none }
+a { cursor: pointer}
+
+/* helper */
+.no-padding { padding: 0 !important }
+
+/* reuse */
+input.search { background: #f5f8fa url(../img/ic-search.png) no-repeat 98% center; border: 1px solid #ddd; font-size: 0.85em; color: #93a3af; padding: 7px 10px 8px; border-radius: 15px; min-width: 180px }
+.button { padding: 4px 15px; border-radius: 4px }
+.button-gray { background: #b9b3b4; color: #fff !important }
+.button-blue { background: #3b94d9 }
+.button-white { background: linear-gradient(to bottom, #fff, #eee); color: #666; border: 1px solid #ddd; font-weight: bold }
+.button-md { padding: 12px 27px; font-weight: bold }
+.w-block { background: #fff; border: 1px solid #eee; border-radius: 5px; padding: 10px; margin: 0 0 10px }
+.w-block .title { font-size: 1.3em; color: #66757f; margin: 5px 5px 10px }
+.w-block .title a { font-size: 0.6em }
+
+/* page */
+body { background: #f5f8fa url(../img/bg.jpg) no-repeat right -50px }
+@media( max-width: 500px ){
+	body { background-position: right -250px }
+}
+h1 { font-size: 1.7em; font-weight: bold; line-height: 0.75em }
+h1 small { color: #99addd }
+a { color: #a7a7a7 }
+.menu-h { background: #fff; box-shadow:0 0 1px #999 }
+.menu-h nav li { float: left; padding: 6px 10px 8px 10px }
+.menu-h nav li a { color: #66757f; font-size: 0.9em; display: block }
+.menu-h nav li a.button { font-size: 1em }
+.menu-h nav li a.button.small { padding: 4px 6px }
+.menu-top { background: #fff url(../img/ic-twitter-mini.png) center no-repeat; height: 40px; position: fixed; top: 0; width: 100%; z-index: 9999 }
+@media( max-width: 800px ){ 
+	.menu-top { background-position: 80px center }
+	.menu-top ul.first { width: 150px; background: #fff }
+}
+@media( max-width: 500px ){ 
+	.menu-top { background-position: center }
+	.menu-top ul { background: #fff }
+	.menu-top ul.first { position: fixed; top: 40px; left: 0; width: 100%; }
+	.menu-top ul.first li { width: 100%; text-align: center; border-bottom: 1px solid #eee; }
+}
+.menu-top ul:last-child { margin: -4px }
+@media( max-width: 500px ){ 
+	.menu-top ul:last-child { position: fixed; top: 208px; left: 0; width:100% }
+	.menu-top ul:last-child li { width:100%; text-align:center }
+}
+/**/
+.menu-middle { margin-top: 320px; height: 60px }
+@media( max-width: 500px ){ 
+	.menu-middle { margin-top: 120px }
+}
+.menu-middle ul:last-child { margin: 8px 0 0 }
+.menu-middle nav li { padding: 2px }
+.menu-middle nav li a { font-size: 0.8em; text-align: center; line-height: normal; padding: 10px }
+@media( max-width: 500px ){ 
+	.menu-middle nav li a { font-size: 0.7em; padding: 12px 9px }
+}
+.menu-middle nav li a span { font-size: 1.7em; color: #aaa }
+.menu-middle nav li a.active, .menu-middle nav li a:hover { border-bottom: 4px solid #a8a1a2 }
+.menu-middle nav li a.active span, .menu-middle nav li a:hover span { color: #333 }
+.menu-middle nav li a.button { padding: 6px 15px; margin: 4px 0 0; color: #333; font-weight: bold }
+.menu-middle nav li a.button:hover { border-bottom: 1px solid #fff }
+.menu-middle nav li a.button-white:hover { border-bottom: 1px solid #ddd }
+/**/
+.img-profile { margin: -200px 0 0; width: 220px; height: 220px; border: 7px solid #fff; border-radius: 15px; box-shadow: 0 1px 1px #ccc }
+@media( max-width: 800px ){ 
+	.img-profile { margin: 10px 20px 0 0; float: left }
+}
+@media( max-width: 500px ){ 
+	.img-profile { width: 85px; height: 85px; margin: 0 10px 0 0; }
+}
+/**/
+.tweets-nav { padding: 12px 10px 25px }
+.tweets-nav li { float: left }
+.tweets-nav li a { font-size: 1.25em; padding: 5px 30px 10px 5px }
+@media( max-width: 500px ){ 
+	.tweets-nav li a { font-size: 1em; padding: 5px 20px 10px 5px }
+}
+.tweets-nav li a.active, .tweets-nav li a:hover { color: #333 }
+.tweets-list { clear: both; border-top: 1px solid #eee }
+.tweets-list li { border-bottom: 1px solid #eee; padding: 10px; clear: both}
+.tweets-list p { margin: 0 }
+.tweets-list p.retweet.true { display: block }
+.tweets-list p.retweet.false { display: none }
+.tweets-list p.pre img:first-child { float: left; margin: 7px 10px 10px 0 }
+.tweets-list p.pre .user { color: #333 }
+.tweets-list p.msg { font-size: 1.1em; margin-left: 58px }
+.tweets-list li p.actions { margin-left: 54px }
+.tweets-list li p.actions span { border: none; padding: 10px 0 0; float: left; clear: none }
+.tweets-list li p.actions span a { padding: 0 50px 10px 0 }
+.tweets-list li p.actions span:last-child a { padding: 0 0 10px 0 }
+/**/
+.to-follow .photo { float: left; margin: 0 0 10px }
+.to-follow ul li { margin: 0 0 15px 0 }
+/**/
+.trends li { color: #8fbce8; font-size: 0.9em; margin: 0 0 10px 5px }
+.trends li a { font-weight: bold; font-size: 1.1em; color: #bbb }
