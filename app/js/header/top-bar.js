@@ -26,7 +26,7 @@ export default class TopBar extends React.Component {
         <div className="container">
           <nav>
             <a href="">
-              <i />
+              <span className="Icon Icon--home" />
               Home
             </a>
             <a href="">
@@ -38,7 +38,7 @@ export default class TopBar extends React.Component {
               Notifications
             </a>
             <a href="">
-              <i />
+              <span className="Icon Icon--message" />
               Messages
             </a>
           </nav>

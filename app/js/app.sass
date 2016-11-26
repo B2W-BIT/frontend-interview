@@ -1,3 +1,51 @@
+@font-face
+  font-family: 'rosettaIconFont'
+  src: url(../fonts/rosetta-icons-Regular.woff)
+  src: url(../fonts/rosetta-icons-Regular.ttf)
+
+.Icon
+  font-family: 'rosettaIconFont'
+  display: block
+  font-weight: normal
+  font-style: normal
+  text-align: center
+  -webkit-font-smoothing: antialiased
+  display: inline-block
+  vertical-align: middle
+
+.Icon--home:before
+  content: "\f053"
+
+.Icon--connect:before
+  content: "\f050"
+
+.Icon--discover:before
+  content: "\f052"
+
+.Icon--me:before
+  content: "\f056"
+
+.Icon--message:before
+  content: "\f054"
+
+.Icon--setting:before
+  content: "\f059"
+
+.Icon--tweet:before
+  content: "\f029"
+
+.Icon--bird:before
+  content: "\f179"
+
+.Icon--geo:before
+  content: "\f031"
+
+.Icon--url:before
+  content: "\f098"
+
+.Icon--calendar:before
+  content: "\f203"
+
 body
   background: #f5f8fa
 
@@ -5,3 +53,6 @@ body
   position: relative
   max-width: 1200px
   margin: 0 auto
+
+a:hover
+  text-decoration: underline

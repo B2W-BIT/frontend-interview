@@ -46,16 +46,16 @@ export default class ProfileSideBar extends React.Component {
             <a href="">{descriptionUrl}</a>
           </p>
           <div className="location">
-            <i />
+            <span className="Icon Icon--geo" />
             <p>{location}</p>
           </div>
           <div className="url">
-            <i />
+            <span className="Icon Icon--url" />
             <p><a href="">{url}</a></p>
           </div>
           <div className="join-date">
-            <i />
-            <p><a href="">{createdAt}</a></p>
+            <span className="Icon Icon--calendar" />
+            <p>{createdAt}</p>
           </div>
           <div className="tweet">
             <i />
