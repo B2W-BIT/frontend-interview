@@ -20,7 +20,10 @@ exports.config = {
       },
     },
     stylesheets: {
-      joinTo: 'styles/app.css',
+      joinTo: {
+        "styles/app.css": /app/,
+        "styles/vendor.css": /node_modules/
+      },
     },
   },
   plugins: {

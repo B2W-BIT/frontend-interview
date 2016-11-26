@@ -1,7 +1,26 @@
 import React from 'react';
 
+import * as Services from './services'
+
 export default class TopBar extends React.Component {
+  constructor(props){
+    super(props)
+    this.state= {}
+  }
+
+  async componentWillMount() {
+    try {
+      const userInfos = await Services.getUserInfos()
+      this.setState({
+        profilePic: userInfos.profile_image_url
+      })
+    } catch (e) {
+      console.log(e)
+    }
+  }
+
   render() {
+    const { profilePic } = this.state
     return (
       <div className="top-bar">
         <div className="container">
@@ -31,12 +50,12 @@ export default class TopBar extends React.Component {
           <div className="on-right">
             <div className="search">
               <form action="">
-                <input type="text" />
-                <input type="submit" />
+                <input type="text" placeholder="Search on Twitter" />
+                <input type="submit" value="s" />
               </form>
             </div>
             <div className="profile-access">
-              <a href=""><img src="" alt="" /></a>
+              <a href=""><img src={profilePic} alt="" /></a>
             </div>
             <div className="tweet">
               <i />

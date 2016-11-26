@@ -23,8 +23,8 @@ export default class HeaderAvatar extends React.Component {
   render() {
     const { profilePic } = this.state
     return (
-      <div className="avatar-wrapper">
-        <div className="container">
+      <div className="container">
+        <div className="avatar-wrapper">
           <div className="avatar">
             <a href=""><img src={profilePic} alt="" /></a>
           </div>
