@@ -33,7 +33,7 @@ export default class MiddleBar extends React.Component {
       <div className="middle-bar">
         <div className="container">
           <div className="stats">
-            <div className="stat">
+            <div className="stat active">
               <p className="label">Tweets</p>
               <p className="value">{statusesCount}</p>
             </div>
@@ -51,9 +51,9 @@ export default class MiddleBar extends React.Component {
             </div>
           </div>
           <div className="actions">
-            <a href=""><i /></a>
+            <span className="Icon Icon--cog" />
             <div className="follow">
-              <i />
+              <span className="Icon Icon--follow" />
               <p>Folow</p>
             </div>
           </div>

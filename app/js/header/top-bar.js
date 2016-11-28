@@ -27,38 +27,38 @@ export default class TopBar extends React.Component {
           <nav>
             <a href="">
               <span className="Icon Icon--home" />
-              Home
+              <p>Home</p>
             </a>
             <a href="">
-              <i />
-              Moments
+              <span className="Icon Icon--raio" />
+              <p>Moments</p>
             </a>
             <a href="">
-              <i />
-              Notifications
+              <span className="Icon Icon--notifications" />
+              <p>Notifications</p>
             </a>
             <a href="">
               <span className="Icon Icon--message" />
-              Messages
+              <p>Messages</p>
             </a>
           </nav>
           <div className="logo">
             <a href="">
-              <img src="" alt="" />
+              <span className="Icon Icon--bird" />
             </a>
           </div>
           <div className="on-right">
             <div className="search">
               <form action="">
                 <input type="text" placeholder="Search on Twitter" />
-                <input type="submit" value="s" />
+                <div className="submit"><span className="Icon Icon--search" /></div>
               </form>
             </div>
             <div className="profile-access">
               <a href=""><img src={profilePic} alt="" /></a>
             </div>
             <div className="tweet">
-              <i />
+              <span className="Icon Icon--tweet" />
               <p>Tweet</p>
             </div>
           </div>

@@ -1,5 +1,6 @@
 @font-face
   font-family: 'rosettaIconFont'
+  src: url(../fonts/rosetta-icons-Regular.eot)
   src: url(../fonts/rosetta-icons-Regular.woff)
   src: url(../fonts/rosetta-icons-Regular.ttf)
 
@@ -12,6 +13,9 @@
   -webkit-font-smoothing: antialiased
   display: inline-block
   vertical-align: middle
+
+.Icon:before
+  font-family: 'rosettaIconFont'
 
 .Icon--home:before
   content: "\f053"
@@ -45,6 +49,27 @@
 
 .Icon--calendar:before
   content: "\f203"
+
+.Icon--raio:before
+  content: "\f160"
+
+.Icon--notifications:before
+  content: "\f055"
+
+.Icon--search:before
+  content: "\f058"
+
+.Icon--tweet:before
+  content: "\f029"
+
+.Icon--bird:before
+  content: "\f179"
+
+.Icon--cog:before
+  content: "\f059"
+
+.Icon--follow:before
+  content: "\f175"
 
 body
   background: #f5f8fa

@@ -51,7 +51,6 @@ app.get('/statuses/tweets', function(req, res) {
 
   client.get('statuses/user_timeline', params, function(err, tweets, response) {
       if (err) return console.error(err);
-
     res.json(tweets);
   });
 });
