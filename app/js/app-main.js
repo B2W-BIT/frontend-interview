@@ -9,7 +9,9 @@ export default class AppMain extends React.Component {
       <main>
         <div className="container">
           <ProfileSideBar />
-          <Timeline />
+          <div className="main-content">
+            <Timeline />
+          </div>
         </div>
       </main>
     );

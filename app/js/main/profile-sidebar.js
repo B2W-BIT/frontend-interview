@@ -1,6 +1,8 @@
 import React from 'react';
+import moment from 'moment';
 
 import * as Services from '../utils/services'
+
 
 export default class ProfileSideBar extends React.Component {
   constructor(props){
@@ -13,7 +15,6 @@ export default class ProfileSideBar extends React.Component {
       const userInfos = await Services.getUserInfos()
       this.setState({
         description: userInfos.description,
-        descriptionUrl: userInfos.entities.description.urls[0].display_url,
         name: userInfos.name,
         screenName: userInfos.screen_name,
         location: userInfos.location,
@@ -26,16 +27,17 @@ export default class ProfileSideBar extends React.Component {
     }
   }
 
+
   render() {
     const {
         description,
-        descriptionUrl,
         name,
         screenName,
         location,
         createdAt,
         url,
     } = this.state
+    const created = moment(createdAt).format("MMMM YYYY")
     return (
       <div className="profile-info-side-bar">
         <div className="profile-card">
@@ -43,7 +45,6 @@ export default class ProfileSideBar extends React.Component {
           <h2 className="screenname">@{screenName}</h2>
           <p className="bio">
             {description}
-            <a href="">{descriptionUrl}</a>
           </p>
           <div className="location">
             <span className="Icon Icon--geo" />
@@ -55,37 +56,11 @@ export default class ProfileSideBar extends React.Component {
           </div>
           <div className="join-date">
             <span className="Icon Icon--calendar" />
-            <p>{createdAt}</p>
+            <p>Joined {created}</p>
           </div>
           <div className="tweet">
-            <i />
-            <p>Tweet to americanads</p>
-          </div>
-        </div>
-        <div className="photo-trail">
-          <div className="heading">
-            <i />
-            <p><a href="">2000 fotos</a></p>
-          </div>
-          <div className="media-box">
-            <div className="photo">
-              <a href=""><img src="" alt="" /></a>
-            </div>
-            <div className="photo">
-              <a href=""><img src="" alt="" /></a>
-            </div>
-            <div className="photo">
-              <a href=""><img src="" alt="" /></a>
-            </div>
-            <div className="photo">
-              <a href=""><img src="" alt="" /></a>
-            </div>
-            <div className="photo">
-              <a href=""><img src="" alt="" /></a>
-            </div>
-            <div className="photo">
-              <a href=""><img src="" alt="" /></a>
-            </div>
+            <span className="Icon Icon--tweet" />
+            <p>Tweet to {name}</p>
           </div>
         </div>
       </div>

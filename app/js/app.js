@@ -9,6 +9,7 @@ class App extends React.Component {
     return (
       <div>
         <AppHeader />
+        <div className="clearfix" />
         <AppMain />
       </div>
     )

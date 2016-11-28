@@ -23,7 +23,7 @@ export default class Timeline extends React.Component {
         <div className="heading">
           <ul>
             <li><a href="">Tweets</a></li>
-            <li><a href="">Tweets & replies</a></li>
+            <li><a href="" className="active">Tweets & replies</a></li>
             <li><a href="">Media</a></li>
           </ul>
         </div>
@@ -32,8 +32,8 @@ export default class Timeline extends React.Component {
             <li className="item">
               <div className="context">
                 <div className="margin-fix">
-                  <i />
-                  <p>reply to blablabla</p>
+                  <span className="Icon Icon--reply" />
+                  <p>In reply to <a href="" className="name">Nome</a></p>
                 </div>
               </div>
               <div className="content">
@@ -42,28 +42,24 @@ export default class Timeline extends React.Component {
                     <div className="avatar">
                       <img src="" alt="" />
                     </div>
-                    <a href="">nome</a> <span>@screename</span> <a href="">Jan 28</a>
+                    <a href="" className="name">nome</a> <span>@screename</span> <a href="" className="date">Jan 28</a>
                   </div>
                   <div className="message">
-                    <p>Qualquer coisa</p>
+                    <p> Por favor, manda pra gente um “print” da página e o link do produto. Assim, vamos conseguir te ajudar.</p>
                   </div>
                   <div className="footer">
                     <div className="reply">
-                      <i />
-                      <p></p>
+                      <span className="Icon Icon--reply" />
                     </div>
                     <div className="retweet">
-                      <i />
-                      <p></p>
+                      <span className="Icon Icon--retweet" />
                     </div>
                     <div className="like">
-                      <i />
-                      <p></p>
+                      <span className="Icon Icon--like" />
                     </div>
                     <div className="more">
-                      <i />
+                      <span className="Icon Icon--dots" />
                     </div>
-                    <a href="" className="conversation">View conversation</a>
                   </div>
                 </div>
               </div>
