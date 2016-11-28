@@ -12,13 +12,26 @@ export default class MiddleBar extends React.Component {
     try {
       const userInfos = await Services.getUserInfos()
       this.setState({
-          followersCount: userInfos.followers_count
-          , statusesCount: userInfos.statuses_count
-          , friendsCount: userInfos.friends_count
-          , favouritesCount: userInfos.favourites_count
+          followersCount: this.formatCount(userInfos.followers_count)
+          , statusesCount: this.formatCount(userInfos.statuses_count)
+          , friendsCount: this.formatCount(userInfos.friends_count)
+          , favouritesCount: this.formatCount(userInfos.favourites_count)
       })
     } catch (e) {
       console.log(e)
+    }
+  }
+
+  formatCount(count) {
+    const M = 1000000
+    const TenK = 10000
+    const K = 1000
+    if (count > M) {
+      return Math.floor(count/M) + 'M'
+    } else if (count > TenK) {
+      return Math.floor(count/K) + 'K'
+    } else {
+      return count
     }
   }
 
