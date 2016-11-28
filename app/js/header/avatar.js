@@ -12,12 +12,15 @@ export default class HeaderAvatar extends React.Component {
     try {
       const userInfos = await Services.getUserInfos()
       this.setState({
-        profilePic: userInfos.profile_image_url
+        profilePic: this.formatProfileImage(userInfos.profile_image_url)
       })
-      console.log(userInfos)
     } catch (e) {
       console.log(e)
     }
+  }
+
+  formatProfileImage(image_url) {
+    return image_url.replace(/_normal/i, '')
   }
 
   render() {
