@@ -15,6 +15,8 @@ var key = {
   api_key: '3de470a3de4c9510ec040b59100b4cf2'
 };
 
+var max_id = undefined
+
 flickr = new Flickr(key);
 
 app.use(function(req, res, next) {
@@ -44,28 +46,13 @@ app.get('/config/reset-id', function(req, res) {
 
 app.get('/statuses/tweets', function(req, res) {
   var params = {
-    screen_name: 'americanascom',
-    count: 10,
+    user_id: 35019751,
+    count: 200,
     exclude_replies: true
   };
 
   client.get('statuses/user_timeline', params, function(err, tweets, response) {
-      if (err) return console.error(err);
-    res.json(tweets);
-  });
-});
-
-app.get('/statuses/tweets_rts', function(req, res) {
-  var params = {
-    screen_name: 'americanascom',
-    count: 5,
-    max_id: max_id
-  };
-
-  client.get('statuses/user_timeline', params, function(err, tweets, response) {
-      if (err) return console.error(err);
-
-    max_id = tweets[tweets.length - 1].id;
+    if (err) return console.error(err);
     res.json(tweets);
   });
 });
