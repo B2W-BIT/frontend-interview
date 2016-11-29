@@ -5,7 +5,8 @@
   "scripts": {
     "build": "NODE_ENV=development brunch build",
     "build:prod": "NODE_ENV=production brunch build --production",
-    "start": "NODE_ENV=development brunch watch --server"
+    "debug": "NODE_ENV=development brunch watch --server",
+    "start": "npm install && npm run build:prod && xdg-open http://localhost:3000 && node server.js"
   },
   "author": "Vinícius Lagêdo",
   "license": "ISC",
