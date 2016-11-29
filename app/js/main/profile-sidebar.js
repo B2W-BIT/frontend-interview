@@ -21,7 +21,6 @@ export default class ProfileSideBar extends React.Component {
         createdAt: userInfos.created_at,
         url: userInfos.entities.url.urls[0].display_url,
       })
-      console.log(userInfos)
     } catch (e) {
       console.log(e)
     }

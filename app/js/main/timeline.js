@@ -10,8 +10,8 @@ export default class Timeline extends React.Component {
 
   async componentWillMount() {
     try {
-      const Tweets = await Services.getTweets()
-      console.log(Tweets)
+      //const Tweets = await Services.getTweets()
+      //console.log(Tweets)
     } catch (e) {
       console.log(e)
     }

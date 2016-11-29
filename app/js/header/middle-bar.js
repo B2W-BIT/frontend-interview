@@ -1,6 +1,7 @@
 import React from 'react';
 
-import * as Services from './services'
+import * as Services from '../utils/services'
+import { formatCount } from '../utils/services'
 
 export default class MiddleBar extends React.Component {
   constructor(props){
