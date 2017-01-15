@@ -27,6 +27,7 @@ import { ProfileCardDirective } from '../app/components/profile-card-component/p
 
 angular.module('frontendInterview', [
   'ngAnimate', 
+  'ngResource',
   'ui.router',
   'ui.bootstrap'])
   .config(config)
@@ -43,4 +44,4 @@ angular.module('frontendInterview', [
   .directive('profileSidebarComponent', ProfileSidebarDirective)
   .directive('timelineComponent', TimelineDirective)
   .directive('tweetComponent', TweetDirective)
-  .directive('prfileCardComponent', ProfileCardDirective);
+  .directive('profileCardComponent', ProfileCardDirective);

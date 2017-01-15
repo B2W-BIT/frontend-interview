@@ -10,7 +10,7 @@ export function ProfileHeaderDirective() {
         creationDate: '='
     },
     controller: ProfileHeaderController,
-    controllerAs: 'vm',
+    controllerAs: 'profileBannerCtrl',
     bindToController: true
   };
 
@@ -18,8 +18,19 @@ export function ProfileHeaderDirective() {
 }
 
 class ProfileHeaderController {
-  constructor () {
+  constructor ($scope) {
     'ngInject';
 
+    this.$scope = $scope;
+    this.bannerUrl = '';
+
+    this.$scope.$on('dispatch', (event, args) => {
+      this.setBannerUrl(args.bannerUrl);
+    })
+
+  }
+
+  setBannerUrl(url){
+    this.bannerUrl = url.replace("_normal", "");
   }
 }

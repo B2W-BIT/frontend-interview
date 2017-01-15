@@ -18,8 +18,19 @@ export function ProfileAvatarDirective() {
 }
 
 class ProfileAvatarController {
-  constructor () {
+  constructor ($scope) {
     'ngInject';
 
+    this.$scope = $scope;
+    this.avatarUrl = '';
+
+    this.$scope.$on('dispatch', (event, args) => {
+      this.setProfileUrl(args.profileUrl);
+    })
+
+  }
+
+  setProfileUrl(url){
+    this.avatarUrl = url.replace("_normal", "");
   }
 }

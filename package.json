@@ -1,8 +1,13 @@
 {
   "name": "frontendInterview",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "~1.5.2",
+    "express": "~4.7.2",
+    "twit": "~2.2.4"
+  },
   "scripts": {
+    "prestart": "gulp",
     "test": "gulp test"
   },
   "devDependencies": {

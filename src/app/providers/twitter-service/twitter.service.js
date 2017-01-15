@@ -1,53 +1,44 @@
 export class TwitterService {
-  constructor ($log, $http, stringService) {
+
+  constructor ($log, $http, $resource, stringService) {
     'ngInject';
 
     this.$log = $log;
     this.$http = $http;
+    this.$resource = $resource;
     this.stringService = stringService;
     this.API_BASE = '';
     this.TOKE = '';
+    this.AUTHORIZATION_TOKEN = '';
     this.LIMIT = '';
     this.getResource();
 
-
-    
   }
 
   getResource(){
     this.stringService.getResource().then((response)=>{
       this.API_BASE = response.data.API_BASE;
       this.TOKEN = response.data.API_TOKEN;
-      this.LIMIT = response.data.LIMIT;
+      this.AUTHORIZATION_TOKE = response.data.API_TOKEN_AUTHORIZATION
     }, ()=>{})
   }
 
-  getDevelopers(username, limit=30) {
+  getTweets() {
     let options = {
-      url: this.API_BASE + '/users' + (angular.isUndefined(username) ? '' : '/' + username ),
-      method: 'GET',
-      params: {
-        'per_page': limit
-    },
-    headers: {
-        'Authorization': "Bearer " + this.TOKEN
-      }
+      url: '/tweets',
+      method: 'GET'
     }
     return this.$http(options);
   }
 
-  searchDevelopers(username){
+  getAccount() {
     let options = {
-      url: this.API_BASE + '/search/users',
-      method: 'GET',
-      params: {
-        'q': username,
-        'per_page': this.LIMIT
-    },
-    headers: {
-        'Authorization': "Bearer " + this.TOKEN
-      }
+      url: '/lookup',
+      method: 'GET'
     }
     return this.$http(options);
   }
+  
+
+
 }

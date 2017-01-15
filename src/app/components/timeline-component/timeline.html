@@ -1,4 +1,7 @@
 <div class="panel panel-default">
   <div class="panel-heading">Panel heading without title</div>
-  <tweet-component></tweet-component>
+
+  <span ng-repeat="tweet in timelineCtrl.tweets track by $index">
+    <tweet-component tweet="tweet"></tweet-component>
+  </span>
 </div>

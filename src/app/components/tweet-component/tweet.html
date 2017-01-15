@@ -1,9 +1,14 @@
 <div class="panel-body">
-    Basic panel example
-</div>
-<hr/>
-
-<div class="panel-body">
-    Basic panel example
+    <div class="row">
+        <div class="col-xs-3 col-md-2">
+            <div class="tweet-avatar thumbnail">
+                <img src="{{tweetCtrl.tweet.user.profile_image_url}}">
+            </div>
+        </div>
+        <div class="col-xs-9 col-md-9">
+            {{tweetCtrl.tweet.text}}
+        </div>
+    </div>
+    
 </div>
 <hr/>

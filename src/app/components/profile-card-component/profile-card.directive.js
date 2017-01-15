@@ -6,9 +6,6 @@ export function ProfileCardDirective() {
   let directive = {
     restrict: 'E',
     templateUrl: 'app/components/profile-card-component/profile-card.html',
-    scope: {
-        creationDate: '='
-    },
     controller: ProfileCardController,
     controllerAs: 'profileCardCtrl',
     bindToController: true
@@ -18,8 +15,24 @@ export function ProfileCardDirective() {
 }
 
 class ProfileCardController {
-  constructor () {
+  constructor ($log, $scope) {
     'ngInject';
+    
+    this.$log = $log;
+    this.userData = {};
+    this.$scope = $scope;
+
+    this.$scope.$on('dispatch', (event, args) => {
+      this.setUserData(args.userData);
+    });
 
   }
+
+  setUserData(data){
+    console.log(data);
+    this.userData = data;
+  }
+  
+
+  
 }

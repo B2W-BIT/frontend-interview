@@ -6,8 +6,8 @@ export function TweetDirective() {
   let directive = {
     restrict: 'E',
     templateUrl: 'app/components/tweet-component/tweet.html',
-    scope: {
-        creationDate: '='
+    bindings: {
+      tweet: '='
     },
     controller: TweetController,
     controllerAs: 'tweetCtrl',
@@ -18,8 +18,10 @@ export function TweetDirective() {
 }
 
 class TweetController {
-  constructor () {
+  constructor ($log, $scope) {
     'ngInject';
+    this.$log = $log;
+    this.tweet = $scope.tweet;
 
   }
 }
