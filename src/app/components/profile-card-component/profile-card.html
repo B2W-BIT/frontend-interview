@@ -1,8 +1,11 @@
     <div class="row">
         <div class="col-xs-12 col-md-12">
             <h2> {{profileCardCtrl.userData.name}}</h2>
-            <div>{{profileCardCtrl.userData.screen_name}}</div>
+            <div>@{{profileCardCtrl.userData.screen_name}}</div>
             <div>{{profileCardCtrl.userData.description}}</div>
-            <div>{{profileCardCtrl.userData.location}}</div>
+            <div>
+                <span class="glyphicon glyphicon-map-marker"></span>
+                {{profileCardCtrl.userData.location}}
+            </div>
         </div>
 </div>
