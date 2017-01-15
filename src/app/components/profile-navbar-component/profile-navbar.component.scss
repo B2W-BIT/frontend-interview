@@ -1,0 +1,27 @@
+
+//Variables
+$height: 60px;
+
+profile-navbar-component{
+
+  .custom-navbar-height { 
+    height: $height;
+    z-index: -1;
+  }
+
+  .height-brand {
+    padding-top: 100px !important;
+  }
+
+  .items-padding{
+    padding-top: 5px !important
+  }
+
+  @media (max-width: 768px ) { 
+        .navbar{
+            height: $height + 70px;
+            
+        }
+     }
+
+}

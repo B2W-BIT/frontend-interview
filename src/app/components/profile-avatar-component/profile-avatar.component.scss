@@ -1,0 +1,79 @@
+
+
+profile-avatar-component{
+   
+
+    .avatar-thumb{
+        position: absolute;
+        z-index: 1000;
+    }
+    
+
+    @media (max-width: 768px ) { 
+        .avatar-thumb{
+            position: absolute;
+            z-index: 1000;
+            height: 90px;
+            margin-top: 145px;
+        }
+         .avatar{
+            position: relative;
+            z-index: 3;
+            height: 180px;
+            margin-left: 20%;
+            left: 10px;
+        }
+     }
+
+    @media (min-width: 768px  ) and (max-width: 991px ) { 
+        .avatar-thumb{
+            position: absolute;
+            z-index: 1000;
+            height: 180px;
+            margin-top: 238px;
+        }
+         .avatar{
+            position: relative;
+            z-index: 3;
+            height: 180px;
+            margin-top: 150px;
+            left: 10px;
+        }
+    }
+
+    @media (min-width: 992px ) and (max-width: 1200px ) {
+         .avatar-thumb{
+            position: absolute;
+            z-index: 1000;
+
+        }
+         .avatar{
+            position: relative;
+            z-index: 3;
+            height: 180px;
+            margin-top: 150px;
+            left: 10px;
+        }
+    }
+
+    @media (min-width: 1201px ) { 
+        .avatar{
+            position: relative;
+            z-index: 3;
+            height: 180px;
+            margin-top: 150px;
+            left: 10px;
+        }
+        .container{
+            margin-top: 60px;
+        }
+        .img-responsive{
+            width: 200px;
+            height: auto;
+            position: absolute;
+            margin-top: 17%;
+        }
+     }
+
+    
+}

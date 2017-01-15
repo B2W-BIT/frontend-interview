@@ -1,0 +1,56 @@
+
+profile-header-component{
+   
+
+    .profile-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+    
+
+
+    @media (max-width: 768px ) { 
+        .profile-header{
+            background-color: #FFFFFF;  
+        }
+        .banner{
+            margin-top: 60px;
+        }
+     }
+
+    @media (min-width: 768px  ) and (max-width: 991px ) { 
+        .profile-header{
+            background-color: #FFFFFF;        
+        }
+        .banner{
+          margin-top: 60px;
+        }
+    }
+
+    @media (min-width: 992px ) and (max-width: 1200px ) {
+         .profile-header{
+            background-color: #FFFFFF;        
+        }
+       
+    }
+
+    @media (min-width: 1201px ) { 
+        .profile-header{
+            background-color: #FFFFFF;  
+            height: 300px;      
+        }
+        
+        
+        .profile-header .banner img{
+            position: absolute;
+            width: 80%;
+            margin-top: 6px;
+            border-radius: 10px;
+        }
+     }
+
+}

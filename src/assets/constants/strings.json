@@ -1,0 +1,19 @@
+{
+  "API_BASE": "https://api.twitter.com/1.1",
+  "API_TOKEN": "AAAAAAAAAAAAAAAAAAAAAJSzvgAAAAAAqMXN7uyhFmavBINhWrSgT%2Ft6FnE%3DaVzbAr9Pd0MMoXETvTbKxLvmExp19Y6tQktbJH33YdKHmH7hqt",
+  
+  "DEVELOPERS_COMPONENT": {
+      "TITLE": "Desenvolvedores",
+      "REPOSITORIES": "Repositorios",
+      "FOLLOWERS": "Seguidores",
+      "FILTER": "Filtrar desenvolvedores",
+      "SEE_ON_GITHUB": "Ver no github"
+  },
+  "FORM_COMPONENT": {
+      "BTN_TEXT": "Buscar",
+      "USERNAME": "Digite o nome do usuário",
+      "SEARCH_ALL": "Buscar todos",
+      "SEARCH_BY_USERNAME": "Buscar pelo nome de usuário",
+      "TITLE": "Consulta de usuários do github"
+  }
+}

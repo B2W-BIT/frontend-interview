@@ -1,0 +1,19 @@
+
+//Variables
+$height: 60px;
+
+top-navbar-component{
+
+  .custom-navbar-height { 
+    height: $height !important;
+  }
+
+  .height-brand {
+    padding-top: 0px !important;
+  }
+
+  .items-padding{
+    padding-top: 5px !important
+  }
+
+}
