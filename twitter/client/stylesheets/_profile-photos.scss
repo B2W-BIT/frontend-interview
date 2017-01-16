@@ -1,0 +1,20 @@
+.profile-photos-container {
+    display: table;
+    margin-top: 20px;
+
+    .profile-photos-header {
+        color: #8899a6;
+        font-size: 14px;
+        line-height: 1;
+        padding: 0 0 10px 2px;
+    }
+
+    .profile-photos {
+        padding: 2px;
+
+        .profile-photos-img {
+            width: 100%;
+        }
+    }
+
+}

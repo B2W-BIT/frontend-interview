@@ -1,0 +1,16 @@
+.btn {
+
+    &.btn-tweet {
+        background: rgba(168,161,162,.8);
+        color: #FFF;
+    }
+
+    &.btn-profile {
+        background: #000;
+    }
+
+    &.btn-full {
+        width: 100%;
+    }
+
+}

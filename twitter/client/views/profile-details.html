@@ -1,0 +1,33 @@
+<main ng-controller="profileDetailsController as ctrl">
+    <section class="col-md-12 profile-cover-container">
+        <profile-cover user="ctrl.user"></profile-cover>
+        <profile-img class-img="profile-cover-img" link="ctrl.user.profile_banner_url"></profile-img>
+    </section>
+    <section class="col-md-12 profile-counts-container">
+        <article class="container">
+            <div class="col-md-3">
+                <profile-img class-img="profile-img visible-lg" link="ctrl.user.profile_image_url"></profile-img>
+                <profile-img class-img="profile-img mod-small hidden-lg" link="ctrl.user.profile_image_url"></profile-img>
+            </div>
+            <div class="col-md-6 profile-count-container visible-lg">
+                <profile-count title="Twetts" count="ctrl.user.statuses_count" active="true"></profile-count>
+                <profile-count title="Following" count="ctrl.user.friends_count"></profile-count>
+                <profile-count title="Followers" count="ctrl.user.followers_count"></profile-count>
+                <profile-count title="Likes" count="ctrl.user.favourites_count"></profile-count>
+            </div>
+        </article>
+    </section>
+    <section class="container">
+        <section class="col-md-3">
+            <profile-info user="ctrl.user"></profile-info>
+            <profile-followers-know class="visible-lg"></profile-followers-know>
+            <profile-photos-videos class="visible-lg"></profile-photos-videos>
+        </section>
+        <section class="col-md-6 col-sm-12 col-xs-12">
+            <profile-tweets tweets="ctrl.tweets"></profile-tweets>
+        </section>
+        <section class="col-md-3 visible-lg">
+            <profile-trends></profile-trends>
+        </section>
+    </section>
+</main>

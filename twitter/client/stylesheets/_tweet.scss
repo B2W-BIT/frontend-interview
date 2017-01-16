@@ -1,0 +1,73 @@
+.tweet-container {
+    border-bottom: 1px solid #e1e8ed;
+    cursor: pointer;
+    display: table;
+
+    &:hover {
+        background: #f5f8fa;
+    }
+
+    .tweet-img-container {
+        padding: 0;
+
+        .tweet-img {
+            margin-top: 35px;
+            height: 48px;
+            width: 48px;
+        }
+    }
+
+    .tweet-main-container {
+        padding: 10px 10px 10px 0;
+
+        .tweet-main-reply {
+            font-size: 13px;
+
+            .icon-reply {
+                left: -31px;
+                position: absolute;
+            }
+        }
+    }
+
+    .tweet-main-profile-container {
+
+        .tweet-main-profile-name {
+            color: #292f33;
+            font-weight: bold;
+        }
+
+        .tweet-main-profile-at {
+            font-size: 13px;
+        }
+
+    }
+
+    .tweet-main {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    .tweet-main-icons {
+        margin-top: 10px;
+        font-size: 16px;
+
+        .fa {
+            margin-right: 50px;
+        }
+
+        .tweet-main-icons-value {
+            font-weight: bold;
+        }
+    }
+
+    .tweet-secondary, .tweet-main-profile-at-user, .tweet-main-reply, .tweet-main-profile-at, .tweet-main-icons {
+      color: #8899a6;
+    }
+
+}
+
+.profile-tweet-image {
+    width: 100%;
+}
