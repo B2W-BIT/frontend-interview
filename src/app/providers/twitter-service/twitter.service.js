@@ -23,10 +23,13 @@ export class TwitterService {
     }, ()=>{})
   }
 
-  getTweets() {
+  getTweets(lastTweetId) {
     let options = {
       url: '/tweets',
-      method: 'GET'
+      method: 'GET',
+      params: {
+        last_tweet_id: lastTweetId
+      }
     }
     return this.$http(options);
   }

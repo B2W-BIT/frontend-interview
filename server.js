@@ -32,13 +32,16 @@ app.use(function(req, res, next) {
 
 //Routes
 app.get('/tweets', function(req, res) {
-
+    var max_id = req.query['last_tweet_id']
     req = 'statuses/user_timeline';
     var options = {
-        screen_name: 'americanascom',
-        exclude_replies: false,
-        count: 10
+        user_id: 35019751,
+        max_id: max_id,
+        exclude_replies: true,
+        count: 200
     };
+    
+    if (max_id === undefined || max_id === "") delete options.max_id;
 
     return twitterGet(req, res, options);
 });
@@ -46,7 +49,7 @@ app.get('/tweets', function(req, res) {
 app.get('/lookup', function(req, res) {
     req = 'users/lookup';
     var options = {
-        screen_name: 'americanascom'
+        user_id: 35019751
     };
 
     return twitterGet(req, res, options);

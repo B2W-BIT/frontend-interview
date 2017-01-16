@@ -1,5 +1,11 @@
 "use strict";
 
+/*
+* Defining controllerAs alias
+*/
+let timelineCtrl;
+
+
 export function TimelineDirective() {
   'ngInject';
 
@@ -15,22 +21,33 @@ export function TimelineDirective() {
 }
 
 class TimelineController {
-  constructor ($timeout, twitterService) {
+  constructor (twitterService) {
     'ngInject';
     
+    timelineCtrl = this;
     this.tweets = [];
+    this.lastId = '';
     this.twitterService = twitterService;
     this.getTweets();
+
+    
+    angular.element(window).scroll(function() {
+      let length = angular.element(window).scrollTop() + angular.element(window).height();
+      if( length === angular.element(document).height()) {
+          timelineCtrl.getTweets();
+      }
+    });
   }
 
   getTweets(){
-    let ts = this.tweets;
     this.twitterService
-      .getTweets().then(response => {
+      .getTweets(timelineCtrl.lastId).then(response => {
         angular.forEach(response.data, item => {
-          ts.push(item);
+          if (timelineCtrl.lastId !== item.id_str)
+            timelineCtrl.tweets.push(item);
         })
-        this.tweets = ts;
+        this.lastId = timelineCtrl.tweets[timelineCtrl.tweets.length-1].id_str;
+        
       }, (error)=>{
           this.$log.info(error);
       })    
