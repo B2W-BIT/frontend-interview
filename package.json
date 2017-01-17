@@ -9,8 +9,7 @@
   },
   "scripts": {
     "start": "set NODE_HOME=dev && node server.js",
-    "prestart": "gulp",
-    "test": "gulp test"
+
   },
   "devDependencies": {
     "babel-core": "~6.7.4",
