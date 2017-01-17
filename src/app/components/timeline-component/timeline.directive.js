@@ -43,6 +43,7 @@ class TimelineController {
     this.twitterService
       .getTweets(timelineCtrl.lastId).then(response => {
         angular.forEach(response.data, item => {
+          console.log(item)
           if (timelineCtrl.lastId !== item.id_str)
             timelineCtrl.tweets.push(item);
         })

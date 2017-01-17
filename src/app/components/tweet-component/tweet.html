@@ -1,4 +1,4 @@
-<div class="panel-body">
+<div class="panel-body padding">
     <div class="row">
         <div class="col-xs-3 col-md-2">
             <div class="tweet-avatar thumbnail">
@@ -6,9 +6,26 @@
             </div>
         </div>
         <div class="col-xs-9 col-md-9">
+            <div><strong>{{tweetCtrl.tweet.user.name}}</strong> @{{tweetCtrl.tweet.user.screen_name}}</div>
             {{tweetCtrl.tweet.text}}
+            
+            <div class="text-center" ng-if="tweetCtrl.tweet.entities.media.length">
+                <img class="tweet-img" src="{{tweetCtrl.tweet.entities.media[0].media_url}}">
+            </div>
+
+            <div class="row m-t">
+                <div class="col-xs-2 col-md-3">
+                    <img style="height: 15px;" src="assets/images/glyphicons/glyphicons-222-unshare.png">
+                </div>
+                <div class="col-xs-2 col-md-3">
+                    <img style="height: 15px;" src="assets/images/glyphicons/glyphicons-81-retweet.png">
+                </div>
+                <div class="col-xs-2 col-md-3">
+                    <img style="height: 15px;" src="assets/images/glyphicons/glyphicons-13-heart.png">
+                </div>
+            </div>
         </div>
     </div>
-    
+
 </div>
 <hr/>
