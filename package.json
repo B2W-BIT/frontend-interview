@@ -8,7 +8,7 @@
     "twit": "~2.2.4"
   },
   "scripts": {
-    "start": "set NODE_HOME=dev && node server.js",
+    "start": "set NODE_HOME=dev && node server.js"
 
   },
   "devDependencies": {
