@@ -58,6 +58,7 @@
     "phantomjs": "~1.9.18",
     "uglify-save-license": "~0.4.1",
     "webpack-stream": "~2.1.1",
-    "wiredep": "~2.2.2"
+    "wiredep": "~2.2.2",
+    "bower": "^1.7.7"
   }
 }
