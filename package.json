@@ -5,13 +5,10 @@
   "dependencies": {
     "body-parser": "~1.5.2",
     "express": "~4.7.2",
-    "twit": "~2.2.4",
-    "config": "^1.20.1",
-    "bower": "^1.7.7"
+    "twit": "~2.2.4"
   },
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "bower install",
+    "start": "set NODE_HOME=dev && node server.js",
     "prestart": "gulp",
     "test": "gulp test"
   },
@@ -60,7 +57,9 @@
     "phantomjs": "~1.9.18",
     "uglify-save-license": "~0.4.1",
     "webpack-stream": "~2.1.1",
-    "wiredep": "~2.2.2",
-    "bower": "^1.7.7"
+    "wiredep": "~2.2.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
   }
 }
