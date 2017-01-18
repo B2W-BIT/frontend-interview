@@ -4,6 +4,16 @@ $height: 60px;
 
 profile-navbar-component{
 
+  .navbar .navbar-nav {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 23%;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
   .custom-navbar-height { 
     height: $height;
     z-index: -1;
@@ -21,6 +31,10 @@ profile-navbar-component{
         .navbar{
             height: $height + 70px;
             
+        }
+
+        .custom-navbar-height { 
+          display: none;
         }
      }
 

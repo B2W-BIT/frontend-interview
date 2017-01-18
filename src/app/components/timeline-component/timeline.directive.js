@@ -27,6 +27,7 @@ class TimelineController {
     timelineCtrl = this;
     this.tweets = [];
     this.lastId = '';
+    this.replies = false;
     this.twitterService = twitterService;
     this.getTweets();
 
@@ -34,7 +35,9 @@ class TimelineController {
     angular.element(window).scroll(function() {
       let length = angular.element(window).scrollTop() + angular.element(window).height();
       if( length === angular.element(document).height()) {
-          timelineCtrl.getTweets();
+
+          if (!timelineCtrl.replies) timelineCtrl.getTweets();
+          else timelineCtrl.getTweetsWithReplies();
       }
     });
   }
@@ -43,7 +46,20 @@ class TimelineController {
     this.twitterService
       .getTweets(timelineCtrl.lastId).then(response => {
         angular.forEach(response.data, item => {
-          console.log(item)
+          if (timelineCtrl.lastId !== item.id_str)
+            timelineCtrl.tweets.push(item);
+        })
+        this.lastId = timelineCtrl.tweets[timelineCtrl.tweets.length-1].id_str;
+        
+      }, (error)=>{
+          this.$log.info(error);
+      })    
+  }
+
+  getTweetsWithReplies(){
+    this.twitterService
+      .getTweetsWithReplies(timelineCtrl.lastId).then(response => {
+        angular.forEach(response.data, item => {
           if (timelineCtrl.lastId !== item.id_str)
             timelineCtrl.tweets.push(item);
         })
@@ -56,6 +72,20 @@ class TimelineController {
 
   setTweets(tweets){
     this.tweets = tweets;
+  }
+
+  changeTweetsViewed(replie){
+    timelineCtrl.lastId = '';
+    timelineCtrl.tweets = [];
+
+    if (replie){
+      this.replies = true;
+      timelineCtrl.getTweetsWithReplies();
+      
+    } else {
+      this.replies = false;
+      timelineCtrl.getTweets();
+    }
   }
 }
 

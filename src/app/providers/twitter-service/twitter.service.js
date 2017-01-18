@@ -34,6 +34,18 @@ export class TwitterService {
     return this.$http(options);
   }
 
+  getTweetsWithReplies(lastTweetId){
+    let options = {
+      url: '/tweets',
+      method: 'GET',
+      params: {
+        last_tweet_id: lastTweetId,
+        exclude_replies: false
+      }
+    }
+    return this.$http(options);
+  }
+
   getAccount() {
     let options = {
       url: '/lookup',
@@ -41,6 +53,16 @@ export class TwitterService {
     }
     return this.$http(options);
   }
+
+  getSuggestions() {
+    let options = {
+      url: '/suggestions',
+      method: 'GET'
+    }
+    return this.$http(options);
+  }
+
+  
   
 
 

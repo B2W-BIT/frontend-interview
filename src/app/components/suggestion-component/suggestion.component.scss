@@ -1,0 +1,17 @@
+
+suggestion-component{
+    
+    .thumbnail{
+        height: 36px;
+    }
+
+    @media (max-width: 768px ) { 
+        .thumbnail{
+            height: 36px;
+        }
+
+        .hide-panel{
+            display: none;
+        }
+    }
+}

@@ -21,6 +21,8 @@ import { ProfileSidebarDirective } from '../app/components/profile-sidebar-compo
 import { TimelineDirective } from '../app/components/timeline-component/timeline.directive';
 import { TweetDirective } from '../app/components/tweet-component/tweet.directive';
 import { ProfileCardDirective } from '../app/components/profile-card-component/profile-card.directive';
+import { SuggestionDirective } from '../app/components/suggestion-component/suggestion.directive';
+
 
 
 
@@ -44,4 +46,5 @@ angular.module('frontendInterview', [
   .directive('profileSidebarComponent', ProfileSidebarDirective)
   .directive('timelineComponent', TimelineDirective)
   .directive('tweetComponent', TweetDirective)
-  .directive('profileCardComponent', ProfileCardDirective);
+  .directive('profileCardComponent', ProfileCardDirective)
+  .directive('suggestionComponent', SuggestionDirective);

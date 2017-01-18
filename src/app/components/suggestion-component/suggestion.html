@@ -1,0 +1,25 @@
+<div class="hide-panel panel panel-default">
+  <div class="panel-body padding">
+    <div class="row">
+        <div class="col-md-12">
+            Quem seguir
+        </div>
+    </div>
+    <div class="row" ng-repeat="suggest in suggestionCtrl.suggestions">
+        <div class="col-md-3">
+            <div class="tweet-avatar thumbnail">
+                <img src="{{suggest.profile_image_url}}">
+            </div>
+        </div>
+        <div class="col-md-9">
+            {{suggest.screen_name}}
+        </div>
+        <hr/>
+    </div>
+
+</div>
+
+
+
+  
+</div>
