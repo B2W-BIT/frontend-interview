@@ -5,18 +5,25 @@
             Quem seguir
         </div>
     </div>
-    <div class="row" ng-repeat="suggest in suggestionCtrl.suggestions">
+    <div class="suggest-row row" ng-repeat="suggest in suggestionCtrl.suggestions">
         <div class="col-md-3">
             <div class="tweet-avatar thumbnail">
                 <img src="{{suggest.profile_image_url}}">
             </div>
         </div>
         <div class="col-md-9">
-            {{suggest.screen_name}}
+            {{suggest.name}} <span class="username-style">@{{suggest.screen_name}}</span>
+            <div>
+                <a href="" class="btn btn-sm btn-default"> 
+                    <img class="glyphicons" src="assets/images/glyphicons/glyphicons-4-user.png">
+                    <strong> Seguir </strong>
+                </a>
+            </div>
         </div>
-        <hr/>
+        
+        
     </div>
-
+    
 </div>
 
 

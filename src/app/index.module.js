@@ -10,6 +10,9 @@ import { MainController } from './pages/main/main.controller';
 import { StringService } from '../app/providers/string-service/string.service';
 import { TwitterService } from '../app/providers/twitter-service/twitter.service';
 
+//Filters
+import { DateFormatFilter } from '../app/filters/date-formate.filter';
+
 
 //Components
 import { TopNavbarDirective } from '../app/components/top-navbar-component/top-navbar.directive';
@@ -22,6 +25,7 @@ import { TimelineDirective } from '../app/components/timeline-component/timeline
 import { TweetDirective } from '../app/components/tweet-component/tweet.directive';
 import { ProfileCardDirective } from '../app/components/profile-card-component/profile-card.directive';
 import { SuggestionDirective } from '../app/components/suggestion-component/suggestion.directive';
+import { TrendsDirective } from '../app/components/trends-component/trends.directive';
 
 
 
@@ -32,6 +36,7 @@ angular.module('frontendInterview', [
   'ngResource',
   'ui.router',
   'ui.bootstrap'])
+  .constant('moment', moment)
   .config(config)
   .config(routerConfig)
   .run(runBlock)
@@ -47,4 +52,6 @@ angular.module('frontendInterview', [
   .directive('timelineComponent', TimelineDirective)
   .directive('tweetComponent', TweetDirective)
   .directive('profileCardComponent', ProfileCardDirective)
-  .directive('suggestionComponent', SuggestionDirective);
+  .directive('suggestionComponent', SuggestionDirective)
+  .directive('trendsComponent', TrendsDirective)
+  .filter('dateFormatFilter', DateFormatFilter.dateFormatFilter);

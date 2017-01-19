@@ -49,6 +49,7 @@ class TimelineController {
           if (timelineCtrl.lastId !== item.id_str)
             timelineCtrl.tweets.push(item);
         })
+        console.log(timelineCtrl.tweets)
         this.lastId = timelineCtrl.tweets[timelineCtrl.tweets.length-1].id_str;
         
       }, (error)=>{

@@ -62,6 +62,13 @@ export class TwitterService {
     return this.$http(options);
   }
 
+  getTrends() {
+    let options = {
+      url: '/trends',
+      method: 'GET'
+    }
+    return this.$http(options);
+  }
   
   
 

@@ -29,9 +29,12 @@ class ProfileCardController {
   }
 
   setUserData(data){
-    console.log(data);
     this.userData = data;
   }
+
+  
+
+  
   
 
   

@@ -5,6 +5,12 @@ suggestion-component{
         height: 36px;
     }
 
+    .suggest-row{
+        padding-top: 8%;
+        padding-bottom: 8%;
+        border-bottom: 1px solid #e7e7e7;
+    }
+
     @media (max-width: 768px ) { 
         .thumbnail{
             height: 36px;

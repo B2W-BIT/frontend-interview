@@ -59,10 +59,11 @@ module.exports = function(app) {
      * Get trend topics
      */
     app.get('/trends', function(req, res){
-        req = '/trends';
+        req = 'trends/place';
 
         var options = {
-            id: 1 //Mundial trends
+             id: 23424768,
+             count: 10
         };
 
         return twitterGet(req, res, options);
