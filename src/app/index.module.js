@@ -1,10 +1,11 @@
 
+
 import { config } from './index.config';
 import { routerConfig } from './index.route';
 import { runBlock } from './index.run';
 
-//Controllers (Pages)
-import { MainController } from './pages/main/main.controller';
+//Controllers (views)
+import { MainController } from './main/main.controller';
 
 //Providers
 import { StringService } from '../app/providers/string-service/string.service';
@@ -26,8 +27,6 @@ import { TweetDirective } from '../app/components/tweet-component/tweet.directiv
 import { ProfileCardDirective } from '../app/components/profile-card-component/profile-card.directive';
 import { SuggestionDirective } from '../app/components/suggestion-component/suggestion.directive';
 import { TrendsDirective } from '../app/components/trends-component/trends.directive';
-
-
 
 
 

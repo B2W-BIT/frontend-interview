@@ -3,7 +3,7 @@ export function routerConfig ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: 'app/pages/main/main.html',
+      templateUrl: 'app/main/main.html',
       controller: 'MainController',
       controllerAs: 'main'
     });
