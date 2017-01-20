@@ -36,6 +36,12 @@ profile-navbar-component{
         .custom-navbar-height { 
           display: none;
         }
-     }
+  }
+
+  @media (min-width: 768px  ) and (max-width: 991px ) { 
+      .custom-navbar-height { 
+        display: none;
+      }
+    }
 
 }

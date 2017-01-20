@@ -8,7 +8,6 @@ import { runBlock } from './index.run';
 import { MainController } from './main/main.controller';
 
 //Providers
-import { StringService } from '../app/providers/string-service/string.service';
 import { TwitterService } from '../app/providers/twitter-service/twitter.service';
 
 //Filters
@@ -28,7 +27,8 @@ import { ProfileCardDirective } from '../app/components/profile-card-component/p
 import { SuggestionDirective } from '../app/components/suggestion-component/suggestion.directive';
 import { TrendsDirective } from '../app/components/trends-component/trends.directive';
 
-
+//Load constants
+import constants from 'json!../assets/constants/pt-BR.json';
 
 angular.module('frontendInterview', [
   'ngAnimate', 
@@ -36,10 +36,10 @@ angular.module('frontendInterview', [
   'ui.router',
   'ui.bootstrap'])
   .constant('moment', moment)
+  .constant('constants', constants)
   .config(config)
   .config(routerConfig)
   .run(runBlock)
-  .service('stringService', StringService)
   .service('twitterService', TwitterService)
   .controller('MainController', MainController)
   .directive('profileNavbarComponent', ProfileNavbarDirective)

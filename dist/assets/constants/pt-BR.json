@@ -1,7 +1,4 @@
 {
-  "API_BASE": "https://api.twitter.com/1.1",
-  "API_TOKEN": "AAAAAAAAAAAAAAAAAAAAAJSzvgAAAAAAqMXN7uyhFmavBINhWrSgT%2Ft6FnE%3DaVzbAr9Pd0MMoXETvTbKxLvmExp19Y6tQktbJH33YdKHmH7hqt",
-  "API_TOKEN_AUTHORIZATION": "bWVjaTllbUI3MjA1Ymo0VzQ0eFFDQVRVNjowR0RKWWFUeDg1bkRwbm9pOHp3R2EwVDdNU1FJT1J0OVJkS3Y2aEFmRFNSb0QzUjRGUA==",
   "TWEETS": "Tweets",
 
   "PROFILE_CARD_COMPONENT": {
@@ -14,17 +11,24 @@
   "PROFILE_NAVBAR_COMPONENT": {
       "FOLLOWERS": "Seguidores",
       "FOLLOWING": "Seguindo",
-      "LIKES": "Curtidas"
+      "LIKES": "Curtidas",
+      "TWEET": "Tweetar"
   },
   "SUGESTION_COMPONENT":{
       "WHO_IS_FOLLOW": "Quem seguir",
       "FOLLOW": "Seguir"
   },
   "TIMELINE_COMPONENT": {
-     "TWEETS_AND_REPLIES": "Tweets"
+     "TWEETS_AND_REPLIES": "Tweets e respostas"
   },
   "TOP_NAVBAR_COMPONENT": {
-     "HOME": "Inicio" 
+     "HOME": "Inicio" ,
+     "MOMENTS": "Moments",
+     "NOTIFICATIONS": "Notificações",
+     "MESSAGES": "Mensagens",
+     "SEARCH_ON_TWITTER": "Buscar no Twitter",
+     "TWEET": "Tweetar"
+     
   },
   "TRENDS_COMPONENTS": {
       "TREND_TOPICS": "Assuntos do momento: Brasil"

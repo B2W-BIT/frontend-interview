@@ -5,14 +5,14 @@
           <a href="" 
              ng-class="{selected: !timelineCtrl.replies}" 
              ng-click="timelineCtrl.changeTweetsViewed(false)"> 
-             Tweets
+             {{timelineCtrl.TWEETS}}
           </a>
         </div>
         <div class="col-md-4">
           <a href="" 
              ng-class="{selected: timelineCtrl.replies}" 
              ng-click="timelineCtrl.changeTweetsViewed(true)">
-              Tweets e respostas 
+              {{timelineCtrl.TWEETS_AND_REPLIES}} 
           </a>
         </div>
     </div>

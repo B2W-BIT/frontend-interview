@@ -25,7 +25,7 @@ profile-avatar-component{
         }
      }
 
-    @media (min-width: 768px  ) and (max-width: 991px ) { 
+    @media (min-width: 768px) and (max-width: 991px ) { 
         .avatar-thumb{
             position: absolute;
             z-index: 1000;
@@ -36,8 +36,8 @@ profile-avatar-component{
             position: relative;
             z-index: 3;
             height: 180px;
-            margin-top: 22%;
-            left: 10px;
+            margin-top:0%;
+            margin-left: 24%;
         }
     }
 

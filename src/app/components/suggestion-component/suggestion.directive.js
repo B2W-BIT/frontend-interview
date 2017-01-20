@@ -17,16 +17,21 @@ export function SuggestionDirective() {
 }
 
 class SuggestionController {
-  constructor (twitterService) {
+  constructor (twitterService, constants) {
     'ngInject';
     
     suggestionCtrl = this;
     this.twitterService = twitterService;
     this.suggestions = [];
 
+    //Strings
+    this.WHO_IS_FOLLOW = constants.SUGESTION_COMPONENT.WHO_IS_FOLLOW;
+    this.FOLLOW = constants.SUGESTION_COMPONENT.FOLLOW;
+
     this.getSuggestions();
 
   }
+
 
   getSuggestions(){
     let items = []

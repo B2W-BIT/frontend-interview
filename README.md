@@ -1,3 +1,26 @@
+# Felipe Nascimento
+**B2w: coding challenge**
+
+## Install
+
+
+Running the follow command in a terminal (bash)
+    
+    npm install
+    bower install
+    npm start
+
+With command above you run gulp task runner, gulp will transpile ES6 to ES5 and generate the build (Compiling sass to css, minfied and concat files). 
+After ran gulp (I did this way because I put this in production on Heroku)
+
+To see in production acessing:
+
+    https://developers-mad.herokuapp.com/
+
+
+
+
+
 # B2W Challenge
 
 ### Mission

@@ -21,7 +21,7 @@ export function TimelineDirective() {
 }
 
 class TimelineController {
-  constructor (twitterService) {
+  constructor (twitterService, constants) {
     'ngInject';
     
     timelineCtrl = this;
@@ -29,6 +29,11 @@ class TimelineController {
     this.lastId = '';
     this.replies = false;
     this.twitterService = twitterService;
+
+    //Strings
+    this.TWEETS_AND_REPLIES = constants.TIMELINE_COMPONENT.TWEETS_AND_REPLIES;
+    this.TWEETS = constants.TWEETS;
+
     this.getTweets();
 
     
@@ -49,7 +54,6 @@ class TimelineController {
           if (timelineCtrl.lastId !== item.id_str)
             timelineCtrl.tweets.push(item);
         })
-        console.log(timelineCtrl.tweets)
         this.lastId = timelineCtrl.tweets[timelineCtrl.tweets.length-1].id_str;
         
       }, (error)=>{

@@ -4,23 +4,43 @@
   <div class="container">
     <div class="navbar-header">
       
-      <!--<a class="navbar-brand" href="https://www.mongeralaegon.com.br/">
-        <img src="assets/images/mongeral-logo.png" class="height-brand" alt="Mongeral Aegon Web Site">
-      </a>-->
+    
     </div>
 
     <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           <li class="items-padding">
-            <a ui-sref-active="active" ui-sref="home">
-              <img class="glyphicons" src="assets/images/glyphicons/glyphicons-21-home.png">
-              Home
+            <a href="">
+              <img class="glyphicons" ng-src="assets/images/glyphicons/glyphicons-21-home.png">
+              {{topNavbarCtrl.HOME}}
             </a>
           </li>
-          <!--<li class="items-padding">
-            <a ui-sref-active="active" ui-sref="developers"> Developers </a>
-          </li>-->
+          <li class="items-padding">
+            <a href="">
+              <img class="glyphicons" ng-src="assets/images/glyphicons/glyphicons-49-star-empty.png">
+              {{topNavbarCtrl.MOMENTS}}
+            </a>
+          </li>
+          <li class="items-padding">
+            <a href="">
+              <img class="glyphicons" ng-src="assets/images/glyphicons/glyphicons-334-bell.png">
+              {{topNavbarCtrl.NOTIFICATIONS}}
+            </a>
+          </li>
+          <li class="items-padding">
+            <a href="">
+              <img class="glyphicons" ng-src="assets/images/glyphicons/glyphicons-310-comments.png">
+              {{topNavbarCtrl.MESSAGES}}
+            </a>
+          </li>
+          
         </ul>
-    </div><!--/.navbar-collapse -->
-  </div><!--/.container-fluid -->
+        <form class="navbar-form navbar-right padding-form">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="{{topNavbarCtrl.SEARCH_ON_TWITTER}}">
+        </div>
+        <button type="submit" class="btn btn-default btn-tweet">{{topNavbarCtrl.TWEET}}</button>
+      </form>
+    </div>
+  </div>
 </nav>

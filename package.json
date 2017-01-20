@@ -45,6 +45,7 @@
     "gulp-useref": "~3.0.3",
     "gulp-util": "~3.0.6",
     "http-proxy-middleware": "~0.9.0",
+    "json-loader": "^0.5.4",
     "karma": "~0.13.10",
     "karma-coverage": "~0.5.2",
     "karma-jasmine": "~0.3.6",

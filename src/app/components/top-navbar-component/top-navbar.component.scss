@@ -16,4 +16,39 @@ top-navbar-component{
     padding-top: 5px !important
   }
 
+  .btn-tweet, 
+  .btn-tweet:hover,
+  .btn-tweet:visited,
+  .btn-tweet:focus,
+  .btn-tweet:active{
+    background-color: #A8A1A2;
+    border-color: #A8A1A2;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+
+  @media (max-width: 768px ) { 
+        .padding-form{
+           display: none;
+        }
+  }
+
+  @media (min-width: 768px  ) and (max-width: 991px ) { 
+      .padding-form{
+           display: none;
+        }
+  }
+
+  @media (min-width: 992px ) and (max-width: 1200px ) {
+      .padding-form{
+           display: none;
+        }
+  }
+
+  @media (min-width: 1201px ) { 
+      
+  }   
+  
+
 }

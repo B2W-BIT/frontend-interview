@@ -17,7 +17,7 @@ export function ProfileNavbarDirective() {
 }
 
 class ProfileNavbarController {
-  constructor ($scope) {
+  constructor ($scope, constants) {
     'ngInject';
     profileNavCtrl = this;
 
@@ -27,13 +27,18 @@ class ProfileNavbarController {
     this.followersCount = null;
     this.$scope = $scope;
 
+    //Strings
+    this.FOLLOWERS = constants.PROFILE_NAVBAR_COMPONENT.FOLLOWERS;
+    this.FOLLOWING = constants.PROFILE_NAVBAR_COMPONENT.FOLLOWING;
+    this.LIKES = constants.PROFILE_NAVBAR_COMPONENT.LIKES;
+    this.TWEETS = constants.TWEETS;
+
     this.$scope.$on('dispatch', (event, args) => {
       this.setCounts(args.userData);
     });
   }
 
   setCounts(userData){
-    console.log(userData);
     this.setCountTweets(userData.statuses_count);
     this.setFavouritesCount(userData.favourites_count);
     this.setFriendsCount(userData.friends_count);

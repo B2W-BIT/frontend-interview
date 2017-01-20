@@ -2,21 +2,21 @@
   <div class="panel-body padding">
     <div class="row">
         <div class="col-md-12">
-            Quem seguir
+            {{suggestionCtrl.WHO_IS_FOLLOW}}
         </div>
     </div>
     <div class="suggest-row row" ng-repeat="suggest in suggestionCtrl.suggestions">
         <div class="col-md-3">
             <div class="tweet-avatar thumbnail">
-                <img src="{{suggest.profile_image_url}}">
+                <img ng-src="{{suggest.profile_image_url}}">
             </div>
         </div>
         <div class="col-md-9">
             {{suggest.name}} <span class="username-style">@{{suggest.screen_name}}</span>
             <div>
                 <a href="" class="btn btn-sm btn-default"> 
-                    <img class="glyphicons" src="assets/images/glyphicons/glyphicons-4-user.png">
-                    <strong> Seguir </strong>
+                    <img class="glyphicons" ng-src="assets/images/glyphicons/glyphicons-4-user.png">
+                    <strong> {{suggestionCtrl.FOLLOW}} </strong>
                 </a>
             </div>
         </div>

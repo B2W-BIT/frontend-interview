@@ -17,7 +17,7 @@ export function TrendsDirective() {
 }
 
 class TrendsController {
-  constructor ($log, twitterService) {
+  constructor ($log, twitterService, constants) {
     'ngInject';
 
     trendsCtrl = this;
@@ -25,14 +25,17 @@ class TrendsController {
     this.trends = [];
     this.twitterService = twitterService;
 
+    //Strings
+    this.TREND_TOPICS = constants.TRENDS_COMPONENTS.TREND_TOPICS;
+
     this.getTrends();
   }
 
+ 
   getTrends(){
     let trends = [];  
     this.twitterService
       .getTrends().then(response => {
-          console.log(response)
           angular.forEach(response.data[0].trends, item => {
               trends.push(item);
           });

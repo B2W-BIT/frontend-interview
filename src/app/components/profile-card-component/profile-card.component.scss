@@ -3,11 +3,20 @@ profile-card-component{
     padding-top: 10px;
 
      @media (max-width: 768px ) { 
-        
+        .follow{
+            display: none
+        }
      }
 
     @media (min-width: 768px  ) and (max-width: 991px ) { 
-  
+        .profile-card{
+            font-size: 19pt;
+            margin-top: 125px;
+        }
+
+        .follow{
+            display: none
+        }
     }
 
     @media (min-width: 992px ) and (max-width: 1200px ) {
@@ -19,7 +28,11 @@ profile-card-component{
             margin-top: 15%;
         }
 
-        .follow{
+        .follow,
+        .follow:hover,
+        .follow:visited
+        .follow:active
+        .follow:focus{
             color: #FFFFFF;
             font-weight: bold;
             min-width: 100%;
@@ -27,5 +40,6 @@ profile-card-component{
             background-color: #A8A1A2;
             border-color: #A8A1A2;
         }
+
     }
 }
