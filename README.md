@@ -5,10 +5,12 @@
 
 
 Install dependencies
+    
     npm install
     bower install
 
 Aftet that, run the command bellow in a terminal (bash)
+    
     npm start
 
 With command above you run gulp task runner, gulp will transpile ES6 to ES5 and generate the build (compile sass to css, minfied and concat files). 
