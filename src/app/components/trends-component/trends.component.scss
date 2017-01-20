@@ -1,0 +1,29 @@
+
+trends-component{
+
+    
+
+     @media (max-width: 768px ) { 
+        .padding-form{
+            display: none;
+        }
+     }
+
+    @media (min-width: 768px  ) and (max-width: 991px ) { 
+        .padding-form{
+            display: none;
+        }
+    }
+
+    @media (min-width: 992px ) and (max-width: 1200px ) {
+         .padding-form{
+            display: none;
+        }
+    }
+
+    @media (min-width: 1201px ) { 
+        .padding-form{
+        padding-top: 5px;
+    }
+    }
+}

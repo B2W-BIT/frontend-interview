@@ -1,0 +1,36 @@
+{
+  "TWEETS": "Tweets",
+
+  "PROFILE_CARD_COMPONENT": {
+      "SINCE_OF": "Participa desde",
+      "TWEETER_TO": "Tweetar para",
+      "FOLLOWERS": "Seguidores",
+      "FILTER": "Filtrar desenvolvedores",
+      "SEE_ON_GITHUB": "Ver no github"
+  },
+  "PROFILE_NAVBAR_COMPONENT": {
+      "FOLLOWERS": "Seguidores",
+      "FOLLOWING": "Seguindo",
+      "LIKES": "Curtidas",
+      "TWEET": "Tweetar"
+  },
+  "SUGESTION_COMPONENT":{
+      "WHO_IS_FOLLOW": "Quem seguir",
+      "FOLLOW": "Seguir"
+  },
+  "TIMELINE_COMPONENT": {
+     "TWEETS_AND_REPLIES": "Tweets e respostas"
+  },
+  "TOP_NAVBAR_COMPONENT": {
+     "HOME": "Inicio" ,
+     "MOMENTS": "Moments",
+     "NOTIFICATIONS": "Notificações",
+     "MESSAGES": "Mensagens",
+     "SEARCH_ON_TWITTER": "Buscar no Twitter",
+     "TWEET": "Tweetar"
+     
+  },
+  "TRENDS_COMPONENTS": {
+      "TREND_TOPICS": "Assuntos do momento: Brasil"
+  }
+}

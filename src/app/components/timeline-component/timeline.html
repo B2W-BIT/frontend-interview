@@ -1,0 +1,29 @@
+<div class="panel panel-default">
+  <div class="panel-heading heading-content">
+      <div class="row">
+        <div class="col-md-2">
+          <a href="" 
+             ng-class="{selected: !timelineCtrl.replies}" 
+             ng-click="timelineCtrl.changeTweetsViewed(false)"> 
+             {{timelineCtrl.TWEETS}}
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="" 
+             ng-class="{selected: timelineCtrl.replies}" 
+             ng-click="timelineCtrl.changeTweetsViewed(true)">
+              {{timelineCtrl.TWEETS_AND_REPLIES}} 
+          </a>
+        </div>
+    </div>
+  </div>
+
+  <span ng-repeat="tweet in timelineCtrl.tweets track by $index" ng-if="!timelineCtrl.replies">
+    <tweet-component tweet="tweet"></tweet-component>
+  </span>
+
+  <span ng-repeat="tweet in timelineCtrl.tweets track by $index" ng-if="timelineCtrl.replies">
+    <tweet-component tweet="tweet"></tweet-component>
+  </span>
+
+</div>

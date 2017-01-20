@@ -1,0 +1,47 @@
+
+//Variables
+$height: 60px;
+
+profile-navbar-component{
+
+  .navbar .navbar-nav {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 23%;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+  .custom-navbar-height { 
+    height: $height;
+    z-index: -1;
+  }
+
+  .height-brand {
+    padding-top: 100px !important;
+  }
+
+  .items-padding{
+    padding-top: 0px !important
+  }
+
+  @media (max-width: 768px ) { 
+        .navbar{
+            height: $height + 70px;
+            
+        }
+
+        .custom-navbar-height { 
+          display: none;
+        }
+  }
+
+  @media (min-width: 768px  ) and (max-width: 991px ) { 
+      .custom-navbar-height { 
+        display: none;
+      }
+    }
+
+}

@@ -1,0 +1,24 @@
+
+timeline-component{
+    ul li{
+        display: inline;
+    }
+
+    .heading-content{
+        background-color: #fff;
+        border: 1px solid #e1e8ed;
+        border-radius: 5px 5px 0 0;
+        margin-bottom: -1px;
+    }
+
+    .selected{
+        color: #292f33;
+        cursor: default;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}

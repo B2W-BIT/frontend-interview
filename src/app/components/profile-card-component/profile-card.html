@@ -1,0 +1,20 @@
+    <div class="row profile-card">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2> {{profileCardCtrl.userData.name}}</h2>
+            <div class="username-style">@{{profileCardCtrl.userData.screen_name}}</div>
+            <div>{{profileCardCtrl.userData.description}}</div>
+            <div>
+                <img style="height: 20px;" ng-src="assets/images/glyphicons/glyphicons-243-map-marker.png">
+                {{profileCardCtrl.userData.location}}
+            </div>
+            <div>
+                <img style="height: 20px;" ng-src="assets/images/glyphicons/glyphicons-46-calendar.png">
+                {{profileCardCtrl.SINCE_OF}} {{profileCardCtrl.userData.created_at | dateFormatFilter }}
+            </div>
+            <div>
+                <a href="" class="btn btn-primary follow"> 
+                    {{profileCardCtrl.TWEETER_TO}}
+                </a>
+            </div>
+        </div>
+</div>

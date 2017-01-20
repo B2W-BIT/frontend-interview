@@ -1,0 +1,36 @@
+<div class="panel-body padding">
+    <div class="row">
+        <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
+            <div class="tweet-avatar thumbnail">
+                <img ng-src="{{tweetCtrl.tweet.user.profile_image_url}}">
+            </div>
+        </div>
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <div><strong>{{tweetCtrl.tweet.user.name}}</strong> 
+            @{{tweetCtrl.tweet.user.screen_name}} . <small>{{tweetCtrl.tweet.created_at | dateFormatFilter}}</small></div>
+            {{tweetCtrl.tweet.text}}
+            
+            <div class="text-center" ng-if="tweetCtrl.tweet.entities.media.length">
+                <img class="tweet-img" ng-src="{{tweetCtrl.tweet.entities.media[0].media_url}}">
+            </div>
+
+            <div class="row m-t">
+                <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3">
+                    <img style="height: 15px;" ng-src="assets/images/glyphicons/glyphicons-222-unshare.png">
+                    
+                </div>
+                <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3">
+                    <img style="height: 15px;" ng-src="assets/images/glyphicons/glyphicons-81-retweet.png">
+                    <span ng-if="tweetCtrl.tweet.retweet_count">{{tweetCtrl.tweet.retweet_count}}</span>
+                </div>
+                <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3">
+                    <img style="height: 15px;" ng-src="assets/images/glyphicons/glyphicons-13-heart.png">
+                    <span ng-if="tweetCtrl.tweet.favorite_count">{{tweetCtrl.tweet.favorite_count}}</span>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<hr/>

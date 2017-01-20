@@ -1,0 +1,45 @@
+
+profile-card-component{
+    padding-top: 10px;
+
+     @media (max-width: 768px ) { 
+        .follow{
+            display: none
+        }
+     }
+
+    @media (min-width: 768px  ) and (max-width: 991px ) { 
+        .profile-card{
+            font-size: 19pt;
+            margin-top: 125px;
+        }
+
+        .follow{
+            display: none
+        }
+    }
+
+    @media (min-width: 992px ) and (max-width: 1200px ) {
+         
+    }
+
+    @media (min-width: 1201px ) { 
+        .sidebar-left{
+            margin-top: 15%;
+        }
+
+        .follow,
+        .follow:hover,
+        .follow:visited
+        .follow:active
+        .follow:focus{
+            color: #FFFFFF;
+            font-weight: bold;
+            min-width: 100%;
+            margin-top: 10px;
+            background-color: #A8A1A2;
+            border-color: #A8A1A2;
+        }
+
+    }
+}
