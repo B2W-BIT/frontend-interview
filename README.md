@@ -1,25 +1,28 @@
 # Felipe Nascimento
-**B2w: coding challenge**
+**B2W: Coding challenge**
 
 ## Install
 
 
-Running the follow command in a terminal (bash)
-    
+Install dependencies
     npm install
     bower install
+
+Aftet that, run the command bellow in a terminal (bash)
     npm start
 
-With command above you run gulp task runner, gulp will transpile ES6 to ES5 and generate the build (Compiling sass to css, minfied and concat files). 
-After ran gulp (I did this way because I put this in production on Heroku)
+With command above you run gulp task runner, gulp will transpile ES6 to ES5 and generate the build (compile sass to css, minfied and concat files). 
+After run gulp (I did this way because I put this in production on Heroku)
 
 To see in production acessing:
 
     https://developers-mad.herokuapp.com/
 
 
+## Notes
 
-
+I added an express server running on top of node.js to run the application because I needed a middleware to access the twitter api, for this reason I created a "proxy"
+To forward client application calls and after my api call twitter api with my own secret pass (yes, I did not use the tolkien that you gave). 
 
 # B2W Challenge
 
