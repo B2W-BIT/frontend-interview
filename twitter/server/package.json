@@ -6,12 +6,11 @@
   "scripts": {
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Felippe Mauricio",
   "license": "ISC",
   "dependencies": {
     "body-parser": "1.12.3",
     "express": "4.12.3",
-    "nedb": "1.1.2",
     "twitter-node-client": "0.0.6"
   }
 }
