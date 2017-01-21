@@ -14,7 +14,7 @@ app.directive('profileTweets', function profileTweets() {
             '       <tweets-header-option text="Tweets & replies" active="true"></tweets-header-option>',
             '       <tweets-header-option text="Media"></tweets-header-option>',
             '   </header>',
-            '   <section class="col-md-12 col-sm-12 col-xs-12">',
+            '   <section>',
             '       <tweet ng-repeat="tweet in tweets track by $index" tweet="tweet"></tweet>',
             '   </section>',
             '   <div infinite-scroll="moreTweets()" infinite-scroll-distance="0"></div>',

@@ -5,4 +5,4 @@ constants = angular.module('app.constants');
 
 constants.constant('FLICKR_API', 'https://api.flickr.com/services/rest/');
 
-constants.constant('FLICKR_KEY', '507fee28d0e6c2b1575e7343bdf11bd1');
+constants.constant('FLICKR_KEY', '2ff958264d0f285beac52b51a3fd2247');

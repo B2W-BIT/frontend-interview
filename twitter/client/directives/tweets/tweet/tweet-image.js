@@ -19,6 +19,8 @@ app.directive('tweetImage', function tweetImage(flickr, helpService) {
                 flickr.getPhotos(tag).then(function (response) {
                     scope.url = flickr.getPhotoUrl(helpService.first(response.photos.photo));
                 });
+            } else if (scope.tweet.entities.media && scope.tweet.entities.media.length) {
+                scope.url = helpService.first(scope.tweet.entities.media).media_url;
             }
 
         }
