@@ -33,11 +33,13 @@
 .profile-img {
     border-radius: 10px;
     position: absolute;
-    width: 200px;
-    top: -115px;
+    width: 100px;
+    top: -30px;
+}
 
-    &.mod-small {
-        width: 100px;
-        top: -30px;
+@media screen and (min-width: 1170px) {
+    .profile-img {
+        width: 200px;
+        top: -115px;
     }
 }
