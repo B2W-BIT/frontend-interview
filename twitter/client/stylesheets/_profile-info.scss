@@ -1,0 +1,31 @@
+.profile-info-container {
+    margin-top: 40px;
+
+    .profile-info-name {
+        margin: 0;
+
+        .profile-info-name-at {
+            color: #8899a6;
+        }
+
+        .profile-info-name-title {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1;
+            word-wrap: break-word;
+        }
+
+        .profile-info-description-url {
+            color: #A8A1A2;
+        }
+
+    }
+}
+
+.profile-info-data {
+    padding-top: 5px;
+}
+
+.profile-info-description-container {
+    padding-top: 10px;
+}

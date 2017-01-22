@@ -1,0 +1,45 @@
+.profile-counts-container {
+    background-color: #fff;
+    border-bottom: 1px solid #e1e8ed;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 60px;
+
+    .profile-count {
+        display: inline-block;
+        padding: 4px;
+        width: 70px;
+        text-align: center;
+
+        &:hover, &.mod-active{
+            border-bottom: 5px solid #A8A1A2;
+            box-sizing: border-box;
+        }
+
+        .profile-count-title {
+            color: #66757f;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        .profile-count-data {
+            color: #292f33;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+    }
+}
+
+.profile-img {
+    border-radius: 10px;
+    position: absolute;
+    width: 100px;
+    top: -30px;
+}
+
+@media screen and (min-width: 1170px) {
+    .profile-img {
+        width: 200px;
+        top: -115px;
+    }
+}

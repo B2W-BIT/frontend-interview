@@ -1,0 +1,16 @@
+{
+  "name": "twitter_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Felippe Mauricio",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.12.3",
+    "express": "4.12.3",
+    "twitter-node-client": "0.0.6"
+  }
+}

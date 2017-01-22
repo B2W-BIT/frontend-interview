@@ -1,0 +1,34 @@
+.profile-trends-container {
+    background-color: #fff;
+    background-clip: inherit;
+    border: 1px solid #e1e8ed;
+    border-radius: 5px;
+    display: table;
+    line-height: inherit;
+    margin-top: 15px;
+    padding: 15px;
+
+    .profile-trends-container-header {
+        color: #66757f;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .profile-trend {
+        padding-top: 10px;
+
+        .profile-trend-hashtag {
+            color: #A8A1A2;
+            font-weight: bold;
+        }
+
+        .profile-trend-count {
+            color: #8899a6;
+            font-size: 13px;
+            font-weight: normal;
+            line-height: 17px;
+            overflow: hidden;
+        }
+
+    }
+}

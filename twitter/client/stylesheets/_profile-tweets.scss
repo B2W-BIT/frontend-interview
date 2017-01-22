@@ -1,0 +1,31 @@
+.profile-tweets-container {
+    background-color: #fff;
+    background-clip: inherit;
+    border: 1px solid #e1e8ed;
+    border-radius: 5px;
+    display: table;
+    line-height: inherit;
+    margin-top: 15px;
+    padding: 0;
+
+    .profile-tweets-header {
+        border-bottom: 1px solid #e1e8ed;
+        padding: 15px;
+
+        .profile-tweets-option {
+            cursor: pointer;
+            color: #A8A1A2;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1;
+            margin-right: 25px;
+
+            &.mod-active {
+                color: #292f33;
+                font-weight: 500;
+                text-decoration: none;
+            }
+        }
+    }
+}
