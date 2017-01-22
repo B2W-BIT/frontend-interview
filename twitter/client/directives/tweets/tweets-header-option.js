@@ -4,16 +4,24 @@ app.directive('tweetsHeaderOption', function tweetsHeaderOption() {
 
     return {
         restrict : 'E',
-        scope: {},
+        scope: {
+            active: '=',
+            text: '=',
+            index: '='
+        },
         template : [
-            '<section class="profile-tweets-option">',
+            '<section class="profile-tweets-option" ng-class="{ \'mod-active\' : active }" ng-click="ctrl.selectHeaderOption()">',
             '   <span>{{ text }}</span>',
             '</section>'
         ].join(''),
-        link: function link(scope, element, attrs) {
-            scope.text = attrs.text;
-            if (attrs.active) element.find('section').addClass('mod-active');
-        }
+        controller: function tweetsHeaderOptionController($scope) {
+
+            this.selectHeaderOption = function selectHeaderOption() {
+                $scope.$parent.ctrl.selectTweetsHeaderOption($scope.index);
+            };
+
+        },
+        controllerAs: 'ctrl'
     };
 
 });

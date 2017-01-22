@@ -22,21 +22,25 @@ services.factory('twitter', function twitter(helpService, TwitterService, TWITTE
     
     return {
         _readingTweets: false,
-        moreTweets: function moreTweets(arrayTweets) {
+        moreTweets: function moreTweets(arrayTweets, excludeReplies, onlyMedia) {
             if (this._readingTweets) return;
-            var max_id = (helpService.last(arrayTweets)).id;
+            var max_id = arrayTweets.length ? (helpService.last(arrayTweets)).id_str : null;
             this._readingTweets = true;
-            this.getTweets(TWITTER_QUANTITY_TWEETS_GET + 1, max_id).then(function(response) {
-                response.shift();
-                for (var index = 0; index < response.length; index++) arrayTweets.push(response[index]);
+            this.getTweets(TWITTER_QUANTITY_TWEETS_GET + 1, excludeReplies, max_id).then(function(response) {
+                if (arrayTweets.length) response.shift();
+                helpService.forEach(response, function(tweet) {
+                    if (onlyMedia && helpService.isEmpty(tweet.entities.hashtags) && helpService.isEmpty(tweet.entities.media)) return;
+                    arrayTweets.push(tweet);
+                });
                 this._readingTweets = false;
             }.bind(this)).catch(function() {
                 this._readingTweets = false;
             }.bind(this));
         },
-        getTweets: function(count, maxId) {
+        getTweets: function(count, excludeReplies, maxId) {
             if (!count) count = TWITTER_QUANTITY_TWEETS_GET;
-            return TwitterService.tweets({ count: count, max_id: maxId }).$promise;
+            if (!helpService.isBool(excludeReplies)) excludeReplies = true;
+            return TwitterService.tweets({ count: count, max_id: maxId, exclude_replies: excludeReplies }).$promise;
         },
         getUser: function getUser() {
             return TwitterService.user().$promise;

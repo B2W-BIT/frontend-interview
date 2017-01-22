@@ -12,9 +12,7 @@ var error = function error(err) {
 
 var api = {
     tweets: function tweets(req, res) {
-        var count = req.query.count;
-        var maxId = req.query.max_id;
-        twitter.getUserTimeline({ screen_name: 'americanascom', count: count, max_id: maxId }, error, function(response) {
+        twitter.getUserTimeline({ screen_name: 'americanascom', count: req.query.count, max_id: req.query.max_id, exclude_replies: req.query.exclude_replies }, error, function(response) {
             res.send(response);
         });
     },

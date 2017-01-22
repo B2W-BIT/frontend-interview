@@ -13,6 +13,7 @@
         padding: 15px;
 
         .profile-tweets-option {
+            cursor: pointer;
             color: #A8A1A2;
             display: inline-block;
             font-size: 18px;
@@ -22,7 +23,6 @@
 
             &.mod-active {
                 color: #292f33;
-                cursor: default;
                 font-weight: 500;
                 text-decoration: none;
             }

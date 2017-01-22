@@ -40,4 +40,20 @@ http://localhost:3000
 
 ## Problemas
 
-Tive problemas com a api-key do Flickr disponibilizada. Todas as requisições davam que chave havia expirado. Para seguir, peguei uma chave temporária informada pela api. Espero que ela ainda esteja ativa no teste de vocês.
+1- Tive problemas com a api-key do Flickr disponibilizada. Todas as requisições davam que chave havia expirado. Para seguir, peguei uma chave temporária informada pela api. Espero que ela ainda esteja ativa no teste de vocês;
+
+2- A api que retorna os tweets do Twitter lê no máximo de 200 em 200. E ao aplicar o filtro de não retornar as respostas, ele contabiliza os 200 e depois filtra. Assim, caso existam mais de 200 respostas seguidas, fico imposibilitado de ler mais tweets para a aba de 'Tweets';
+
+3- Não consegui ler somente os tweets que possuiam Mídias. Neste caso, faço uma leitura normal e filtro no front.
+
+## Data de entrega - Atenção
+
+Minha data de entrega era até o dia 16/01/2017. Como ninguém veio falar comigo até o momento, fui fazendo algumas melhorias. Na data de entrega, tudo estava funcionando com os requisitos solicitados, mas eu não havia "enfeitado o pavão", ou, feito o "a +". Caso vocês queiram pegar o código de acordo com a data de entrega, basta ver os commits tanto no meu repositório, quanto pelos commits no pull-request. Meu intuito era melhorar um projeto meu, e não trapaciar. Por isto esta nota aqui em baixo. Obrigado desde já :)
+ 
+````
+Meu repo: https://github.com/felippemauricio/twitter
+````
+ 
+````
+Pull Request: https://github.com/B2W-BIT/frontend-interview/pull/12 
+```` 
