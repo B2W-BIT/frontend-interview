@@ -4,7 +4,8 @@ body
     margin: 0;
     padding: 0 0 40px 0;
     color: white;
-    background: #2c3e50;
+    background: #fff;
+    overflow-x: hidden;
 }
 .box {
     padding: 10px;
@@ -74,6 +75,61 @@ body
 
 
 /*****Header*****/
+
+.top-user{
+  height: 41px;
+  width: 100%;
+  background: #FFFFFF;
+
+}
+
+.top-user ul{
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateY(30%);
+  position: relative;
+
+}
+.top-user ul a {
+  color: #66757f;
+  text-decoration: none;
+}
+.top-user ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 15px;
+  vertical-align: middle;
+}
+
+
+.top-user a .twitter-img {
+  height: 25px;
+  width: 25px;
+  transition: all .2s ease-in-out;
+   transform: translateY(30%);
+}
+
+.top-user a .twitter-img:hover {
+  transform: scale(1.1);
+}
+.top-user .form-group {
+    width: 220px;
+    transform: translateY(4px);
+}
+.top-user .form-group input{
+  border-radius: 15px;
+  background: #f5f8fa;
+  height: 33px;
+  width: 220px;
+}
+
+.top-user .hidden-xs{
+  transform: translateY(4px);
+}
+.glyphicon-search {
+  color: #66757f;
+
+}
 header{
   background: url(../images/background-header.png) #E50014 no-repeat right;
   height: 319px;
