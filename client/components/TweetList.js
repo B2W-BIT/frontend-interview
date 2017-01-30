@@ -1,6 +1,4 @@
-
 import io from 'socket.io-client';
-
 import React from 'react';
 import Tweet from './Tweet';
 
@@ -87,7 +85,9 @@ const TweetList = React.createClass({
       );
     });
     return (
-        <ul className="tweets">{tweetNodes}</ul>
+        <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <ul className="tweets">{tweetNodes}</ul>
+        </div>
     );
   }
 });

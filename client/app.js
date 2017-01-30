@@ -1,7 +1,9 @@
 /* eslint-env browser */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from'./components/Header.js'
+import Header from'./components/Header.js';
+import Sidebar1 from'./components/Sidebar1.js';
+import Sidebar2 from'./components/Sidebar2.js';
 
 import TweetList from './components/TweetList';
 
@@ -15,7 +17,12 @@ export default class Main extends React.Component{
 		return(
 			    <div>
 			    	<Header/>
-				     <TweetList data={initialState} />
+			    	<div className="container">
+				    	<Sidebar1/>
+				    	<TweetList data={initialState} />
+				    	<Sidebar2/>
+			    	</div>
+				    
 				</div> 
 			);
 	}

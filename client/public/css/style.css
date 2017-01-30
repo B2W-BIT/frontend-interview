@@ -73,6 +73,9 @@ body
     clear: both;
 }
 
+.container{
+  width: 1180px;
+}
 
 /*****Header*****/
 
@@ -113,14 +116,14 @@ body
   transform: scale(1.1);
 }
 .top-user .form-group {
-    width: 220px;
-    transform: translateY(4px);
+    width: 215px;
+    transform: translate(-30px,4px);
 }
 .top-user .form-group input{
   border-radius: 15px;
   background: #f5f8fa;
   height: 33px;
-  width: 220px;
+  width: 215px;
 }
 
 .top-user .hidden-xs{
@@ -128,11 +131,29 @@ body
 }
 .glyphicon-search {
   color: #66757f;
-
 }
 header{
   background: url(../images/background-header.png) #E50014 no-repeat right;
   height: 319px;
 }
+
+/*****Content sidebar1*****/
+.profile-description{
+  color: #000;
+}
+.profile-description .profile-pic{
+  border-radius: 5px;
+  border: solid 5px #fff;
+  height: 195px;
+  width: 201px;
+  transform: translateY(-125px);
+}
+
+.profile-description button{
+  background: #b7b2b3;
+  border-radius: 10px;
+}
+
+
 
 
