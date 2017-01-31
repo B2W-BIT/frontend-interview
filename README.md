@@ -1,45 +1,63 @@
-# B2W Challenge
+# React Twitter Timeline and Stream App
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-### Mission
+## Getting Started 
+This app is a viewer of the twitter stream according a few words to track the twitter timeline **it doesn't allow twitter posts** and show the timeline of the selected twitter page.
 
-Develop a Twitter's clone timeline following the image attached. Your solution must be responsive ([RWD](http://alistapart.com/article/responsive-web-design) and [MF](http://www.lukew.com/ff/entry.asp?933)) and work in IE9+.
+## Table of Contents
+- [Installation](#Installation)
+- [Installing Mongo](#MongoDB)
+- [Creating a MongoDB database](#Database)
+- [Roadmap](#Roadmap)
+- [Tests](#Test)
+- [Credits](#Credits)
+- [License](#License)
 
-##### 3 Points
+## Installation
 
-Use the Twitter api to create your timeline. Your timeline must include a list of recent @americanascom's tweets (main content), cover photo and profile photo. 
+The installation of the development environment you have to use *yarn*. I've adopted the [yarn](https://github.com/yarnpkg/yarn) due to his performance and to avoid depracated dependencies that sometimes not work using npm.
 
-##### 1 Point
+1. Install Yarn (npm install yarn -g) and run `yarn install` on the repo folder.
+2. Create local MongoDB database called react-tweets (Next Section Explains better).
+3. Replace in the component **content** the prop user by your desired twitter user `<TwitterTimeline user="HERE" chrome="noheader" className="twitter-timeline" />`
+4. `npm run start`
+5. Go to `localhost:3000`
 
-Add profile description, joined data, site and location.
+## MongoDB
 
-##### 2 Points
+If you are a windows user you gonna suffer in your developer life, but here's a few tips in how to do it for you and other OS:
 
-Call the Flickr api and get the first image based on the #hashtag you may find in a tweet and improve your timeline with images :).
+1.[windows](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
+2.[Mac OS X](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
+3.[Linux](https://docs.mongodb.com/manual/administration/install-on-linux/)
 
-##### 2 Points
+Extra-tip for windows users: https://www.youtube.com/watch?v=sBdaRlgb4N8&feature=youtu.be&t=120
 
-Add others informations like count of tweets, followers, following and likes. Develop the infinite pagination.
+## Database
+http://theholmesoffice.com/how-to-create-a-mongodb-database/
 
-##### 2 Points
+## Roadmap
 
-Add followers box, photos & videos box and trends box.
+**Release 0.0.1** (current) - First release of the app
 
-### Hint 
+**Release 0.0.2** - Improvements in the responsive, create a loader for sass in webpack and configure.
 
-Try to clone this layout:
-![Timeline](/resources/timeline.png)
+**Release 0.0.3** - Use Mocha + chai to insert Unit Tests
 
-You may use our tests accounts to authorize your requests. 
+**Release 0.0.4** - 
 
-The Base64 encoded bearer token credential for Twitter api is ```bWVjaTllbUI3MjA1Ymo0VzQ0eFFDQVRVNjowR0RKWWFUeDg1bkRwbm9pOHp3R2EwVDdNU1FJT1J0OVJkS3Y2aEFmRFNSb0QzUjRGUA==```.
+**Release 0.0.5** - 
 
-The apiKey for Flickr api is ```3de470a3de4c9510ec040b59100b4cf2```.
+## Tests
+Not yet
+
+## Credits
+
+Yuri Ramos 
+
+## License
+
+MIT
 
 
-### What you will be assessed
-
-Keep your solution as simple as possible. "Done Is Better Than Perfect". We love tests at B2W, try to test all of your application. Performance impress! As a developer we are lazy too... automate your application to install & run with a single command. You don't need to beat it (10 points), we will enjoy to check your proposed solution.
-
-### How to send the results
-
-* Work locally in a custom branch ```git checkout -b my-solutions``` then send us a pull request with your code.
+Questions? Issues? Pull Request? e-mail me at yuri.pramos@gmail.com
