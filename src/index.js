@@ -7,7 +7,7 @@ import angular from 'angular';
 import 'angular-ui-router';
 import routesConfig from './routes';
 
-import {main} from './app/main';
+import {main} from './app/main/main';
 import {header} from './app/header/header';
 import {navbar} from './app/navbar/navbar';
 import {sidebar} from './app/sidebar/sidebar';
