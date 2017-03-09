@@ -5,7 +5,7 @@ import {footer} from './footer';
 describe('footer component', () => {
   beforeEach(() => {
     angular
-      .module('fountainFooter', ['app/footer.html'])
+      .module('fountainFooter', [])
       .component('fountainFooter', footer);
     angular.mock.module('fountainFooter');
   });

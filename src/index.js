@@ -1,13 +1,18 @@
-import angular from 'angular';
+import 'jquery';
+import 'bootstrap/dist/js/bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'font-awesome-webpack';
 
-import {techsModule} from './app/techs/index';
+import angular from 'angular';
 import 'angular-ui-router';
 import routesConfig from './routes';
 
 import {main} from './app/main';
-import {header} from './app/header';
-import {title} from './app/title';
-import {footer} from './app/footer';
+import {header} from './app/header/header';
+import {footer} from './app/footer/footer';
+import {navbar} from './app/navbar/navbar';
+
+import {techsModule} from './app/techs';
 
 import './index.css';
 
@@ -15,6 +20,6 @@ angular
   .module('app', [techsModule, 'ui.router'])
   .config(routesConfig)
   .component('app', main)
-  .component('fountainHeader', header)
-  .component('fountainTitle', title)
-  .component('fountainFooter', footer);
+  .component('appHeader', header)
+  .component('appFooter', footer)
+  .component('appNavbar', navbar);

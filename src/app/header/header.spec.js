@@ -1,11 +1,11 @@
 import angular from 'angular';
 import 'angular-mocks';
-import {header} from './header';
+import {header} from '.';
 
 describe('header component', () => {
   beforeEach(() => {
     angular
-      .module('fountainHeader', ['app/header.html'])
+      .module('fountainHeader', [])
       .component('fountainHeader', header);
     angular.mock.module('fountainHeader');
   });
