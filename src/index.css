@@ -3,17 +3,3 @@ body {
   padding-bottom: 30px;
   background-color: rgb(243, 246, 249);
 }
-
-.main-container {
-  min-height: 100%;
-}
-.main {
-}
-
-.footer {
-  padding: 0.5rem;
-  font-size: 1rem;
-  background-color: #1f1f1f;
-  text-align: center;
-  color: white;
-}

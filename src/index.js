@@ -9,7 +9,6 @@ import routesConfig from './routes';
 
 import {main} from './app/main';
 import {header} from './app/header/header';
-import {footer} from './app/footer/footer';
 import {navbar} from './app/navbar/navbar';
 
 import {techsModule} from './app/techs';
@@ -21,5 +20,4 @@ angular
   .config(routesConfig)
   .component('app', main)
   .component('appHeader', header)
-  .component('appFooter', footer)
   .component('appNavbar', navbar);
