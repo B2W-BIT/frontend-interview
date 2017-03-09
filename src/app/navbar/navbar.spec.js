@@ -13,6 +13,7 @@ describe('navbar component', () => {
   it('should render twitter logo', angular.mock.inject(($rootScope, $compile) => {
     const element = $compile('<app-navbar></app-navbar>')($rootScope);
     $rootScope.$digest();
-    expect(element.find('.twitter').length).toEqual(1);
+    const result = element[0].getElementsByClassName('twitter');
+    expect(result.length).toEqual(1);
   }));
 });
