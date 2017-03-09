@@ -15,6 +15,13 @@ module.exports = {
         enforce: 'pre'
       },
       {
+        test: /\.css$/,
+        loaders: [
+          'style-loader',
+          'css-loader'
+        ]
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         loaders: [
