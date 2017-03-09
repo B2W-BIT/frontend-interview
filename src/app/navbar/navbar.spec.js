@@ -1,21 +1,18 @@
 import angular from 'angular';
 import 'angular-mocks';
-import {main} from './main';
+import {navbar} from './navbar';
 
-describe('main component', () => {
+describe('navbar component', () => {
   beforeEach(() => {
     angular
-      .module('app', ['app/main.html'])
-      .component('app', main);
-    angular.mock.module('app');
+      .module('navbar', ['app/navbar/navbar.html'])
+      .component('appNavbar', navbar);
+    angular.mock.module('navbar');
   });
 
-  it('should render the header, title, techs and footer', angular.mock.inject(($rootScope, $compile) => {
-    const element = $compile('<app>Loading...</app>')($rootScope);
+  it('should render twitter logo', angular.mock.inject(($rootScope, $compile) => {
+    const element = $compile('<app-navbar></app-navbar>')($rootScope);
     $rootScope.$digest();
-    expect(element.find('fountain-header').length).toEqual(1);
-    expect(element.find('fountain-title').length).toEqual(1);
-    expect(element.find('fountain-techs').length).toEqual(1);
-    expect(element.find('fountain-footer').length).toEqual(1);
+    expect(element.find('.twitter').length).toEqual(1);
   }));
 });

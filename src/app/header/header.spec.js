@@ -1,6 +1,6 @@
 import angular from 'angular';
 import 'angular-mocks';
-import {header} from '.';
+import {header} from './header';
 
 describe('header component', () => {
   beforeEach(() => {
