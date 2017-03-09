@@ -1,0 +1,19 @@
+.header-title {
+  background-color: rgb(229, 0, 3);
+  float: left;
+  width: 100%;
+}
+.header-img {
+  background-image: url('/timeline.png');
+  background-repeat: no-repeat;
+  background-position: -805px -42px;
+  height: 317px;
+  width: 540px;
+  float: right;
+}
+.header-avatar-img {
+  background-image: url('/timeline.png');
+  background-position: -93px -243px;
+  height: 200px;
+  width: 200px;
+}

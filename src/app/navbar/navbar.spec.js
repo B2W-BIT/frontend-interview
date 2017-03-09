@@ -63,7 +63,7 @@ describe('navbar component', () => {
       const tweetButton = wrappedNavbarRight.find('button');
 
       expect(profilePicture.length).toEqual(1);
-      expect(tweetButton.length).toEqual(1);
+      expect(tweetButton.find('span').html().trim()).toEqual('Tweet');
     }));
   });
 });

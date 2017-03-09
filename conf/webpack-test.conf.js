@@ -1,4 +1,6 @@
 const webpack = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 module.exports = {
   module: {
     loaders: [
@@ -41,7 +43,15 @@ module.exports = {
     new webpack.LoaderOptionsPlugin({
       options: {},
       debug: true
-    })
+    }),
+    new webpack.ProvidePlugin({
+      jQuery: 'jquery',
+      $: 'jquery',
+      jquery: 'jquery'
+    }),
+    new CopyWebpackPlugin([
+      {from: 'resources'}
+    ])
   ],
   devtool: 'source-map'
 };

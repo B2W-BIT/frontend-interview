@@ -5,15 +5,15 @@ import {header} from './header';
 describe('header component', () => {
   beforeEach(() => {
     angular
-      .module('fountainHeader', [])
-      .component('fountainHeader', header);
-    angular.mock.module('fountainHeader');
+      .module('appHeader', [])
+      .component('appHeader', header);
+    angular.mock.module('appHeader');
   });
 
-  it('should render \'Fountain Generator\'', angular.mock.inject(($rootScope, $compile) => {
-    const element = $compile('<fountain-header></fountain-header>')($rootScope);
+  it('should render header title', angular.mock.inject(($rootScope, $compile) => {
+    const element = $compile('<app-header></app-header>')($rootScope);
     $rootScope.$digest();
-    const header = element.find('a');
-    expect(header.html().trim()).toEqual('Fountain Generator');
+    const header = element[0].querySelectorAll('.header-title');
+    expect(header.length).toEqual(1);
   }));
 });
