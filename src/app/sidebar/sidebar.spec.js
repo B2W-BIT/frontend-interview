@@ -13,7 +13,7 @@ describe('sidebar component', () => {
   it('should render the sidebar', angular.mock.inject(($rootScope, $compile) => {
     const element = $compile('<app-sidebar></app-sidebar>')($rootScope);
     $rootScope.$digest();
-    const result = element[0].getElementsByClassName('sidebar');
+    const result = element[0].querySelectorAll('.sidebar');
     expect(result.length).toEqual(1);
   }));
 });
