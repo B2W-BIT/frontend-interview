@@ -5,7 +5,7 @@ import {sidebar} from './sidebar';
 describe('sidebar component', () => {
   beforeEach(() => {
     angular
-      .module('sidebar', ['app/sidebar/sidebar.html'])
+      .module('sidebar', ['app/main/sidebar/sidebar.html'])
       .component('appSidebar', sidebar);
     angular.mock.module('sidebar');
   });

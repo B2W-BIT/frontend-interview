@@ -16,6 +16,7 @@
   left: 10px;
   position: relative;
   z-index: 3;
+  width: 210px;
 }
 .header-avatar-inner {
   background: #fff;
