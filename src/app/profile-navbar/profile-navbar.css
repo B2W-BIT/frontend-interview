@@ -31,8 +31,19 @@
   letter-spacing: .02em;
   text-transform: uppercase;
 }
+.profile-navbar .navbar-right li {
+  padding-top: 12px;
+}
 .profile-navbar .value {
   font-size: 18px;
   font-weight: 600;
   padding-top: 3px;
+}
+.profile-navbar .follow {
+  font-weight: 600;
+  background-image: linear-gradient(#fff,#e6ecf0);
+}
+.profile-navbar .follow i {
+  color: #1da1f2;
+  font-size: 15px;
 }
