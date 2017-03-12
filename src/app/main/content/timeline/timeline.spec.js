@@ -2,7 +2,7 @@ import angular from 'angular';
 import 'angular-mocks';
 import {timeline} from './timeline';
 
-const user = {};
+const tweets = {};
 
 describe('timeline component', () => {
   beforeEach(() => {
@@ -14,7 +14,8 @@ describe('timeline component', () => {
   });
 
   it('should render the timeline', angular.mock.inject(($rootScope, $compile, $httpBackend) => {
-    $httpBackend.when('GET', 'http://localhost:8000/user/americanascom').respond(user);
+    const tweetsUrl = 'http://localhost:8000/user/americanascom/timeline';
+    $httpBackend.when('GET', tweetsUrl).respond(tweets);
     const element = $compile('<timeline></timeline>')($rootScope);
     $httpBackend.flush();
     $rootScope.$digest();

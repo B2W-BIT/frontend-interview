@@ -1,8 +1,11 @@
+.sidebar .profile-info {
+  padding: 10px 0;
+}
 .sidebar .name {
   font-size: 22px;
   font-weight: 700;
   line-height: 1;
-  margin-right: 3px;
+  margin: 10px 3px 1px 0;
   word-wrap: break-word;
 }
 .sidebar .verified {
@@ -21,6 +24,8 @@
 .sidebar .joined i {
   color: #657786;
   font-size: 17px;
+  min-width: 18px;
+  text-align: center;
 }
 .sidebar .tweet i {
   font-size: 19px;

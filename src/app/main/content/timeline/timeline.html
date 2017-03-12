@@ -7,7 +7,9 @@
     </ul>
   </div>
 
-  <tweet></tweet>
+  <div class="tweets">
+    <tweet ng-repeat="tweet in timelineCtrl.tweets" tweet="tweet"></tweet>
+  </div>
 
-  <pre>{{timelineCtrl.user | json}}</pre>
+  <pre>{{timelineCtrl.tweets | json}}</pre>
 </div>

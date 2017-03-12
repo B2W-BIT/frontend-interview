@@ -1,24 +1,26 @@
 <div class="sidebar">
-  <h1 class="name">
-    {{sidebarCtrl.user.name}}
-    <i class="verified fa fa-check-circle" ng-if="sidebarCtrl.user.verified"></i>
-  </h1>
-  <h2 class="screen-name">@{{sidebarCtrl.user.screen_name}}</h2>
-  <p class="description">{{sidebarCtrl.user.description}}</p>
-  <div class="location">
-    <i class="fa fa-map-marker"></i>
-    {{sidebarCtrl.user.location}}
+  <div class="profile-info">
+    <h1 class="name">
+      {{sidebarCtrl.user.name}}
+      <i class="verified fa fa-check-circle" ng-if="sidebarCtrl.user.verified"></i>
+    </h1>
+    <h2 class="screen-name">@{{sidebarCtrl.user.screen_name}}</h2>
+    <p class="description">{{sidebarCtrl.user.description}}</p>
+    <div class="location">
+      <i class="fa fa-map-marker"></i>
+      {{sidebarCtrl.user.location}}
+    </div>
+    <div class="url">
+      <i class="fa fa-link"></i>
+      {{sidebarCtrl.user.url}}
+    </div>
+    <div class="joined">
+      <i class="fa fa-calendar"></i>
+      Joined {{sidebarCtrl.user.created_at}}
+    </div>
+    <button type="button" class="btn btn-lg btn-block tweet">
+      <i class="fa fa-send"></i>
+      <span class="text">Tweet to {{sidebarCtrl.user.name}}</span>
+    </button>
   </div>
-  <div class="url">
-    <i class="fa fa-link"></i>
-    {{sidebarCtrl.user.url}}
-  </div>
-  <div class="joined">
-    <i class="fa fa-calendar"></i>
-    Joined {{sidebarCtrl.user.created_at}}
-  </div>
-  <button type="button" class="btn btn-lg btn-block tweet">
-    <i class="fa fa-send"></i>
-    <span class="text">Tweet to {{sidebarCtrl.user.name}}</span>
-  </button>
 </div>

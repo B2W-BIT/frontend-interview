@@ -3,9 +3,9 @@ import './timeline.css';
 class TimelineController {
   constructor(twitter) {
     twitter
-      .getUser('americanascom')
-      .then(user => {
-        this.user = user.data;
+      .getUserTimeline('americanascom')
+      .then(tweets => {
+        this.tweets = tweets.data;
       });
   }
 }
