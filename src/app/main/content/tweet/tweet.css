@@ -1,31 +1,62 @@
-.timeline-header {
-  background-color: #fff;
+.tweet {
+  background-color: white;
   border: 1px solid #e6ecf0;
-  border-radius: 5px 5px 0 0;
-  margin-bottom: -1px;
+  margin-top: -1px;
+  cursor: pointer;
+  min-height: 51px;
+  padding: 9px 12px;
 }
-.timeline-header ul {
-  margin: 0;
-  list-style: none;
-  padding: 0;
+.tweet-body {
+  padding-left: 20px;
 }
-.timeline-header li {
+.profile-info .name {
+  font-weight: bold;
+  color: #14171a;
+}
+.profile-info .verified {
+  color: #1da1f2;
+}
+.profile-info .screen-name,
+.tweet-time {
+  font-size: 13px;
+  color: #657786;
+}
+.tweet-time:before {
+  content: "\00b7";
+}
+
+.tweet-text p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.tweet-action-more {
+  color: #aab8c2;
+}
+.tweet-action-more:hover {
+  color: #a8a1a2;
+}
+.tweet-actions div {
   display: inline-block;
-  color: #a8a1a2;
-  font-size: 18px;
-  font-weight: 300;
+  min-width: 80px;
+  color: #aab8c2;
+  display: inline-block;
+  font-size: 16px;
   line-height: 1;
-  padding: 15px 15px 12px;
+  padding: 0 2px;
+  height: 18px;
+  margin-bottom: 2px;
+  margin-top: 10px;
 }
-.timeline-header li a {
+.tweet-action-reply:hover {
   color: #a8a1a2;
 }
-.timeline-header li.active {
-  color: #14171a;
-  cursor: default;
-  font-weight: 500;
-  text-decoration: none;
+.tweet-action-retweet:hover {
+  color: #17bf63;
 }
-.timeline-header li.active a {
-  color: #14171a;
+.tweet-action-favorite:hover {
+  color: #e0245e;
 }

@@ -1,6 +1,6 @@
 /* eslint-disable angular/json-functions */
 import express from 'express';
-import {getUser, getUserTimeline} from '../lib/twitter-api';
+import {twitterApi} from '../lib/twitter-api';
 
 const app = express();
 
@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 
 app.get('/user/:screen_name', (req, res) => {
   const screenName = req.params.screen_name;
-  getUser(screenName)
+  twitterApi.getUser(screenName)
     .then(user => {
       const jsonUser = JSON.parse(user);
       res.status(200).json(jsonUser);
@@ -26,7 +26,7 @@ app.get('/user/:screen_name/timeline', (req, res) => {
   const maxId = req.query.max_id;
   const excludeReplies = req.query.exclude_replies;
 
-  getUserTimeline(screenName, count, maxId, excludeReplies)
+  twitterApi.getUserTimeline(screenName, count, maxId, excludeReplies)
     .then(tweets => {
       const jsonTweets = JSON.parse(tweets);
       res.status(200).json(jsonTweets);

@@ -1,3 +1,56 @@
 <div class="tweet">
-One Tweet
+  <div class="row">
+    <div class="col-md-1">
+      <img src="{{tweetCtrl.tweet.user.profile_image_url}}">
+    </div>
+    <div class="col-md-11 tweet-body">
+      <div class="tweet-header">
+
+        <span class="profile-info">
+          <span class="name">
+            {{tweetCtrl.tweet.user.name}}
+            <i class="verified fa fa-check-circle" ng-if="tweetCtrl.tweet.user.verified"></i>
+          </span>
+          <span class="screen-name">
+            @{{tweetCtrl.tweet.user.screen_name}}
+          </span>
+        </span>
+
+        <span class="tweet-time">
+          <span class="created_at">
+            {{tweetCtrl.tweet.created_at}}
+          </span>
+        </span>
+
+        <div class="tweet-action-more pull-right">
+          <i class="fa fa-chevron-down"></i>
+        </div>
+      </div> <!-- tweet-header  -->
+
+      <div class="tweet-content">
+        <div class="tweet-text">
+          <p>{{tweetCtrl.tweet.text}}</p>
+        </div>
+
+        <div class="tweet-actions">
+          <div class="tweet-action-reply">
+            <i class="fa fa-reply" ng-class=""></i>
+          </div>
+          <div class="tweet-action-retweet">
+            <i class="fa fa-retweet" ng-class=""></i>
+            <span class="count" ng-if="tweetCtrl.tweet.retweet_count > 0">
+              {{tweetCtrl.tweet.retweet_count}}
+            </span>
+          </div>
+          <div class="tweet-action-favorite">
+            <i class="fa fa-heart" ng-class=""></i>
+            <span class="count" ng-if="tweetCtrl.tweet.favorite_count > 0">
+              {{tweetCtrl.tweet.favorite_count}}
+            </span>
+          </div>
+        </div>
+      </div> <!-- tweet-content -->
+
+    </div>
+  </div>
 </div>

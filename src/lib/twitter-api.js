@@ -24,9 +24,7 @@ const getUserTimeline = (screenName, count, maxId, excludeReplies) => {
     twitter.getUserTimeline(params, reject, resolve));
 };
 
-const twitterApi = {
+export const twitterApi = {
   getUser,
   getUserTimeline
 };
-
-module.exports = twitterApi;
