@@ -8,7 +8,6 @@ describe('Twitter Api', () => {
   it('should get user data from twitter', done => {
     const screenName = 'americanascom';
 
-    console.log('-------------', screenName);
     twitterApi.getUser(screenName)
     .then(result => {
       expect(result.screen_name).toEqual(screenName);

@@ -10,10 +10,10 @@ describe('main component', () => {
     angular.mock.module('app');
   });
 
-  it('should render the sidebar and techs', angular.mock.inject(($rootScope, $compile) => {
+  it('should render the sidebar and content', angular.mock.inject(($rootScope, $compile) => {
     const element = $compile('<app>Loading...</app>')($rootScope);
     $rootScope.$digest();
     expect(element.find('app-sidebar').length).toEqual(1);
-    expect(element.find('fountain-techs').length).toEqual(1);
+    expect(element.find('app-content').length).toEqual(1);
   }));
 });

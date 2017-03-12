@@ -20,6 +20,7 @@
 .sidebar .url i,
 .sidebar .joined i {
   color: #657786;
+  font-size: 17px;
 }
 .sidebar .tweet i {
   font-size: 19px;
