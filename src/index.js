@@ -9,7 +9,6 @@ import routesConfig from './routes';
 
 import {mainModule} from './app/main/index';
 import {twitterModule} from './app/twitter/twitter';
-import {techsModule} from './app/techs';
 
 import {navbar} from './app/navbar/navbar';
 import {header} from './app/header/header';
@@ -18,7 +17,7 @@ import {profileNavbar} from './app/profile-navbar/profile-navbar';
 import './index.css';
 
 angular
-  .module('app', [mainModule, twitterModule, techsModule, 'ui.router'])
+  .module('app', [mainModule, twitterModule, 'ui.router'])
   .config(routesConfig)
   .component('appNavbar', navbar)
   .component('appHeader', header)
