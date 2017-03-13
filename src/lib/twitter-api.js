@@ -24,7 +24,16 @@ const getUserTimeline = (screenName, count, maxId, excludeReplies) => {
     twitter.getUserTimeline(params, reject, resolve));
 };
 
+const getUserProfileBanner = screenName => {
+  const url = '/users/profile_banner.json';
+  const params = {screen_name: screenName};
+
+  return new Promise((resolve, reject) =>
+    twitter.getCustomApiCall(url, params, reject, resolve));
+};
+
 export const twitterApi = {
   getUser,
-  getUserTimeline
+  getUserTimeline,
+  getUserProfileBanner
 };

@@ -9,7 +9,7 @@ class Twitter {
   }
 
   getUser(screenName) {
-    return this.$http.get(`${this.host}/user/${screenName}`);
+    return this.$http.get(`${this.host}/user/${screenName}`, {cache: true});
   }
 
   getUserTimeline(screenName, count, maxId, excludeReplies) {

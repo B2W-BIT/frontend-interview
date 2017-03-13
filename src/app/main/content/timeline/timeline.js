@@ -4,8 +4,8 @@ class TimelineController {
   constructor(twitter) {
     twitter
       .getUserTimeline('americanascom')
-      .then(tweets => {
-        this.tweets = tweets.data;
+      .then(response => {
+        this.tweets = response.data;
       });
   }
 }

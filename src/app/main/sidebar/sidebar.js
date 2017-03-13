@@ -4,8 +4,8 @@ class SidebarController {
   constructor(twitter) {
     twitter
       .getUser('americanascom')
-      .then(user => {
-        this.user = user.data;
+      .then(response => {
+        this.user = response.data;
       });
   }
 }

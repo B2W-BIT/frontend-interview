@@ -33,5 +33,16 @@ app.get('/user/:screen_name/timeline', (req, res) => {
     });
 });
 
+app.get('/user/:screen_name/profile_banner', (req, res) => {
+  const screenName = req.params.screen_name;
+
+  twitterApi.getUserProfileBanner(screenName)
+    .then(tweets => {
+      const jsonTweets = JSON.parse(tweets);
+      res.status(200).json(jsonTweets);
+    })
+    .catch(console.log);
+});
+
 app.listen(8000);
 
