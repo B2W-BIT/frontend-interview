@@ -3,7 +3,7 @@ import './timeline.css';
 class TimelineController {
   constructor(twitter) {
     twitter
-      .getUserTimeline('americanascom')
+      .getUserTimeline('globocom', null, null, true)
       .then(response => {
         this.tweets = response.data;
       });

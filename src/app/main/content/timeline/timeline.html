@@ -8,6 +8,8 @@
   </div>
 
   <div class="tweets">
-    <tweet ng-repeat="tweet in timelineCtrl.tweets" tweet="tweet"></tweet>
+    <div ng-repeat="tweet in timelineCtrl.tweets">
+      <tweet tweet="tweet"></tweet>
+    </div>
   </div>
 </div>

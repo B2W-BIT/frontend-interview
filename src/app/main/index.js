@@ -8,11 +8,12 @@ import {tweet} from './content/tweet/tweet';
 import {trends} from './content/trends/trends';
 
 import {twitterModule} from '../twitter/twitter';
+import {flickrModule} from '../flickr/flickr';
 
 export const mainModule = 'main';
 
 angular
-  .module(mainModule, [twitterModule])
+  .module(mainModule, [twitterModule, flickrModule])
   .component('app', main)
   .component('appSidebar', sidebar)
   .component('appContent', content)

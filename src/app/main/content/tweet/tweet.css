@@ -32,6 +32,14 @@
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+.tweet-photo {
+  margin-right: 5px;
+}
+.tweet-photo img {
+  display: block;
+  max-width: 100%;
+  border-radius: 5px;
+}
 
 .tweet-action-more {
   color: #aab8c2;
