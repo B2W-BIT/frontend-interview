@@ -5,7 +5,7 @@ import {sidebar} from './sidebar/sidebar';
 import {content} from './content/content';
 import {timeline} from './content/timeline/timeline';
 import {tweet} from './content/tweet/tweet';
-import {rightSidebar} from './content/right-sidebar/right-sidebar';
+import {trends} from './content/trends/trends';
 
 import {twitterModule} from '../twitter/twitter';
 
@@ -18,4 +18,4 @@ angular
   .component('appContent', content)
   .component('timeline', timeline)
   .component('tweet', tweet)
-  .component('rightSidebar', rightSidebar);
+  .component('trends', trends);

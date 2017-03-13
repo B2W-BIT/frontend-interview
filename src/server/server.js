@@ -40,8 +40,15 @@ app.get('/user/:screen_name/profile_banner', (req, res) => {
     .then(tweets => {
       const jsonTweets = JSON.parse(tweets);
       res.status(200).json(jsonTweets);
-    })
-    .catch(console.log);
+    });
+});
+
+app.get('/trends', (req, res) => {
+  twitterApi.getTrends()
+    .then(trends => {
+      const jsonTrends = JSON.parse(trends);
+      res.status(200).json(jsonTrends);
+    });
 });
 
 app.listen(8000);

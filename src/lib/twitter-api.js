@@ -1,8 +1,10 @@
 import {Twitter} from 'twitter-node-client';
 
 const twitter = new Twitter({
-  consumerKey: 'meci9emB7205bj4W44xQCATU6',
-  consumerSecret: '0GDJYaTx85nDpnoi8zwGa0T7MSQIORt9RdKv6hAfDSRoD3R4FP'
+  consumerKey: 'islSDzqun7mLndT9THKxXxKTu',
+  consumerSecret: '9VTzyioIbpnvvKFJ6ynkVI0FGfi7Ieg0fGms9N9E5WP1Cz3JjR',
+  accessToken: '802361788562079744-DnHQYshmb2ykfRjbqUc0jO589nehP9t',
+  accessTokenSecret: 'wuCyFZFQqgSGH0Z0mKLqWDSbR8zTwZmuWegFRoAkIV7zV'
 });
 
 const getUser = screenName => {
@@ -32,8 +34,19 @@ const getUserProfileBanner = screenName => {
     twitter.getCustomApiCall(url, params, reject, resolve));
 };
 
+const getTrends = () => {
+  const url = '/trends/place.json';
+
+  const brazilId = 23424768;
+  const params = {id: brazilId};
+
+  return new Promise((resolve, reject) =>
+    twitter.getCustomApiCall(url, params, reject, resolve));
+};
+
 export const twitterApi = {
   getUser,
   getUserTimeline,
-  getUserProfileBanner
+  getUserProfileBanner,
+  getTrends
 };
