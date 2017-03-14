@@ -33,7 +33,8 @@
   font-weight: 500;
   color: white;
   background-color: #a8a1a2;
-  margin-top: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.15);
 }
 .timeline-load:hover {

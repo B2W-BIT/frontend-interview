@@ -44,6 +44,9 @@ const getTrends = () => {
     twitter.getCustomApiCall(url, params, reject, resolve));
 };
 
+// Undocumented Twitter urls
+// https://github.com/owencoder/twitter_undocumented
+
 export const twitterApi = {
   getUser,
   getUserTimeline,
