@@ -1,15 +1,17 @@
 <header class="header">
   <div class="header-title">
-    <div class="header-img"></div>
+    <div class="header-img">
+      <img ng-src="{{headerCtrl.user.profile_banner_url}}">
+    </div>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="header-avatar">
-        <div class="header-avatar-inner">
-          <a href="#avatar">
-            <div class="header-avatar-img"></div>
-          </a>
-        </div>
+  <div class="container header-container">
+    <div class="header-avatar">
+      <div class="header-avatar-inner">
+        <a href="#avatar">
+          <img class="header-avatar-img"
+            ng-src="{{headerCtrl.user.profile_image_url_400x400}}">
+          </img>
+        </a>
       </div>
     </div>
   </div>
