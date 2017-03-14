@@ -2,7 +2,9 @@ import angular from 'angular';
 import 'angular-mocks';
 import {sidebar} from './sidebar';
 
-const user = {};
+const user = {
+  created_at: new Date()
+};
 
 describe('sidebar component', () => {
   beforeEach(() => {
