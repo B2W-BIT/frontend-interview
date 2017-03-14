@@ -8,8 +8,11 @@
   </div>
 
   <div class="tweets">
-    <div ng-repeat="tweet in timelineCtrl.tweets">
-      <tweet tweet="tweet"></tweet>
-    </div>
+    <tweet ng-repeat="tweet in timelineCtrl.tweets" tweet="tweet"></tweet>
   </div>
+  <button class="btn btn-lg btn-block timeline-load"
+    ng-click="timelineCtrl.loadMoreTweets()"
+    ng-show="timelineCtrl.tweets">
+    <span>{{timelineCtrl.loadMoreTweetsLabel}}</span>
+  </button>
 </div>

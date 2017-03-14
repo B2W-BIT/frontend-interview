@@ -8,11 +8,17 @@ describe('tweet component', () => {
       .module('tweet', ['app/main/content/tweet/tweet.html'])
       .component('tweet', tweet);
     angular.mock.module('tweet');
+    angular.mock.module('flickr');
   });
 
   it('should render the tweet', angular.mock.inject(($rootScope, $compile) => {
-    const element = $compile('<tweet></tweet>')($rootScope);
-    $rootScope.$digest();
+    const $scope = $rootScope.$new();
+    $scope.fixture = {
+      entities: []
+    };
+
+    const element = $compile('<tweet tweet="fixture"></tweet>')($scope);
+    $scope.$digest();
     const result = element[0].querySelectorAll('.tweet');
     expect(result.length).toEqual(1);
   }));

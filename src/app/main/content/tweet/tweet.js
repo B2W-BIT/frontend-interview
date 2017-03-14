@@ -1,7 +1,7 @@
 import './tweet.css';
 
 class TweetCtrl {
-  constructor($scope, flickr) {
+  constructor(flickr) {
     this.flickr = flickr;
   }
 

@@ -12,15 +12,15 @@ class Twitter {
     return this.$http.get(`${this.host}/user/${screenName}`, {cache: true});
   }
 
-  getUserTimeline(screenName, count, maxId, excludeReplies) {
-    const params = {
-      count,
-      max_id: maxId,
-      exclude_replies: excludeReplies
+  getUserTimeline(screenName, params) {
+    const requestParams = {
+      count: params.count,
+      max_id: params.maxId,
+      exclude_replies: params.excludeReplies
     };
 
     return this.$http.get(`${this.host}/user/${screenName}/timeline`,
-      {params});
+      {params: requestParams});
   }
 
   getBrazilTrends() {
