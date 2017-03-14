@@ -9,20 +9,24 @@ Develop a Twitter's clone timeline following the image attached. Your solution m
 ##### To install
 
 Requires nodejs
+
 ```npm install```
 
 ##### Run Twitter API consumer
 
 The express server that consumes Twitter data
+
 ```npm run api```
 
 ##### Run the app
 
 * AngularJS SPA app
 * Packed by Webpack and Gulp
+
 ```npm run serve```
 
 ##### Running tests
 
 * Karma/Jasmine AngularJS unit tests
+
 ```npm run test```
