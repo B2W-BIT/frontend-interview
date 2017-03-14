@@ -1,14 +1,14 @@
 <nav class="navbar profile-navbar">
   <div class="container">
     <div class="row">
-      <div class="col-sm-offset-3 col-md-offset-3 col-sm-9 col-md-9">
+      <div class="col-sm-offset-4 col-sm-8 col-md-offset-3 col-md-9">
         <div id="profile-navbar">
           <ul class="nav navbar-nav navbar-left">
             <li>
-              <a class="navbar-link" href="#tweets">
+              <a class="navbar-link active" href="#tweets">
                 <span class="top-label">Tweets</span>
                 <span class="value">
-                  {{profileNavbarCtrl.user.statuses_count}}
+                  {{profileNavbarCtrl.user.statuses_count | number}}
                 </span>
               </a>
             </li>
@@ -16,7 +16,7 @@
               <a class="navbar-link" href="#following">
                 <span class="top-label">Following</span>
                 <span class="value">
-                  {{profileNavbarCtrl.user.friends_count}}
+                  {{profileNavbarCtrl.user.friends_count | number}}
                 </span>
               </a>
             </li>
@@ -24,7 +24,7 @@
               <a class="navbar-link" href="#followers">
                 <span class="top-label">Followers</span>
                 <span class="value">
-                  {{profileNavbarCtrl.user.followers_count}}
+                  {{profileNavbarCtrl.user.followers_count | number}}
                 </span>
               </a>
             </li>
@@ -32,7 +32,7 @@
               <a class="navbar-link" href="#likes">
                 <span class="top-label">Likes</span>
                 <span class="value">
-                  {{profileNavbarCtrl.user.favourites_count}}
+                  {{profileNavbarCtrl.user.favourites_count | number}}
                 </span>
               </a>
             </li>

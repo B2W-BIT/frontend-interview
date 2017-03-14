@@ -11,8 +11,10 @@
   height: 60px;
   box-sizing: border-box;
   transition: all .15s ease-in-out;
+  line-height: 1;
 }
 @media (min-width: 768px) {
+  .profile-navbar .navbar-link.active,
   .profile-navbar .navbar-link:hover {
     color: #a8a1a2;
     background-color: white;
