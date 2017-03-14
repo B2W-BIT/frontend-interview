@@ -7,6 +7,7 @@ class TweetCtrl {
 
   $onInit() {
     this.getPhoto();
+    this.tweet.createdAt = new Date(this.tweet.created_at);
   }
 
   getFirstHashtag() {

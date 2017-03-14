@@ -14,6 +14,7 @@ describe('tweet component', () => {
   it('should render the tweet', angular.mock.inject(($rootScope, $compile) => {
     const $scope = $rootScope.$new();
     $scope.fixture = {
+      createdAt: new Date('2001-11-01'),
       entities: []
     };
 
