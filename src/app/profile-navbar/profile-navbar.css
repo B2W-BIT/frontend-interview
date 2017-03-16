@@ -1,6 +1,7 @@
 .profile-navbar {
   background-color: white;
   border-color: rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
 }
 .profile-navbar .navbar-link {
   text-align: center;

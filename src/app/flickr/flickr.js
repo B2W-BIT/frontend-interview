@@ -1,11 +1,9 @@
 import angular from 'angular';
 
-export const flickrModule = 'flickr';
-
 class Flickr {
-  constructor($http) {
+  constructor($http, flickrApiUrl) {
     this.$http = $http;
-    this.url = 'https://api.flickr.com/services/rest/';
+    this.url = flickrApiUrl;
 
     this.flickrSearchParams = {
       api_key: '5213fb4cc01e4dc3fb7dbc8be2cb26f7',
@@ -30,6 +28,4 @@ class Flickr {
   }
 }
 
-angular
-  .module(flickrModule, [])
-  .service('flickr', Flickr);
+export const flickrService = Flickr;

@@ -4,7 +4,11 @@ class TrendsCtrl {
   constructor(twitter) {
     twitter.getBrazilTrends()
     .then(response => {
-      this.trends = response.data[0].trends;
+      const trends = response.data[0].trends;
+      if (trends) {
+        // Get first 10 trends
+        this.trends = trends.slice(0, 10);
+      }
     });
   }
 }

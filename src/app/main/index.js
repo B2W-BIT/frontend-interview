@@ -9,7 +9,7 @@ import {tweet} from './content/tweet/tweet';
 import {trends} from './content/trends/trends';
 
 import {twitterModule} from '../twitter/twitter';
-import {flickrModule} from '../flickr/flickr';
+import {flickrModule} from '../flickr/index';
 
 export const mainModule = 'main';
 
