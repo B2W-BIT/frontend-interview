@@ -1,0 +1,31 @@
+.trends {
+  background-color: #fff;
+  border: 1px solid #e6ecf0;
+  border-radius: 5px;
+}
+.trends .header {
+  color: #66757f;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+  padding: 15px 15px 12px;
+}
+.trends .content {
+  font-size: 13px;
+  padding: 0 15px 12px;
+}
+.trends ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.trends li {
+  margin-bottom: 10px;
+}
+.trend {
+  color: #a8a1a2;
+  font-weight: bold;
+}
+.trend-count {
+  color: #66757f;
+}

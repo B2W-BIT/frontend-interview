@@ -1,0 +1,70 @@
+.tweet {
+  background-color: white;
+  border: 1px solid #e6ecf0;
+  margin-top: -1px;
+  cursor: pointer;
+  min-height: 51px;
+  padding: 9px 12px;
+}
+.tweet-body {
+  padding-left: 20px;
+}
+.profile-info .name {
+  font-weight: bold;
+  color: #14171a;
+}
+.profile-info .verified {
+  color: #1da1f2;
+}
+.profile-info .screen-name,
+.tweet-time {
+  font-size: 13px;
+  color: #657786;
+}
+.tweet-time:before {
+  content: "\00b7";
+}
+
+.tweet-text p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.tweet-photo {
+  margin-right: 5px;
+}
+.tweet-photo img {
+  display: block;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.tweet-action-more {
+  color: #aab8c2;
+}
+.tweet-action-more:hover {
+  color: #a8a1a2;
+}
+.tweet-actions div {
+  display: inline-block;
+  min-width: 80px;
+  color: #aab8c2;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0 2px;
+  height: 18px;
+  margin-bottom: 2px;
+  margin-top: 10px;
+}
+.tweet-action-reply:hover {
+  color: #a8a1a2;
+}
+.tweet-action-retweet:hover {
+  color: #17bf63;
+}
+.tweet-action-favorite:hover {
+  color: #e0245e;
+}

@@ -1,0 +1,9 @@
+@media (min-width: 992px) {
+  .content .timeline-column {
+    padding-right: 0;
+  }
+
+  .content .right-sidebar {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,15 @@
+<div class="trends">
+  <div class="header">
+    <span class="title">Brazil Trends</span>
+  </div>
+  <div class="content">
+    <ul>
+      <li ng-repeat="trend in trendsCtrl.trends">
+        <div class="trend">{{trend.name}}</div>
+        <span class="trend-count" ng-if="trend.tweet_volume">
+          {{trend.tweet_volume}} Tweets
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>

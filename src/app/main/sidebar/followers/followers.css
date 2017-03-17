@@ -1,0 +1,21 @@
+.followers {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.followers-header {
+  color: #a8a1a2;
+}
+.followers-header i {
+  color: #657786;
+  font-size: 18px;
+}
+.followers-grid a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.followers-grid img {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+}

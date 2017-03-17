@@ -1,0 +1,52 @@
+.profile-navbar {
+  background-color: white;
+  border-color: rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
+}
+.profile-navbar .navbar-link {
+  text-align: center;
+  color: #66757f;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 0 solid #a8a1a2;
+  height: 60px;
+  box-sizing: border-box;
+  transition: all .15s ease-in-out;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  .profile-navbar .navbar-link.active,
+  .profile-navbar .navbar-link:hover {
+    color: #a8a1a2;
+    background-color: white;
+    border-bottom: 4px solid #a8a1a2;
+    transition: all .15s ease-in-out;
+  }
+}
+.profile-navbar .top-label,
+.profile-navbar .value {
+  display: block;
+}
+.profile-navbar .top-label {
+  color: #657786;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+.profile-navbar .navbar-right li {
+  padding-top: 12px;
+}
+.profile-navbar .value {
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 3px;
+}
+.profile-navbar .follow {
+  font-weight: 600;
+  background-image: linear-gradient(#fff,#e6ecf0);
+}
+.profile-navbar .follow i {
+  color: #1da1f2;
+  font-size: 15px;
+}

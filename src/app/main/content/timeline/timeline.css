@@ -1,0 +1,43 @@
+.timeline-header {
+  background-color: #fff;
+  border: 1px solid #e6ecf0;
+  border-radius: 5px 5px 0 0;
+}
+.timeline-header ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.timeline-header li {
+  display: inline-block;
+  color: #a8a1a2;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+  padding: 15px 15px 12px;
+}
+.timeline-header li a {
+  color: #a8a1a2;
+}
+.timeline-header li.active {
+  color: #14171a;
+  cursor: default;
+  font-weight: 500;
+  text-decoration: none;
+}
+.timeline-header li.active a {
+  color: #14171a;
+}
+.timeline-load {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background-color: #a8a1a2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.15);
+}
+.timeline-load:hover {
+  background-color: #66757f;
+  transition: all .15s ease-in-out;
+}

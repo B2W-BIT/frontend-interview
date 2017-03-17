@@ -1,0 +1,18 @@
+<div class="timeline">
+  <div class="timeline-header">
+    <ul>
+      <li class="active"><a href="#tweets">Tweets</a></li>
+      <li><a href="#tweetsAndReplies">Tweets & replies</a></li>
+      <li><a href="#media">Media</a></li>
+    </ul>
+  </div>
+
+  <div class="tweets">
+    <tweet ng-repeat="tweet in timelineCtrl.tweets" tweet="tweet"></tweet>
+  </div>
+  <button class="btn btn-lg btn-block timeline-load"
+    ng-click="timelineCtrl.loadMoreTweets()"
+    ng-show="timelineCtrl.tweets">
+    <span>{{timelineCtrl.loadMoreTweetsLabel}}</span>
+  </button>
+</div>
