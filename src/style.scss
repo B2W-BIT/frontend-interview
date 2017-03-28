@@ -1,0 +1,156 @@
+$twitter-color: #1da1f2;
+
+html {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+}
+
+.header-info {
+	box-shadow: 0 0 2px #666;
+	position: relative;
+	z-index: 10;
+	.row > div {
+		text-align: center;
+		text-transform: uppercase;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		font-size: 0.8rem;
+	}
+}
+
+.title {
+	font-weight: bold;
+	&:after {
+		content: "\221A";
+		display: inline-block;
+		border-radius: 30px;
+		background-color: $twitter-color;
+		color: #FFF;
+		text-align: center;
+		vertical-align: middle;
+	}
+}
+.accountid {
+	font-size: 14px;
+	color: #657786;
+	font-weight: normal;
+	display: inline-block;
+}
+
+.user-info {
+	position: relative;
+	z-index: 15;
+	margin-top: 10px;
+	img {
+		width: 100%;
+		max-width: 200px;
+		height: auto;
+		border-radius: 8px;
+		box-shadow: 0 1px 0 #DDD;
+		margin-bottom: 20px;
+	}
+	h1 {
+		margin-top: 0;
+		margin-bottom: 10px;
+		font-size: 20px;
+	}
+	.title {
+		font-size: 1.15rem;
+		display: block;
+		&:after {
+			width: 15px;
+			height: 15px;
+			line-height: 15px;
+			margin-left: 5px;
+			font-size: 0.7rem;
+			// width: 20px;
+			// height: 20px;
+			// line-height: 20px;
+			// font-size: 12px;
+			// margin-left: 10px;
+		}
+
+	}
+}
+
+.tweets {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.tweet-block {
+	border-collapse: collapse;
+	border: 1px solid #e6ecf0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	& + & {
+		border-top: 0;
+	}
+	.title {
+		&:after {
+			margin-left: 5px;
+			margin-right: 7px;
+			width: 15px;
+			height: 15px;
+			line-height: 15px;
+			font-size: 8px;
+		}
+	}
+	.accountid {
+		margin-right: 4px;
+		vertical-align: middle;
+	}
+}
+
+.tweet-img {
+	padding-left: 5px;
+	padding-right: 0;
+	& + div {
+		padding-left: 5px;
+	}
+}
+
+
+@media (min-width: 768px) {
+	.user-info {
+		margin-top: -130px;
+		.title {
+			font-size: 1.2rem;
+			&:after {
+				width: 15px;
+				height: 15px;
+				line-height: 15px;
+				font-size: 0.7rem;
+			}
+		}
+	}
+	.tweet-block {
+		&:first-child {
+			border-radius: 10px 10px 0 0;
+		}
+		&:last-child {
+			border-radius: 0 0 10px 10px;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.header-info {
+		.row > div {
+			font-size: 1rem;
+		}
+	}
+	.user-info {
+		.title {
+			font-size: 1.6rem;
+			&:after {
+				width: 20px;
+				height: 20px;
+				line-height: 20px;
+				font-size: 0.9rem;
+				margin-left: 10px;
+			}
+		}
+	}
+}
+@media (min-width: 1200px) {
+
+}
