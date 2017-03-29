@@ -4,7 +4,7 @@ import TweetsList from '../../components/TweetsList'
 
 const mapStateToProps = (state) => {
   return {
-    tweetsList: state.tweetsList
+    tweetsList: state.tweetsList.tweetsList
   }
 }
 const mapDispatchToProps = (dispatch) => {
@@ -16,15 +16,5 @@ const mapDispatchToProps = (dispatch) => {
     }
   }
 }
-
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     initFetchTweets: () => {
-//       dispatch(fetchTweets()).then((tweets) => {
-//             dispatch(fetchTweetsSuccees(tweets.payload.data))
-//         }).catch(err => console.log('ERROR: ', err))
-//     }
-//   }
-// }
 
 export default connect(mapStateToProps, mapDispatchToProps)(TweetsList)

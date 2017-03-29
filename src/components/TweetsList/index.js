@@ -6,10 +6,15 @@ class TweetsList extends Component {
   }
 
   render() {
+    const { tweets, loading, error } = this.props.tweetsList
     return (
       <div>
         <h3>I'am a list of tweets</h3>
-        { console.dir(this.props.tweetsList) }
+        <ul>
+          { tweets.map(t => {
+            return <li key={t.id}>{t.text}</li>
+          }) }
+        </ul>
       </div>
     )
   }
