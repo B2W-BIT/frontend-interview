@@ -1,19 +1,26 @@
 import { connect } from 'react-redux'
-import { fetchTweets } from '../../actions/tweets'
+import { fetchTweets, fetchTweetsSuccees } from '../../actions/tweets'
 import TweetsList from '../../components/TweetsList'
 
 const mapStateToProps = (state) => {
   return {
-    tweets: state.tweets
+    tweetsList: state.tweetsList
+  }
+}
+const mapDispatchToProps = (dispatch) => {
+  return {
+    initFetchTweets: () => { dispatch(fetchTweets()) }
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    fetchTweets: () => {
-      dispatch(fetchTweets())
-    }
-  }
-}
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     initFetchTweets: () => {
+//       dispatch(fetchTweets()).then((tweets) => {
+//             dispatch(fetchTweetsSuccees(tweets.payload.data))
+//         }).catch(err => console.log('ERROR: ', err))
+//     }
+//   }
+// }
 
 export default connect(mapStateToProps, mapDispatchToProps)(TweetsList)

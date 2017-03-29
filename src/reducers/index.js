@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import tweets from './tweets'
+import tweetsList from './tweets'
 
 const appReducer = combineReducers({
-  tweets
+  tweetsList
 })
 
 export default appReducer

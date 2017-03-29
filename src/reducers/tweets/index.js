@@ -1,13 +1,13 @@
-const tweets = (state = {}, action) => {
+const tweetsList = (state = {}, action) => {
   switch (action.type) {
+
     case 'FETCH_TWEETS':
-      return {
-        ...state,
-        tweetsList: action.payload
-      }
+      return { ...state, tweetsList: { tweets: action.payload, error: null, loading: true } }
+    case 'FETCH_TWEETS_SUCCEES':
+      return { ...state, tweetsList: { tweets: action.payload, error: null, loading: false } }
     default:
       return state
   }
 }
 
-export default tweets
+export default tweetsList

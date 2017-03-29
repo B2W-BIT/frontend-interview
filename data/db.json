@@ -1,0 +1,2222 @@
+[
+  {
+    "created_at": "Wed Mar 29 18:51:22 +0000 2017",
+    "id": 847159263684382700,
+    "id_str": "847159263684382720",
+    "text": "@danibertoldi, estamos te seguindo!",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "danibertoldi",
+          "name": "Daniela Bertoldi",
+          "id": 130960907,
+          "id_str": "130960907",
+          "indices": [
+            0,
+            13
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 846735824242835500,
+    "in_reply_to_status_id_str": "846735824242835459",
+    "in_reply_to_user_id": 130960907,
+    "in_reply_to_user_id_str": "130960907",
+    "in_reply_to_screen_name": "danibertoldi",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Wed Mar 29 18:00:47 +0000 2017",
+    "id": 847146533732712400,
+    "id_str": "847146533732712449",
+    "text": "@Leonam_J, você pode falar com a gente por DM, por favor? A sua entrega está agendada para ocorrer até o final de hoje!",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "Leonam_J",
+          "name": "Leonam, are u?",
+          "id": 824347045867716600,
+          "id_str": "824347045867716608",
+          "indices": [
+            0,
+            9
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 846749834375770100,
+    "in_reply_to_status_id_str": "846749834375770113",
+    "in_reply_to_user_id": 824347045867716600,
+    "in_reply_to_user_id_str": "824347045867716608",
+    "in_reply_to_screen_name": "Leonam_J",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Wed Mar 29 17:59:09 +0000 2017",
+    "id": 847146123697569800,
+    "id_str": "847146123697569796",
+    "text": "@biancasierra__, seu pedido já está seguindo fluxo e tem até 06/04 para ser entregue!",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "biancasierra__",
+          "name": "Bianca 💤",
+          "id": 3409426809,
+          "id_str": "3409426809",
+          "indices": [
+            0,
+            15
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 846741324967620600,
+    "in_reply_to_status_id_str": "846741324967620608",
+    "in_reply_to_user_id": 3409426809,
+    "in_reply_to_user_id_str": "3409426809",
+    "in_reply_to_screen_name": "biancasierra__",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 1,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Wed Mar 29 17:56:05 +0000 2017",
+    "id": 847145352063074300,
+    "id_str": "847145352063074304",
+    "text": "@raah2, o seu produto tem até 04/04 para ser entregue. Sugerimos que aguarde esse prazo e qualquer coisa, fala com a gente!",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "raah2",
+          "name": "Rah",
+          "id": 40506386,
+          "id_str": "40506386",
+          "indices": [
+            0,
+            6
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 846736347364778000,
+    "in_reply_to_status_id_str": "846736347364777984",
+    "in_reply_to_user_id": 40506386,
+    "in_reply_to_user_id_str": "40506386",
+    "in_reply_to_screen_name": "raah2",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Wed Mar 29 16:19:53 +0000 2017",
+    "id": 847121142976532500,
+    "id_str": "847121142976532480",
+    "text": "@juuhcandido, vamos verificar com a transportadora e te informamos.",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "juuhcandido",
+          "name": "Ju",
+          "id": 62976012,
+          "id_str": "62976012",
+          "indices": [
+            0,
+            12
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 847101516838309900,
+    "in_reply_to_status_id_str": "847101516838309890",
+    "in_reply_to_user_id": 62976012,
+    "in_reply_to_user_id_str": "62976012",
+    "in_reply_to_screen_name": "juuhcandido",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Wed Mar 29 14:39:34 +0000 2017",
+    "id": 847095893773996000,
+    "id_str": "847095893773996032",
+    "text": "@patioliverio, estamos te seguindo. Fala com a gente por DM! ;)",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "patioliverio",
+          "name": "Patrícia Oliverio",
+          "id": 90061420,
+          "id_str": "90061420",
+          "indices": [
+            0,
+            13
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 847066883572555800,
+    "in_reply_to_status_id_str": "847066883572555778",
+    "in_reply_to_user_id": 90061420,
+    "in_reply_to_user_id_str": "90061420",
+    "in_reply_to_screen_name": "patioliverio",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Wed Mar 29 14:31:03 +0000 2017",
+    "id": 847093752237871100,
+    "id_str": "847093752237871105",
+    "text": "@MarcelaCps, você já tem número de pedido fechado?",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "MarcelaCps",
+          "name": "Maria Marcela",
+          "id": 40362485,
+          "id_str": "40362485",
+          "indices": [
+            0,
+            11
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 847067747427201000,
+    "in_reply_to_status_id_str": "847067747427201024",
+    "in_reply_to_user_id": 40362485,
+    "in_reply_to_user_id_str": "40362485",
+    "in_reply_to_screen_name": "MarcelaCps",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Wed Mar 29 13:49:41 +0000 2017",
+    "id": 847083340494770200,
+    "id_str": "847083340494770176",
+    "text": "@juuhcandido, qual é o número do seu pedido?",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "juuhcandido",
+          "name": "Ju",
+          "id": 62976012,
+          "id_str": "62976012",
+          "indices": [
+            0,
+            12
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 847060674866036700,
+    "in_reply_to_status_id_str": "847060674866036736",
+    "in_reply_to_user_id": 62976012,
+    "in_reply_to_user_id_str": "62976012",
+    "in_reply_to_screen_name": "juuhcandido",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Wed Mar 29 13:45:18 +0000 2017",
+    "id": 847082239485718500,
+    "id_str": "847082239485718528",
+    "text": "@g_candido, já estamos nos falando por outro canal. Vamos manter contato somente por lá, ok?  ;)",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "g_candido",
+          "name": "gabi ❤",
+          "id": 42106052,
+          "id_str": "42106052",
+          "indices": [
+            0,
+            10
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 847050830444445700,
+    "in_reply_to_status_id_str": "847050830444445696",
+    "in_reply_to_user_id": 42106052,
+    "in_reply_to_user_id_str": "42106052",
+    "in_reply_to_screen_name": "g_candido",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Wed Mar 29 13:11:21 +0000 2017",
+    "id": 847073697374572500,
+    "id_str": "847073697374572544",
+    "text": "@Santenorio1, nós recebemos a sua interação pelo Facebook. Vamos seguir com o seu atendimento por lá. Obrigado!",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "Santenorio1",
+          "name": "San Tenorio",
+          "id": 3982044435,
+          "id_str": "3982044435",
+          "indices": [
+            0,
+            12
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 846798720721129500,
+    "in_reply_to_status_id_str": "846798720721129472",
+    "in_reply_to_user_id": 3982044435,
+    "in_reply_to_user_id_str": "3982044435",
+    "in_reply_to_screen_name": "Santenorio1",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Wed Mar 29 12:56:38 +0000 2017",
+    "id": 847069990796841000,
+    "id_str": "847069990796840960",
+    "text": "@neckCRF, seu pedido está seguindo fluxo e tem até 25/04 para ser entregue!",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "neckCRF",
+          "name": "Lucas",
+          "id": 109914710,
+          "id_str": "109914710",
+          "indices": [
+            0,
+            8
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 846803601100095500,
+    "in_reply_to_status_id_str": "846803601100095489",
+    "in_reply_to_user_id": 109914710,
+    "in_reply_to_user_id_str": "109914710",
+    "in_reply_to_screen_name": "neckCRF",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Wed Mar 29 12:47:50 +0000 2017",
+    "id": 847067776053399600,
+    "id_str": "847067776053399552",
+    "text": "@leocontagem_mg, envia pra gente por DM o número do seu pedido e um telefone para contato atual com DDD, por favor? Obrigado.",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "leocontagem_mg",
+          "name": "Leonardo Henrique",
+          "id": 64211210,
+          "id_str": "64211210",
+          "indices": [
+            0,
+            15
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 846854995089743900,
+    "in_reply_to_status_id_str": "846854995089743872",
+    "in_reply_to_user_id": 64211210,
+    "in_reply_to_user_id_str": "64211210",
+    "in_reply_to_screen_name": "leocontagem_mg",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Wed Mar 29 12:29:56 +0000 2017",
+    "id": 847063271870005200,
+    "id_str": "847063271870005249",
+    "text": "@andreluis_1, envia pra gente por DM o número do seu pedido e um telefone para contato atual com DDD, por favor? Obrigado.",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "andreluis_1",
+          "name": "André Luis",
+          "id": 114478859,
+          "id_str": "114478859",
+          "indices": [
+            0,
+            12
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 846854554633338900,
+    "in_reply_to_status_id_str": "846854554633338880",
+    "in_reply_to_user_id": 114478859,
+    "in_reply_to_user_id_str": "114478859",
+    "in_reply_to_screen_name": "andreluis_1",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Wed Mar 29 11:41:12 +0000 2017",
+    "id": 847051008912080900,
+    "id_str": "847051008912080896",
+    "text": "@rakanpablo, envia pra gente por DM um telefone para contato atual com DDD, por favor? Obrigado.",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "rakanpablo",
+          "name": "rakan pablo de sousa",
+          "id": 287725374,
+          "id_str": "287725374",
+          "indices": [
+            0,
+            11
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 846883202920828900,
+    "in_reply_to_status_id_str": "846883202920828930",
+    "in_reply_to_user_id": 287725374,
+    "in_reply_to_user_id_str": "287725374",
+    "in_reply_to_screen_name": "rakanpablo",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 1,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Tue Mar 28 21:47:14 +0000 2017",
+    "id": 846841131832873000,
+    "id_str": "846841131832872960",
+    "text": "@BritneySlave_, estamos te seguindo. Fala com a gente por DM! :)",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "BritneySlave_",
+          "name": "Britney Slave",
+          "id": 141918621,
+          "id_str": "141918621",
+          "indices": [
+            0,
+            14
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 846819172000632800,
+    "in_reply_to_status_id_str": "846819172000632833",
+    "in_reply_to_user_id": 141918621,
+    "in_reply_to_user_id_str": "141918621",
+    "in_reply_to_screen_name": "BritneySlave_",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Tue Mar 28 21:43:11 +0000 2017",
+    "id": 846840113569153000,
+    "id_str": "846840113569153024",
+    "text": "@lilianeferrari, você gostaria de alguma ajuda? Fala com a gente por DM, por favor!",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "lilianeferrari",
+          "name": "█████",
+          "id": 13113932,
+          "id_str": "13113932",
+          "indices": [
+            0,
+            15
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 846779872714391600,
+    "in_reply_to_status_id_str": "846779872714391552",
+    "in_reply_to_user_id": 13113932,
+    "in_reply_to_user_id_str": "13113932",
+    "in_reply_to_screen_name": "lilianeferrari",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Tue Mar 28 19:53:26 +0000 2017",
+    "id": 846812493007786000,
+    "id_str": "846812493007785984",
+    "text": "@VivianneSRF, estamos te seguindo!",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "VivianneSRF",
+          "name": "Vivianne",
+          "id": 236831778,
+          "id_str": "236831778",
+          "indices": [
+            0,
+            12
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 846454793426161700,
+    "in_reply_to_status_id_str": "846454793426161664",
+    "in_reply_to_user_id": 236831778,
+    "in_reply_to_user_id_str": "236831778",
+    "in_reply_to_screen_name": "VivianneSRF",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Tue Mar 28 18:45:07 +0000 2017",
+    "id": 846795304447946800,
+    "id_str": "846795304447946754",
+    "text": "@deh_espositoo você poderia nos passar algum número para contato ativo com DDD, por DM,  por favor?",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "deh_espositoo",
+          "name": "🇰🇷 THANK YOU BTS",
+          "id": 2264197896,
+          "id_str": "2264197896",
+          "indices": [
+            0,
+            14
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 846381664460832800,
+    "in_reply_to_status_id_str": "846381664460832768",
+    "in_reply_to_user_id": 2264197896,
+    "in_reply_to_user_id_str": "2264197896",
+    "in_reply_to_screen_name": "deh_espositoo",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Tue Mar 28 17:19:16 +0000 2017",
+    "id": 846773695771299800,
+    "id_str": "846773695771299840",
+    "text": "@ivoassis, você pode falar com a gente por DM, por favor?",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "ivoassis",
+          "name": "Ivo Filho",
+          "id": 74641112,
+          "id_str": "74641112",
+          "indices": [
+            0,
+            9
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 846729551103381500,
+    "in_reply_to_status_id_str": "846729551103381506",
+    "in_reply_to_user_id": 74641112,
+    "in_reply_to_user_id_str": "74641112",
+    "in_reply_to_screen_name": "ivoassis",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  },
+  {
+    "created_at": "Tue Mar 28 17:11:33 +0000 2017",
+    "id": 846771757432344600,
+    "id_str": "846771757432344577",
+    "text": "@jotiscoski, você pode falar com a gente por DM e passar o seu número de pedido, por favor?",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "jotiscoski",
+          "name": "Jo",
+          "id": 4861250649,
+          "id_str": "4861250649",
+          "indices": [
+            0,
+            11
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://www.scup.com\" rel=\"nofollow\">Scup</a>",
+    "in_reply_to_status_id": 846726201360175100,
+    "in_reply_to_status_id_str": "846726201360175104",
+    "in_reply_to_user_id": 4861250649,
+    "in_reply_to_user_id_str": "4861250649",
+    "in_reply_to_screen_name": "jotiscoski",
+    "user": {
+      "id": 35019751,
+      "id_str": "35019751",
+      "name": "americanas.com",
+      "screen_name": "americanascom",
+      "location": "Brasil",
+      "description": "A maior loja na palma da sua mão: https://t.co/J5pdYz5brU",
+      "url": "http://t.co/PfJKJTZmj1",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/PfJKJTZmj1",
+              "expanded_url": "http://www.americanas.com",
+              "display_url": "americanas.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/J5pdYz5brU",
+              "expanded_url": "https://goo.gl/Ntg9wN",
+              "display_url": "goo.gl/Ntg9wN",
+              "indices": [
+                34,
+                57
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 246804,
+      "friends_count": 2434,
+      "listed_count": 2546,
+      "created_at": "Fri Apr 24 19:51:14 +0000 2009",
+      "favourites_count": 31,
+      "utc_offset": -10800,
+      "time_zone": "Brasilia",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 26630,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "E60014",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/754180801/ea96f827e4c0f1f5f368dff6bc1f545e.gif",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/777959576482287617/taEJPem9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35019751/1474315029",
+      "profile_link_color": "A8A1A2",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "F5FDFF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": null,
+      "follow_request_sent": null,
+      "notifications": null,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "pt"
+  }
+]
