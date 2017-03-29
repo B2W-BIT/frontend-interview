@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const TweetsList = ({ TweetsList, fetchTweets }) => {
-  const tweets = fetchTweets()
-  return (
-    <div>
-      <h3>I'am a list of tweets</h3>
-      { console.log(tweets) }
-    </div>
-  )
+class TweetsList extends Component {
+  componentDidMount() {
+    this.props.fetchTweets()
+  }
+
+  render() {
+    return (
+      <div>
+        <h3>I'am a list of tweets</h3>
+        { console.dir(this.props.tweets) }
+      </div>
+    )
+  }
 }
 
 export default TweetsList

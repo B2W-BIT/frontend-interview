@@ -4,7 +4,7 @@ import TweetsList from '../../components/TweetsList'
 
 const mapStateToProps = (state) => {
   return {
-    tweetsList: state.tweetsList
+    tweets: state.tweets
   }
 }
 
