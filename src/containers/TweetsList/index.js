@@ -9,7 +9,11 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch) => {
   return {
-    initFetchTweets: () => { dispatch(fetchTweets()) }
+    initFetchTweets: () => {
+      dispatch(fetchTweets()).then(response => {
+        dispatch(fetchTweetsSuccees(response.payload.data))
+      })
+    }
   }
 }
 
