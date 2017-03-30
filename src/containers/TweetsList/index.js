@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { fetchTweets, fetchTweetsSuccees } from '../../actions/tweets'
+import { fetchTweets, fetchTweetsSuccees, fetchMore } from '../../actions/tweets'
 import TweetsList from '../../components/TweetsList'
 
 const mapStateToProps = (state) => {
@@ -13,6 +13,9 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(fetchTweets()).then(response => {
         dispatch(fetchTweetsSuccees(response.payload.data))
       })
+    },
+    fetchMore: (id, count) => {
+      dispatch(fetchMore(id, count)).then(response => console.log(response))
     }
   }
 }

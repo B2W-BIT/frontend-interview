@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import express from 'express'
+import bodyParser from 'body-parser'
 import webpack from 'webpack'
 import http from 'http'
 import axios from 'axios'
@@ -22,8 +23,8 @@ const request = axios.create({
 })
 
 const handleError = (res, reason, message, code) => {
-  console.log("ERROR: " + reason)
-  res.status(code || 500).json({"error": message})
+  console.log('ERROR: ' + reason)
+  res.status(code || 500).json({'error': message})
 }
 
 app.use(require('webpack-dev-middleware')(compiler, {
@@ -32,13 +33,13 @@ app.use(require('webpack-dev-middleware')(compiler, {
 }))
 
 app.use(require('webpack-hot-middleware')(compiler))
-
+app.use(bodyParser.json())
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*")
-  res.header("Access-Control-Request-Headers", "*")
+  res.header('Access-Control-Allow-Origin', '*')
+  res.header('Access-Control-Request-Headers', '*')
   res.header('Access-Control-Allow-Methods', 'GET, POST, DELETE, OPTIONS')
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization")
-  res.header("Access-Control-Allow-Credentials", "true")
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization')
+  res.header('Access-Control-Allow-Credentials', 'true')
   next()
 })
 
@@ -56,6 +57,12 @@ app.get('/api/tweets', (req, res) => {
         handleError(res, err.response.data.errors, 'unable to fetch tweets')
       }
     )
+})
+
+app.post('/api/tweets', (req, res) => {
+  if(!req.body) return res.sendStatus(400)
+  const { id, count } = req.body
+  console.log(`received data: ${id}, ${count}`)
 })
 
 const server = http.createServer(app).listen(

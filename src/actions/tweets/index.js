@@ -18,3 +18,18 @@ export const fetchTweetsSuccees = (tweets) => {
     payload: tweets
   }
 }
+
+export const fetchMore = (id, count) => {
+  const req = axios({
+    method: 'post',
+    url: `${ ROOT_URL }/tweets`,
+    data: {
+      id,
+      count
+    }
+  })
+  return {
+    type: 'FETCH_MORE_TWEETS',
+    payload: req
+  }
+}
