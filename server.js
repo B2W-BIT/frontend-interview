@@ -4,26 +4,14 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import webpack from 'webpack'
 import http from 'http'
-import axios from 'axios'
+import tweetsRouter from './routes/tweets'
 
 import config from './webpack.config'
-import * as tconfigs from './twitter.config'
-
 const app = express()
 const compiler = webpack(config)
-const request = axios.create({
-  baseURL: 'https://api.twitter.com',
-  timeout: 10000,
-  headers: {
-    Authorization: `Bearer ${ tconfigs.AF_BEARER_TOKEN }`,
-  },
-  params: {
-    screen_name: 'americanascom'
-  }
-})
 
 const handleError = (res, reason, message, code) => {
-  console.log('ERROR: ' + reason)
+  console.log(reason)
   res.status(code || 500).json({'error': message})
 }
 
@@ -48,22 +36,7 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'))
 })
 
-app.get('/api/tweets', (req, res) => {
-  request.get('/1.1/statuses/user_timeline.json').then(
-    (tweets) => {
-      res.status(200).json(tweets.data)
-    }).catch(
-      (err) => {
-        handleError(res, err.response.data.errors, 'unable to fetch tweets')
-      }
-    )
-})
-
-app.post('/api/tweets', (req, res) => {
-  if(!req.body) return res.sendStatus(400)
-  const { id, count } = req.body
-  console.log(`received data: ${id}, ${count}`)
-})
+app.use('/api', tweetsRouter)
 
 const server = http.createServer(app).listen(
   3000,
