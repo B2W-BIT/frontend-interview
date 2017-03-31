@@ -10,11 +10,6 @@ import config from './webpack.config'
 const app = express()
 const compiler = webpack(config)
 
-const handleError = (res, reason, message, code) => {
-  console.log(reason)
-  res.status(code || 500).json({'error': message})
-}
-
 app.use(require('webpack-dev-middleware')(compiler, {
   noInfo: true,
   publicPath: config.output.publicPath

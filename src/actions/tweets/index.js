@@ -19,7 +19,7 @@ export const fetchTweetsSuccees = (tweets) => {
   }
 }
 
-export const fetchMore = (id, count) => {
+export const fetchMore = (id, count = 20) => {
   const req = axios({
     method: 'post',
     url: `${ ROOT_URL }/tweets`,

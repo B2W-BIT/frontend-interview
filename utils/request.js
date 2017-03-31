@@ -1,11 +1,17 @@
 import axios from 'axios'
 import { BASE64_KEY } from '../twitter.config'
 
+export const handleError = (res, reason, message, code) => {
+  console.log(reason)
+  res.status(code || 500).json({'error': message})
+}
+
 const request = axios.create({
   baseURL: 'https://api.twitter.com',
   timeout: 10000,
   params: {
-    screen_name: 'americanascom'
+    screen_name: 'americanascom',
+    include_rts: true
   }
 })
 

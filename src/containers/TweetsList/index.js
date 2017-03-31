@@ -15,7 +15,9 @@ const mapDispatchToProps = (dispatch) => {
       })
     },
     fetchMore: (id, count) => {
-      dispatch(fetchMore(id, count)).then(response => console.log(response))
+      dispatch(fetchMore(id, count)).then(response => {
+        dispatch(fetchTweetsSuccees(response.payload.data))
+      })
     }
   }
 }

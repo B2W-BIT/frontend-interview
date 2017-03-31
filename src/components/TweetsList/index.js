@@ -32,7 +32,7 @@ class TweetsList extends Component {
         <ul>
           { this.renderTweets(tweets) }
         </ul>
-        <button onClick={() => this.props.fetchMore(lastTweetId, 20)}>Fetch More</button>
+        <button onClick={() => this.props.fetchMore(lastTweetId)}>Fetch More</button>
       </div>
     )
   }
