@@ -5,6 +5,7 @@ import bodyParser from 'body-parser'
 import webpack from 'webpack'
 import http from 'http'
 import tweetsRouter from './routes/tweets'
+import userRouter from './routes/users'
 
 import config from './webpack.config'
 const app = express()
@@ -34,6 +35,7 @@ app.get('/', function(req, res) {
 })
 
 app.use('/api', tweetsRouter)
+app.use('/api', userRouter)
 
 const server = http.createServer(app).listen(
   3000,

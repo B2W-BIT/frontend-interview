@@ -31,7 +31,10 @@ module.exports = {
   },
   resolve: {
     alias: {
-      Utilities: path.resolve(__dirname, 'utils/')
+      Utilities: path.resolve(__dirname, 'utils/'),
+      Containers: path.resolve(__dirname, 'src/containers/'),
+      Components: path.resolve(__dirname, 'src/components/'),
+      Actions: path.resolve(__dirname, 'src/actions/')
     }
   }
 }

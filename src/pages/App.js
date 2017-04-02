@@ -1,11 +1,18 @@
 import React from 'react'
-// import AppContainer from '../containers/AppContainer'
+import Banner from 'Containers/Banner'
 
 const App = ({ children }) => {
   return (
-    <section>
-     { children }
-   </section>
+    <div>
+      <section id='banner' role='banner'>
+        <Banner />
+      </section>
+      <div className="container">
+        <section id='main' role='main'>
+          { children }
+        </section>
+      </div>
+    </div>
   )
 }
 

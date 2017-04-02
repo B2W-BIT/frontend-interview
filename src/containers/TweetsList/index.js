@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
-import { fetchTweets, fetchTweetsSuccees, fetchMore } from '../../actions/tweets'
-import TweetsList from '../../components/TweetsList'
+import { fetchTweets, fetchTweetsSuccees, fetchMore } from 'Actions/tweets'
+import TweetsList from 'Components/TweetsList'
 
 const mapStateToProps = (state) => {
   return {
