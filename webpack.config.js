@@ -3,8 +3,9 @@ const webpack = require('webpack')
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
+  context: __dirname,
   entry: [
-    'webpack-hot-middleware/client',
+    'webpack-hot-middleware/client?quiet=true',
     './src/index.js'
   ],
   output: {
@@ -27,5 +28,10 @@ module.exports = {
         presets: ['es2015', 'react', 'stage-0']
       }
     }]
+  },
+  resolve: {
+    alias: {
+      Utilities: path.resolve(__dirname, 'utils/')
+    }
   }
 }

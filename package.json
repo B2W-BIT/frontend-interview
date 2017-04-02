@@ -4,7 +4,7 @@
   "description": "Twitter clone",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js --exec babel-node --presets react,es2015,stage-0",
+    "start": "nodemon server.js --exec babel-node --presets react,env,stage-0",
     "test": "jest"
   },
   "repository": {
@@ -31,7 +31,6 @@
     "jest": "^19.0.2",
     "nodemon": "^1.11.0",
     "react-addons-test-utils": "^15.4.2",
-    "redux-axios-middleware": "^4.0.0",
     "redux-promise": "^0.5.3",
     "webpack": "^2.3.2",
     "webpack-dev-middleware": "^1.10.1",

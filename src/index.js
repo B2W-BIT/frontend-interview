@@ -8,8 +8,11 @@ import TweetsList from './containers/TweetsList'
 ReactDOM.render(
   <Provider store={store}>
     <App>
-      <h1>Hello React</h1>
-      <TweetsList />
+      <div className="row">
+        <div className="col-3"></div>
+        <TweetsList />
+        <div className="col-3"></div>
+      </div>
     </App>
   </Provider>
   , document.getElementById('root'))

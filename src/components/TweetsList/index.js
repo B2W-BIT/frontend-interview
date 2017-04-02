@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { decrementHugeNumberBy1 as parseId } from 'Utilities/helpers'
 
 class TweetsList extends Component {
   componentDidMount() {
@@ -8,7 +9,18 @@ class TweetsList extends Component {
   renderTweets(tweets) {
     return (
       tweets.map(t => {
-        return <li key={t.id}>{t.text}</li>
+        if(t.hasOwnProperty('video_info')) {
+          return (
+            <li className="list-group-item" key={t.id}>
+              {t.text}
+              <video src={t.video_info.variants[0].url} autoPlay crossOrigin='anonymous'>
+                Ops! Seu navegador não pode reproduzir este vídeo ):
+              </video>
+            </li>
+          )
+        } else {
+          return <li className="list-group-item" key={t.id}>{t.text}</li>
+        }
       })
     )
   }
@@ -18,20 +30,22 @@ class TweetsList extends Component {
     let lastTweet, lastTweetId
 
     if(loading) {
-      return <div><h3>Loading Tweets...</h3></div>
+      return <div><h3>Loading Tweets...<small>wait!!</small></h3></div>
     }
 
     if (typeof tweets !== undefined && tweets.length > 0) {
       lastTweet = tweets[tweets.length -1]
-      lastTweetId = lastTweet.id
+      lastTweetId = parseId(lastTweet.id_str)
     }
 
     return (
-      <div>
+      <div className="col-6">
         <h3>I'am a list of tweets</h3>
-        <ul>
-          { this.renderTweets(tweets) }
-        </ul>
+        <div className="card">
+          <ul className="list-group list-group-flush">
+            { this.renderTweets(tweets) }
+          </ul>
+        </div>
         <button onClick={() => this.props.fetchMore(lastTweetId)}>Fetch More</button>
       </div>
     )

@@ -11,7 +11,8 @@ const request = axios.create({
   timeout: 10000,
   params: {
     screen_name: 'americanascom',
-    include_rts: true
+    include_rts: 1,
+    trim_user: 1
   }
 })
 
