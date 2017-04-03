@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Waypoint from 'react-waypoint'
 import { decrementHugeNumberBy1 as parseId } from 'Utilities/helpers'
 
 class TweetsList extends Component {
@@ -45,7 +46,8 @@ class TweetsList extends Component {
             { this.renderTweets(tweets) }
           </ul>
         </div>
-        <button onClick={() => this.props.fetchMore(lastTweetId)}>Fetch More</button>
+        <Waypoint onEnter={() => this.props.fetchMore(lastTweetId)} />
+        {/* <button onClick={() => this.props.fetchMore(lastTweetId)}>Fetch More</button> */}
       </div>
     )
   }
