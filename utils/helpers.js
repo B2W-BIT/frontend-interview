@@ -41,3 +41,8 @@ export const parseTweets = (tweets) => {
     return tweet
   })
 }
+
+export const parseInfos = (infos) => {
+  infos.profile_image_400 = infos.profile_image_url.replace('normal', '400x400')
+  return infos
+}

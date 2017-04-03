@@ -13,7 +13,7 @@ class TweetsList extends Component {
           return (
             <li className="list-group-item" key={t.id}>
               {t.text}
-              <video src={t.video_info.variants[0].url} autoPlay crossOrigin='anonymous'>
+              <video src={t.video_info.variants[0].url} autoPlay loop crossOrigin='anonymous'>
                 Ops! Seu navegador não pode reproduzir este vídeo ):
               </video>
             </li>
@@ -40,7 +40,6 @@ class TweetsList extends Component {
 
     return (
       <div className="col-6">
-        <h3>I'am a list of tweets</h3>
         <div className="card">
           <ul className="list-group list-group-flush">
             { this.renderTweets(tweets) }

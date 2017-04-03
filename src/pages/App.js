@@ -4,14 +4,14 @@ import Banner from 'Containers/Banner'
 const App = ({ children }) => {
   return (
     <div>
-      <section id='banner' role='banner'>
+      <header>
         <Banner />
-      </section>
-      <div className="container">
-        <section id='main' role='main'>
-          { children }
-        </section>
-      </div>
+      </header>
+      <main>
+        <div className="container">
+            { children }
+        </div>
+    </main>
     </div>
   )
 }
