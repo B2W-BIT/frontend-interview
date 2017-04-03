@@ -46,8 +46,10 @@ class TweetsList extends Component {
             { this.renderTweets(tweets) }
           </ul>
         </div>
-        <Waypoint onEnter={() => this.props.fetchMore(lastTweetId)} />
-        {/* <button onClick={() => this.props.fetchMore(lastTweetId)}>Fetch More</button> */}
+        <span className="lead">
+          <Waypoint onEnter={() => this.props.fetchMore(lastTweetId)} />
+          carregando mais tweets...
+        </span>
       </div>
     )
   }

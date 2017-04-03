@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'rosetta-icons-Regular';
+  src: url('rosetta-icons-Regular.woff') format('woff'),
+       url('rosetta-icons-Regular.ttf') format('truetype'),
+       url('rosetta-icons-Regular.svg#rosetta-icons-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'rosetta-icons-regular';
+  src: url('rosetta-icons-regular.eot');
+  src: url('rosetta-icons-regular.woff2') format('woff2'),
+       url('rosetta-icons-regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

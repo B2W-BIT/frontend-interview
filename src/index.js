@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import store from './store'
 import App from './pages/App'
-import TweetsList from './containers/TweetsList'
+import TweetsList from 'Containers/TweetsList'
+import ProfileCard from 'Containers/ProfileCard'
 
 ReactDOM.render(
   <Provider store={store}>
     <App>
       <div className="row">
-        <div className="col-3"></div>
+        <ProfileCard />
         <TweetsList />
         <div className="col-3"></div>
       </div>

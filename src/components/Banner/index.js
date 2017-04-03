@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Navbar from 'Components/ProfileNavbar'
-import { decrementHugeNumberBy1 as parseId } from 'Utilities/helpers'
 
 class Banner extends Component {
   componentDidMount() {
@@ -10,7 +9,6 @@ class Banner extends Component {
   render() {
     const {
       profile_banner_url
-      , profile_image_url
       , profile_image_400
       , statuses_count
       , friends_count

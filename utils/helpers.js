@@ -46,3 +46,11 @@ export const parseInfos = (infos) => {
   infos.profile_image_400 = infos.profile_image_url.replace('normal', '400x400')
   return infos
 }
+
+export const isEmpty = (obj) => {
+  for(var key in obj) {
+    if(obj.hasOwnProperty(key))
+      return false
+  }
+  return true
+}
