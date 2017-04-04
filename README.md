@@ -7,6 +7,12 @@ Essa parte será em português mesmo!
 Com o tempo curto, acabei deixando coisas importantes de fora, como os testes por exemplo, mas acredito que este desafio serve bem ao propósito de mostrar meus conhecimentos.
 De qualquer forma, vou continuar codando e implementar o que ainda falta, fazer os testes e usar CSS Modules, enfim..
 
+Pra rodar:
+
+```bash
+yarn install
+yarn start
+```
 _____
 
 ### Mission
