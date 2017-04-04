@@ -1,12 +1,21 @@
 # B2W Challenge
 
+##### Notes from the author
+
+Essa parte será em portguês mesmo :)
+
+Com o tempo curto, acabei deixando coias importantes de fora, como os testes por exemplo, mas acredito que este desafio serve bem ao propósito de mostrar meus conhecimentos.
+De qualquer forma, vou continuar codando e implementar o que ainda falta, fazer os testes e usar CSS Modules, enfim..
+
+_____
+
 ### Mission
 
 Develop a Twitter's clone timeline following the image attached. Your solution must be responsive ([RWD](http://alistapart.com/article/responsive-web-design) and [MF](http://www.lukew.com/ff/entry.asp?933)) and work in IE9+.
 
 ##### 3 Points
 
-Use the Twitter api to create your timeline. Your timeline must include a list of recent @americanascom's tweets (main content), cover photo and profile photo. 
+Use the Twitter api to create your timeline. Your timeline must include a list of recent @americanascom's tweets (main content), cover photo and profile photo.
 
 ##### 1 Point
 
@@ -24,12 +33,12 @@ Add others informations like count of tweets, followers, following and likes. De
 
 Add followers box, photos & videos box and trends box.
 
-### Hint 
+### Hint
 
 Try to clone this layout:
 ![Timeline](/resources/timeline.png)
 
-You may use our tests accounts to authorize your requests. 
+You may use our tests accounts to authorize your requests.
 
 The Base64 encoded bearer token credential for Twitter api is ```bWVjaTllbUI3MjA1Ymo0VzQ0eFFDQVRVNjowR0RKWWFUeDg1bkRwbm9pOHp3R2EwVDdNU1FJT1J0OVJkS3Y2aEFmRFNSb0QzUjRGUA==```.
 
