@@ -13,14 +13,14 @@ class TweetsList extends Component {
         if(t.hasOwnProperty('video_info')) {
           return (
             <li className="list-group-item" key={t.id}>
-              {t.text}
+              <p className="tweetBody">{t.text}</p>
               <video src={t.video_info.variants[0].url} autoPlay loop crossOrigin='anonymous'>
                 Ops! Seu navegador não pode reproduzir este vídeo ):
               </video>
             </li>
           )
         } else {
-          return <li className="list-group-item" key={t.id}>{t.text}</li>
+          return <li className="list-group-item" key={t.id}><p className="tweetBody">{t.text}</p></li>
         }
       })
     )
