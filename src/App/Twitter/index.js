@@ -8,6 +8,8 @@ import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
 class Twitter extends Component {
   
     render() {      
+            document.title = 'Twitter clone';
+
         let backgroundColor = {
             background: "#f5f8fa"
         }; 
