@@ -1,0 +1,42 @@
+{
+  "name": "b2w-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "neutrino": {
+    "use": [
+      "neutrino-preset-react"
+    ],
+    "options": {
+      "node_modules": "./node_modules"
+    }
+  },
+  "scripts": {
+    "start": "neutrino start & nodemon api.js",
+    "build": "neutrino build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "FlickrJS": "^1.0.5",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "flickrapi": "^0.6.0",
+    "neutrino": "^5.6.0",
+    "neutrino-preset-react": "^5.6.0",
+    "neutrino-preset-sass": "^1.0.3",
+    "node-flickr": "^1.0.0",
+    "twitter": "^1.7.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "moment": "^2.18.1",
+    "moment-timezone": "^0.5.13",
+    "react": "^15.5.4",
+    "react-bootstrap": "^0.30.10",
+    "react-dom": "^15.5.4",
+    "react-moment": "^0.2.2",
+    "react-waypoint": "^6.0.0"
+  }
+}
