@@ -1,0 +1,3 @@
+Entrar na pasta front-end e rodar o comando: npm install e em seguida npm start para rodar o app
+
+entrar na pasta back-end e rodar o comando: npm install e em seguida nodemon para rodar o app

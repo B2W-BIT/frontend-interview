@@ -1,0 +1,200 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+.top-header {
+    overflow: hidden;
+    height: 300px;
+}
+
+.bio-perfil {
+    width: 200px;
+    max-width: 100%;
+    position: absolute;
+    left: 65px;
+    top: 170px;
+    text-align: left;
+}
+
+.photo-left {
+    height: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.photo-left img {
+    width: 200px;
+    max-width: 100%;
+}
+
+.content-full {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+}
+
+.center-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav-header-botton {
+    float: left;
+    width: 100%;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.25);
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.ind-nav-header {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.ind-nav-header p {
+    color: #657786;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.ind-nav-header span {
+    margin-top: 3px;
+    color: #657786;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.inative {
+    display: none;
+}
+
+.tabs-content {
+    float: left;
+    width: 100%;
+}
+
+.tabs-content ul {
+    list-style: none;
+    margin: 0 auto;
+    width: 590px;
+    margin-top: 15px;
+    max-width: 100%;
+}
+
+.tabs-content ul li {
+    float: left;
+    margin-right: 30px;
+    color: #0084B4;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.tweets-content {
+    width: 590px;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: left;
+}
+
+.cad-tweets {
+    padding-top: 15px;
+    border-top: 1px solid rgba(209, 209, 209, 0.65);
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+}
+
+.cad-tweets h1 {
+    font-size:20px;
+}
+
+.img-profile {
+    float: left;
+    height: 100px;
+    margin-top: 7px;
+}
+
+.bio-perfil span {
+    text-align: left;
+    margin-top: 5px;
+}
+
+.bio-perfil p {
+    margin-top: 10px;    
+}
+
+.center-nav-botton {
+    width: 590px;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: left;
+}
+
+.ind-no-margin {
+    margin: 0;
+}
+
+.top-book {
+    margin: -100px 0px 0px 0px;
+}
+
+.bio-perfil h1 {
+    font-size:20px;
+}
+
+.bio-perfil h2 {
+    font-size: 15px;
+}
+
+/* responsive */
+
+
+@media screen and (max-width: 1200px) {
+
+    .tweets-content, .tabs-content ul, .center-nav-botton {
+        float: right;
+        width: 60%;
+    }
+
+    .bio-perfil {
+        width: 22%;
+    }
+
+}
+
+@media screen and (max-width: 741px) {
+    .ind-nav-header {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .tweets-content, .tabs-content ul, .center-nav-botton {
+        width: 95%;
+    }
+
+    .bio-perfil {
+        top: 0;
+        right: 0;
+        left: 0;
+        background: #fff;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        width: 170px;
+        margin: 0 auto;
+    }
+
+    .photo-left {
+        height: auto;
+    }
+
+    .nav-header-botton {
+        margin-top:95px;
+    }
+}
