@@ -1,0 +1,81 @@
+.twitter-bird-animation {
+  background-image: url("http://www.cloud.elalemanyo.de/tmp/twitter-bird-sprite-e0FhFKaXRI.png");
+  background-size: cover;
+  display: block;
+  position: relative;
+  height: 75px;
+  width: 75px;
+  margin: 50px auto 0 auto;
+  animation: 0.3s fly step-end infinite;
+}
+.page-loader {
+    z-index: 9;
+}
+.loading {
+  margin: auto;
+  width: 100px;
+  zoom: 1;
+  &:before {
+    content: '';
+    display: block;
+  }
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+.text {
+  float: left;
+  color: #1ab7ea;
+  font-weight: bold;
+}
+.blob {
+  border-radius: 50%;
+  background-color: #1ab7ea;
+  display: block;
+  float: left;
+  margin: 5px 2px;
+  position: relative;
+  top: 6px;
+  height: 3px;
+  width: 3px;
+  animation: loading-blob 1.2s infinite;
+  animation-timing-function: ease-in-out;
+  transform: translate3d(0, 0, 0);
+}
+.blob2 {
+  animation-delay: 150ms;
+}
+.blob3 {
+  animation-delay: 300ms;
+}
+@keyframes fly {
+  0% {
+    background-position: 0 0;
+  }
+  33% {
+    background-position: -250 0;
+  }
+  66% {
+    background-position: -450px 0;
+  }
+}
+@keyframes loading-blob {
+  0% {
+    height: 3px;
+    width: 3px;
+  }
+  25% {
+    height: 7px;
+    width: 7px;
+  }
+  50% {
+    height: 5px;
+    width: 5px;
+  }
+  100% {
+    height: 3px;
+    width: 3px;
+  }
+}

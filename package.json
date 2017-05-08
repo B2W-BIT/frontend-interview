@@ -1,0 +1,76 @@
+{
+  "name": "twitter-clone",
+  "version": "1.0.0",
+  "main": "server/index.js",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "npm run start",
+    "start": "jest && cross-env BABEL_DISABLE_CACHE=1 NODE_ENV=development FLICKR_API_KEY=1a4a0a1728de0714944b66716db2b2ef FLICKR_API_TOKEN=3adfd44ffc12b786 TWITTER_BEARER_TOKEN=AAAAAAAAAAAAAAAAAAAAAMSc0QAAAAAAZPHVDYcPSjkboDyZcelxQN6CC1Y%3DjSxI396aDP7KMq9Ld3Tz3paxt9X9qXXAXNapfQ3IaUx5vg2AKN nodemon server/index --exec babel-node",
+    "start:production": "jest --verbose && cross-env NODE_ENV=production babel server -d dist && cross-env NODE_ENV=production node dist/index.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
+    "build:server": "cross-env NODE_ENV=production babel server -d dist",
+    "build:all": "jest --verbose && cross-env NODE_ENV=production webpack --config webpack.config.prod.js && cross-env NODE_ENV=production babel server -d dist",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-object-rest-spread": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "cross-env": "^3.1.4",
+    "ejs": "^2.5.5",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.14.0",
+    "jest": "^18.1.0",
+    "node-sass": "^4.3.0",
+    "nodemon": "^1.11.0",
+    "sanitize-html": "^1.14.1",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "util": "^0.10.3",
+    "webpack": "^1.14.0",
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-hot-middleware": "^2.15.0"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "css-loader": "^0.26.1",
+    "cuid": "^1.3.8",
+    "flickrapi": "^0.6.0",
+    "font-loader": "^0.1.2",
+    "react": "^15.4.1",
+    "react-bootstrap": "^0.31.0",
+    "react-dom": "^15.4.1",
+    "react-hot-loader": "^1.3.1",
+    "react-redux": "^5.0.2",
+    "react-router": "^3.0.2",
+    "react-router-redux": "^4.0.7",
+    "react-test-renderer": "^15.5.4",
+    "react-time-input": "^0.0.14",
+    "redux": "^3.6.0",
+    "redux-infinite-scroll": "^1.0.9",
+    "redux-logger": "^3.0.1",
+    "redux-promise-middleware": "^4.2.0",
+    "redux-thunk": "^2.2.0",
+    "svg-inline-loader": "^0.7.1",
+    "twitter": "^1.7.0"
+  },
+  "engines": {
+    "node": "^6.9.3"
+  },
+  "jest": {
+    "updateSnapshot": true,
+    "verbose": true,
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|scss|sass)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  }
+}

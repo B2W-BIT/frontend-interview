@@ -1,0 +1,44 @@
+.sidebar {
+    position: relative;
+    margin-top: 23px;
+    padding: 20px;
+    background-color: #fff;
+    &__profile-pic {
+        width: 86px;
+        height: 86px;
+        position: absolute;
+        left: 3%;
+        top: -25%;
+        img {
+            width: 100%;
+        }
+    }
+    &__name-container {
+        margin-top: 5%;
+        h1 {
+            line-height: 0;
+        }
+    }
+    &__screen_name {
+        font-size: 0.99999rem;
+    }
+    &__name {
+        font-size: 1.285714286rem;
+        font-weight: bold;
+        line-height: 0;
+
+    }
+    &__verified {
+        font-size: 1.285714286rem;
+    }
+    &__row {
+        div {
+            display: inline-block;
+            width: auto;
+            margin: 1%;
+        }
+        div:first-child {
+            margin-left: 0;
+        }
+    }
+}

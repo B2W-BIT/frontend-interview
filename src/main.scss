@@ -1,0 +1,172 @@
+@charset "UTF-8";
+@import 'colors.scss';
+@import 'fonts.scss';
+
+#app {
+  height: auto;
+  overflow: hidden;
+}
+body {
+    font-size: 15px;
+}
+.Icon {
+  font-family: "rosetta-icons-Regular";
+  display: block;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.Icon:before {
+  font-family: "rosetta-icons-Regular";
+}
+
+.Icon.-home:before{
+    content: "\f053"
+}
+.Icon.-connect:before{
+    content: "\f050"
+}
+.Icon.-discover:before{
+    content: "\f052"
+}
+.Icon.-me:before{
+    content: "\f056"
+}
+.Icon.-message:before{
+    content: "\f054"
+}
+.Icon.-setting:before{
+    content: "\f059"
+}
+.Icon.-tweet:before{
+    content: "\f029"
+}
+.Icon.-bird:before{
+    content: "\f179"
+}
+.Icon.-geo:before{
+    content: "\f031"
+}
+.Icon.-url:before{
+    content: "\f098"
+}
+.Icon.-calendar:before{
+    content: "\f203"
+}
+.Icon.-raio:before{
+    content: "\f160"
+}
+.Icon.-notifications:before{
+    content: "\f055"
+}
+.Icon.-search:before{
+    content: "\f058"
+}
+.Icon.-tweet:before{
+    content: "\f029"
+}
+.Icon.-bird:before{
+    content: "\f179"
+}
+.Icon.-cog:before{
+    content: "\f059"
+}
+.Icon.-follow:before{
+    content: "\f175"
+}
+.Icon.-reply:before{
+    content: "\f151"
+}
+.Icon.-retweet:before{
+    content: "\f152"
+}
+.Icon.-like:before{
+    content: "\f148"
+}
+.Icon.-dots:before{
+    content: "\f150"
+}
+body {
+  background: #f5f8fa;
+  font-family: "Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.flex {
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+
+    border-width: 0;
+    border-style: solid;
+    box-sizing: border-box;
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: inherit;
+    text-decoration: none;
+    list-style: none;
+    min-height: 0;
+    min-width: 0;
+}
+
+.container-full {
+    height: 100%;
+    width: 100%;
+}
+
+.fix-on-top {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.flex-row {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,9 @@
+exports[`Will test the coverphoto component renders de cover photo nicely 1`] = `
+<div
+  className="cover_photo"
+  style={
+    Object {
+      "backgroundImage": "url(undefined)",
+    }
+  } />
+`;
