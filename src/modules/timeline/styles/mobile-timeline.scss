@@ -1,0 +1,29 @@
+.mobile-timeline {
+    &__nav {
+        border-bottom: 1px solid #ccd6dd;
+    }
+    &__nav-option {
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        height: 100%;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+        padding: 3%;
+
+        font-size: .85rem;
+        color: #657786;
+        border-bottom: 2px solid transparent;
+    }
+
+    &__nav-option.-active {
+        border-bottom-color: #1da1f2;
+        color: #1b95e0;
+        font-weight: 700;
+    }
+}

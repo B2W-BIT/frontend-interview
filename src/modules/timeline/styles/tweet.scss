@@ -1,0 +1,38 @@
+.tweet {
+    padding: 3%;
+    padding-left: 0;
+    border-bottom: 1px solid #ccd6dd;
+    &__profilepic {
+        float: left;
+    }
+    &__date {
+        float: right;
+    }
+    &__text {
+        margin-left: 13%;
+        margin-bottom: 3%;
+    }
+    &__actions {
+        margin-left: 13%;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        height: 100%;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: flex-start;
+        justify-content: flex-start;
+        text-align: center;
+        color: #657786;
+    }
+    &__action {
+        margin-left: 10%;
+
+    }
+    &__action:first-child {
+        margin-left: 0;
+
+    }
+}

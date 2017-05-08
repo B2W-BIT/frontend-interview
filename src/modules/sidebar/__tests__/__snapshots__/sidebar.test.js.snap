@@ -1,0 +1,59 @@
+exports[`Will test the sidebar component renders de cover photo nicely 1`] = `
+<div
+  className="sidebar">
+  <div
+    className="sidebar__profile-pic">
+    <img
+      src="" />
+  </div>
+  <div
+    className="sidebar__name-container">
+    <h1>
+      <div>
+        <span
+          className="sidebar__name">
+          
+        </span>
+        <span
+          className="sidebar__verified">
+          
+        </span>
+      </div>
+      <small
+        className="sidebar__screen_name">
+        @
+        
+      </small>
+    </h1>
+  </div>
+  <div
+    className="sidebar__description">
+    
+  </div>
+  <div
+    className="sidebar__row">
+    <div>
+      -
+    </div>
+  </div>
+  <div
+    className="sidebar__row hidden-lg hidden-md" />
+  <div
+    className="hidden-sm hidden-xs">
+    <div
+      className="sidebar__created_at">
+      Participa desde 
+       de 
+      NaN
+    </div>
+    <div
+      className="sidebar__followersYouKnow">
+      
+    </div>
+    <div
+      className="sidebar__media">
+      
+    </div>
+  </div>
+</div>
+`;

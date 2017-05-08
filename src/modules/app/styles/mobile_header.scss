@@ -1,0 +1,169 @@
+.mobile-header {
+    z-index: 3;
+    &__row, &__row-content {
+        height: 3.5rem;
+    }
+    &__icons-row {
+        margin-bottom: -.5rem;
+        z-index: 3;
+    }
+    &__row-content {
+        background: #fff;
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+    }
+    &__row-align {
+        -ms-flex-align: center;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        height: 3.5rem;
+        -ms-flex-pack: center;
+        padding: 3%;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        max-width: 400px!important;
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 100%;
+    }
+    &__row-content.-bottom {
+        box-shadow: 0 0 4px #657786;
+    }
+
+    &__icon.-icon-left {
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+
+        -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+
+        -ms-flex-align: center;
+        -ms-flex-pack: center;
+
+        min-height: 1.96875rem;
+        min-width: 1.96875rem;
+        margin-right: 1.64063rem;
+    }
+
+    &__icon {
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+
+        -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+
+        -ms-flex-align: center;
+        -ms-flex-pack: center;
+
+        min-height: 1.96875rem;
+        min-width: 1.96875rem;
+        font-size: 24px;
+        i {
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-align-self: stretch;
+            -ms-flex-item-align: stretch;
+            align-self: stretch;
+            color: #1da1f2;
+            cursor: pointer;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            min-width: 1.96875rem;
+            -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+        }
+    }
+    &__icon.-icon-right {
+        margin-left: 1.64063rem;
+    }
+    &__icon.-icon-left {
+        margin-right: 1.64063rem;
+    }
+    &__spacing {
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        height: 100%;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    &__btn-wrapper {
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -webkit-flex-shrink: 1;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        height: 100%;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    &__btn {
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        margin-left: 1.3125rem;
+        &:first-child {
+            margin-left: 0;
+        }
+        button {
+            border: 1px solid currentcolor;
+            border-radius: .35rem;
+            box-sizing: border-box;
+            padding: 0 1em;
+            position: relative;
+            text-align: center;
+
+            cursor: pointer;
+            background: transparent;
+            -webkit-appearance: none;
+            font: inherit;
+            font-weight: 700;
+            text-decoration: none;
+
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            white-space: normal;
+
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+
+            color: #657786;
+            font-size: .85rem;
+            min-height: 1.96875rem;
+            min-width: 1.58484rem;
+        }
+        button.-primary {
+            color: #1da1f2;
+        }
+    }
+
+}
