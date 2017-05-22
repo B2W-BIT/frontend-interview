@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>americanas.com (@americanascom) | Twitter</title>
+    <link href="assets/css/style.min.css" rel="stylesheet">  
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon-192x192.png" sizes="192x192">
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>    
+    <![endif]-->    
+  </head>
+
+  <body>   
+    <nav class="global-nav">   
+      <div class="container">
+        <h1 class="icon icon-bird brand"><span class="sr-only">Twitter</span></h1>
+        <ul class="global-menu">
+          <li>
+            <a href="#" title="Home">
+              <span class="icon icon-home icon-large"></span>
+              <span class="text">Home</span>
+            </a>
+          </li>          
+          <li>
+            <a href="#" title="Moments">
+              <span class="icon icon-lightning icon-large"></span>
+              <span class="text">Moments</span>
+            </a>
+          </li>          
+          <li>
+            <a href="#" title="Notifications">
+              <span class="icon icon-notifications icon-large"></span>
+              <span class="text">Notifications</span>
+            </a>
+          </li>          
+          <li>
+            <a href="#" title="Menssages">
+              <span class="icon icon-dm icon-large"></span>
+              <span class="text">Menssages</span>
+            </a>
+          </li>          
+        </ul>
+        
+        <div class="global-nav-right">          
+          <form class="form-search">
+            <label class="sr-only">Search Twitter</label>
+            <input type="search" name="q" placeholder="Search Twitter">
+            <button type="submit">
+              <span class="icon icon-search"></span>
+              <span class="sr-only">Search</span>
+            </button>
+          </form><!-- /.form-search -->
+          
+          <ul class="global-actions">
+            <li class="global-action-user">
+              <a href="#" title="">
+                <img src="https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Tweet" class="btn btn-primary btn-icon btn-tweet">
+                <span class="icon icon-tweet"></span> 
+                <span class="text">Tweet</span>
+              </a>
+            </li>
+          </ul><!-- /.global-actions -->
+        </div><!-- /.global-nav-right -->
+      </div><!-- /.container -->
+    </nav><!-- /.global-nav -->
+    
+    <div class="profile">
+      <div class="profile-header">
+        <div class="profile-banner" id="profile-banner"></div>
+        
+        <nav class="profile-nav">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <a href="#" title="americanas.com" class="profile-avatar" id="profile-avatar">
+                  <img>
+                </a>                
+              </div><!-- /.col -->
+              
+              <div class="col-md-9">
+                <ul class="profile-menu">
+                  <li class="profile-menu-item active">
+                    <a href="#" title="19.7k Tweets">
+                      <span class="profile-menu-label">Tweets</span>
+                      <span class="profile-menu-count" id="profile-tweets"></span>
+                    </a>
+                  </li>
+                  <li class="profile-menu-item">
+                    <a href="#" title="756 Following">
+                      <span class="profile-menu-label">Following</span>
+                      <span class="profile-menu-count" id="profile-following"></span>
+                    </a>
+                  </li>
+                  <li class="profile-menu-item">
+                    <a href="#" title="231k Followers">
+                      <span class="profile-menu-label">Followers</span>
+                      <span class="profile-menu-count" id="profile-followers"></span>
+                    </a>
+                  </li>
+                  <li class="profile-menu-item">
+                    <a href="#" title="19 Likes">
+                      <span class="profile-menu-label">Likes</span>
+                      <span class="profile-menu-count" id="profile-likes"></span>
+                    </a>
+                  </li>
+                </ul><!-- /.profile-menu -->
+                
+                <ul class="profile-actions">
+                  <li>
+                    <a href="#" title="" class="btn btn-icon">
+                      <span class="icon icon-gear"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <button class="btn btn-secondary btn-icon">
+                      <span class="icon icon-follow"></span>
+                      <span class="text">Follow</span>
+                    </button>
+                  </li>
+                </ul><!-- /.profile-actions -->
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </div><!-- /.container -->          
+        </nav><!-- /.profile-nav -->
+      </div><!-- /.profile-header -->      
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <aside class="profile-sidebar">              
+              <div id="profile"></div><!-- /#profile -->
+              
+              <div class="row">
+                <div class="col-md-12 col-sm-6">
+                  <div class="profile-card">
+                    <div class="profile-card-heading">
+                      <span class="icon icon-user"></span> <a href="https://twitter.com/americanascom/followers" title=""><span id="followers-counter"></span> Follower you know</a>
+                    </div><!-- /.profile-card-heading -->
+                    
+                    <div class="profile-card-body">
+                      <ul class="follower" id="followers-list">
+                      </ul><!-- /.follower -->
+                    </div><!-- /.profile-card-body -->
+                  </div><!-- /.profile-card -->
+                </div><!-- /.col -->
+                
+                <div class="col-md-12 col-sm-6">
+                  <div class="profile-card">
+                    <div class="profile-card-heading">
+                      <span class="icon icon-camera"></span> <a href="https://twitter.com/americanascom/media" title=""><span id="medias-counter"></span> Photos and vídeos</a>
+                    </div><!-- /.profile-card-heading -->
+                    
+                    <div class="profile-card-body">
+                      <ul class="medias" id="medias-list">
+                      </ul><!-- /.medias -->
+                    </div><!-- /.profile-card-body -->
+                  </div><!-- /.profile-card -->
+                </div><!-- /.col -->
+              </div><!-- /.row -->              
+            </aside><!-- /.profile-sidebar -->
+          </div><!-- /.col -->
+          
+          <div class="col-md-6">
+            <div class="profile-body">
+              <div class="panel">
+                <ul class="panel-heading-toggle">
+                  <li class="active"><a href="#" title="Tweets">Tweets</a></li>
+                  <li><a href="#" title="Tweets &amp; replies">Tweets &amp; replies</a></li>
+                  <li><a href="#" title="Media">Media</a></li>
+                </ul>               
+                
+                <ul class="tweets" id="tweets-list">                  
+                </ul><!-- /.tweets -->
+              </div><!-- /.panel -->
+            </div><!-- /.profile-body -->
+          </div><!-- /.col -->
+          
+          <div class="col-md-3">
+            <aside>
+              <div class="row">
+                <div class="col-md-12 col-sm-6">                  
+                  <div class="panel">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Who to follow 
+                        <span class="small">· <a href="#" title="Refresh">Refresh</a> · <a href="#" title="View all">View all</a></span>
+                      </h3>
+                    </div><!-- /panel-heading -->
+                    
+                    <div class="panel-body">
+                      <ul class="follow">
+                        <li>     
+                          <a href="" title="" class="follow-avatar">
+                            <img src="https://pbs.twimg.com/profile_images/602884156650061826/Fly33jqq_normal.png" alt="">
+                          </a>
+                          
+                          <div class="follow-info">                        
+                            <a href="#" title="" class="follow-profile"><strong>TechTudo</strong> @TechTudo</a>
+                            
+                            <button class="btn btn-secondary btn-icon">
+                              <span class="icon icon-follow"></span>
+                              <span class="text">Follow</span>
+                            </button>
+                          </div>
+                          
+                          <button type="button" class="follow-close icon icon-close"></button>                     
+                        </li>
+                        
+                        <li>     
+                          <a href="" title="" class="follow-avatar">
+                            <img src="https://pbs.twimg.com/profile_images/1152161732/twitter_giz_photo_normal.jpg" alt="">
+                          </a>
+                          
+                          <div class="follow-info">                        
+                            <a href="#" title="" class="follow-profile"><strong>GizmodoBR</strong> @GizmodoBR</a>
+                            
+                            <button class="btn btn-secondary btn-icon">
+                              <span class="icon icon-follow"></span>
+                              <span class="text">Follow</span>
+                            </button>
+                          </div>
+                          
+                          <button type="button" class="follow-close icon icon-close"></button>                     
+                        </li>
+                        
+                        <li>     
+                          <a href="" title="" class="follow-avatar">
+                            <img src="https://pbs.twimg.com/profile_images/866291169172398080/D9afCAaY_normal.jpg" alt="">
+                          </a>
+                          
+                          <div class="follow-info">                        
+                            <a href="#" title="" class="follow-profile"><strong>Sebrae</strong> @sebrae</a>
+                            
+                            <button class="btn btn-secondary btn-icon">
+                              <span class="icon icon-follow"></span>
+                              <span class="text">Follow</span>
+                            </button>
+                          </div>
+                          
+                          <button type="button" class="follow-close icon icon-close"></button>                     
+                        </li>
+                      </ul><!-- /.follow -->
+                    </div><!-- /.panel-body -->
+                    
+                    <div class="panel-footer">
+                      <a href="" title="">Find friends</a>
+                    </div><!-- /.panel-footer -->
+                  </div><!-- /.panel -->   
+                </div><!-- /.col -->
+                
+                <div class="col-md-12 col-sm-6">                  
+                  <div class="panel">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Trends <span class="small">· <a href="#" title="Change">Change</a></span></h3>
+                    </div><!-- /.panel-heading -->
+                    
+                    <div class="panel-body">   
+                      <ul class="trends" id="trends-list">
+                        <!-- <li>
+                          <a href="#" title="">
+                            <span class="trend-hastag">#SonsdaConquista</span>                      
+                            <span class="trend-count"><i class="icon icon-trends"></i> Promoted by Caixa</span>
+                          </a>
+                        </li>
+                        
+                        <li>
+                          <a href="#" title="">
+                            <span class="trend-hastag">#SegundaGuerraMemeal</span>                      
+                            <span class="trend-count">78.6K Tweets</span>
+                          </a>
+                        </li> -->
+                      </ul><!-- /.trends -->
+                    </div><!-- /.panel-body -->
+                  </div><!-- /.panel -->             
+                </div><!-- /.col -->
+              </div><!-- /.row -->              
+            </aside><!-- /.profile-sidebar -->
+            
+            <footer class="footer">
+              <ul class="footer-menu">
+                <li>&copy; 2016 Twitter</li>
+                <li><a href="https://twitter.com/about" title="About">About</a></li>
+                <li><a href="https://support.twitter.com/" title="Help">Help</a></li>
+                <li><a href="https://twitter.com/tos" title="Terms">Terms</a></li>
+                <li><a href="https://twitter.com/privacy" title="Privacy">Privacy</a></li>
+                <li><a href="https://support.twitter.com/articles/20170514" title="Cookies">Cookies</a></li>
+                <li><a href="https://support.twitter.com/articles/20170451" title="Adds info">Adds info</a></li>
+              </ul><!-- /.footer-menu -->
+            </footer><!-- /.footer -->
+          </div><!-- /.col -->          
+        </div><!-- /.row -->
+      </div><!-- /.container -->    
+    </div><!-- /.profle -->    
+
+    <script src="assets/js/app.min.js"></script>
+  </body>
+</html>

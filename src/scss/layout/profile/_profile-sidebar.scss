@@ -1,0 +1,72 @@
+.profile-sidebar {
+  margin-top: 45px;
+}
+
+.profile-sidebar-name {
+  font-size: em(21);
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 10px;
+  
+  .icon {
+    color: $secondary-color;
+    font-size: 82%;
+  }
+  
+  a {
+    color: #657786;
+    font-size: em(10);
+    font-weight: normal;
+    
+    &:hover { text-decoration: underline; }
+  }
+}
+
+.profile-sidebar-desc {
+  line-height: 20px;
+  margin-bottom: 10px;
+  
+  a:hover { text-decoration: underline; }
+}
+
+.profile-sidebar-info {
+  margin-bottom: 15px;
+  
+  li {  
+    
+    .icon {
+      color: #8899a6;
+      display: inline-block;
+      font-size: em(18);    
+      position: relative;
+      text-align: center;
+      bottom: -2.5px;
+      width: 18px;
+    }
+    
+    a:hover { text-decoration: underline; }
+  }
+}
+
+.profile-card {
+  margin-bottom: 25px;
+}
+
+.profile-card-heading {
+  color: $link-color;
+  margin-bottom: 10px;
+  
+  .icon {
+    color: #8899a6;
+    display: inline-block;
+    font-size: em(18);    
+    position: relative;
+    text-align: center;
+    bottom: -2.5px;
+    width: 18px;    
+  }
+  
+  a:hover { text-decoration: underline; }
+}
+
+.profile-card-body {}

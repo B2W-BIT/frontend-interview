@@ -1,0 +1,21 @@
+.follower {
+  
+  > li {
+    display: inline-block;
+    margin: 0 3px 3px 0;
+    
+    > a {
+      display: block;
+      height: 48px;
+      overflow: hidden;
+      position: relative;
+      width: 48px;
+      @include border-radius(5px);
+      
+      img {
+        @include center-vertical;
+        width: 48px;
+      }
+    }
+  }
+}

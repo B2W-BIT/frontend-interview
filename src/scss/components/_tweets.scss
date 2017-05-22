@@ -1,0 +1,221 @@
+.tweet-item {
+  border-top: 1px solid #e6ecf0;
+  padding: 15px 15px 9px;
+  @include clearfix;
+  @include transition(background-color .2s ease-in-out);
+  
+  &:hover {
+    background-color: #f5f8fa;
+    
+    .tweet-profile {
+      
+      &:hover {
+        
+        strong { text-decoration: underline; }
+      }      
+    }
+    
+    .tweet-translate {
+      color: #8899a6; 
+    }
+    
+    .tweet-translate-text {
+      visibility: visible;
+      @include opacity(1);
+    }    
+  } 
+}
+
+.tweet-reply {
+  color: #8899a6;
+  font-size: em(15);
+  margin-bottom: 9px;
+  padding-left: 58px;
+  position: relative;
+  
+  .icon {
+    font-size: em(16);
+    position: absolute;
+    left: 34px;
+    top: -2px;
+  }
+}
+
+.tweet-content {
+  padding-left: 58px;
+  position: relative;
+}
+
+.tweet-avatar {
+  float: left;
+  height: 48px;
+  left: 0;
+  margin-right: 10px;
+  overflow: hidden;
+  position: absolute;
+  width: 48px;
+  @include border-radius(5px);
+  
+  img {
+    max-width: 48px;
+    @include center-vertical;
+  }
+}
+
+.tweet-heading {
+  color: #8899a6;
+  font-size: em(15);
+  position: relative;
+  
+  strong {
+    font-size: em(16);
+    color: $primary-color;
+  }
+}
+
+.tweet-translate {
+  color: rgba(#8899a6, .5);
+  font-size: em(14);
+  position: absolute;
+  top: -2px;
+  right: 0;
+  
+  .tweet-translate-text {
+    visibility: hidden;
+    @include opacity(0);
+    @include transition(opacity .15s, visibility .15s);
+  }
+  
+  .icon {
+    position: relative;
+    margin-left: 4px;
+    top: 1.5px;
+  }
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.tweet-body {
+  font-size: em(16);
+  line-height: em(20);
+  
+  padding: {
+    bottom: 9px;
+    top: 4px;    
+  }
+  
+  a:hover { text-decoration: underline; }
+}
+
+.tweet-footer {
+  padding: 2px 0 4px;
+  
+  @include clearfix;
+}
+
+.tweet-actions {
+  float: left;
+  padding-right: 110px;
+  width: 100%;
+  
+  > li {
+    display: inline-block;
+    margin-left: 30px;
+    
+    &:first-child {
+      margin-left: 0;
+    }    
+    
+    > a {
+      color: #8899a6;
+      display: block; 
+      font-size: em(18);
+      font-weight: bold;
+      @include transition(color .15s ease-in-out);
+      
+      .tweet-action-icon,
+      .tweet-action-count {
+        display: inline-block;
+      }
+      
+      .tweet-action-count {
+        margin-left: 5px;
+      }
+    }
+    
+    &.tweet-action-reply {
+      
+      a {
+        
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+    
+    &.tweet-action-retweet {
+      
+      a {
+        
+        &:hover {
+          color: #17bf63;
+        }
+      }
+    }
+    
+    &.tweet-action-like {
+      
+      a {
+        
+        &:hover {
+          color: #e0245e;
+        }
+      }
+    }
+    
+    &.tweet-action-menu {
+      margin-right: 0;
+      
+      a {
+        
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+    
+    &.tweet-conversation {      
+      bottom: 6px;
+      position: absolute;
+      right: 0;
+      
+      a {
+        color: #a8a1a2;
+        font-size: em(15);
+        font-weight: normal;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .tweet-actions {
+    float: right;
+    width: auto;
+    
+    > li {    
+      margin-left: 15px;
+      
+      &.tweet-conversation {
+        display: block;
+        text-align: right;
+      }
+    }
+  }  
+}

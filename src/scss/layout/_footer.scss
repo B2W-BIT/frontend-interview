@@ -1,0 +1,22 @@
+.footer-menu {
+  color: #d7dfe4;
+  font-size: em(12);
+  padding: 15px;
+  
+  > li {
+    display: inline-block;
+    margin: {
+      bottom: 5px;
+      right: 8px;
+    }
+    
+    > a {
+      color: #d7dfe4;
+      
+      &:hover {
+        color: $link-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}

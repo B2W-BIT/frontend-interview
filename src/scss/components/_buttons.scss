@@ -1,0 +1,73 @@
+.btn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #a8a1a2;
+  cursor: pointer;
+  display: inline-block;
+  height: 39px;
+  font-size: em(13.5);
+  font-weight: bold;
+  line-height: normal;
+  padding: 10px;
+  position: relative;  
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  @include border-radius(4px);
+  @include transition(background-color .15s ease-in-out);
+}
+
+.btn-primary {
+  background-color: #a8a1a2;
+  border-color: #e6ecf0;
+  color: #fff;
+}
+
+.btn-secondary {
+  border-color: #e6ecf1;
+  color: #fff;
+  @include linear-gradient(#fff, #f5f8fa);
+  
+  .icon {
+    color: $secondary-color;
+  }
+  
+  .text {
+    color: #36323f;
+  }
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-icon {
+  padding: {
+    bottom: 7px;
+    top: 7px;
+  }
+  
+  .icon,
+  .text {
+    display: inline-block;
+    vertical-align: middle;
+  }
+    
+  .icon {
+    font-size: em(18);
+    position: relative;    
+  } 
+}
+
+.btn-tweet {
+  padding: {
+    bottom: 3px;
+    top: 3px;
+  }  
+        
+  .icon {
+    font-size: em(24);
+    top: -2px;
+  }
+}

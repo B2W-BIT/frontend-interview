@@ -1,0 +1,37 @@
+// https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnx5b3VuZ2Vya2luY29uc3RydWN0aW9ufGd4OjcyNmJiNWUxNmI1YjEzMGQ 
+
+.icon:before {
+  display: inline-block;
+  font-family: "rosettaicons";
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-home:before { content: "\f053"; }
+.icon-lightning:before { content: "\f160"; }
+.icon-notifications:before { content: "\f055"; }
+.icon-dm:before { content: "\f054"; }
+.icon-bird:before { content: "\f179"; }
+.icon-search:before { content: "\f058"; }
+.icon-tweet:before { content: "\f029"; }
+.icon-geo:before { content: "\f031"; }
+.icon-url:before { content: "\f098"; }
+.icon-calendar:before { content: "\f203"; }
+.icon-user:before { content: "\f056"; }
+.icon-camera:before { content: "\f027"; }
+.icon-gear:before { content: "\f059"; }
+.icon-follow:before { content: "\f175"; }
+.icon-reply:before { content: "\f151"; }
+.icon-retweet:before { content: "\f152"; }
+.icon-menu:before { content: "\f150"; }
+.icon-world:before { content: "\f089"; }
+.icon-close:before { content: "\f045"; }
+.icon-trends:before { content: "\f004"; }
+.icon-verified:before { content: "\f099"; }
+
+.icon-large {
+  font-size: 21px;
+  line-height: 1;
+}

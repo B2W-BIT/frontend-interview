@@ -1,0 +1,25 @@
+// core
+@import "core/_variables";
+@import "core/_mixins";
+@import "core/_fonts";
+@import "core/_normalize";
+@import "core/_reset";
+@import "core/_grid";
+
+// components
+@import "components/_icons";
+@import "components/_global-nav";
+@import "components/_buttons";
+@import "components/_panels";
+@import "components/_tweets";
+@import "components/_follower";
+@import "components/_trends";
+@import "components/_follow";
+@import "components/_medias";
+
+// layout
+@import "layout/_content";
+@import "layout/_footer";
+
+//Program
+@import "layout/profile/_profile"
