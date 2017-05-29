@@ -1,0 +1,26 @@
+body {
+  background-color: #f5f8fa;
+  color: $primary-color;
+  font-size: $base-font-size;
+  font-family: $primary-font;
+  padding-bottom: 20px;
+}
+
+a {
+  color: $link-color;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

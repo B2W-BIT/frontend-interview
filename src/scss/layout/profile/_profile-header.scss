@@ -1,0 +1,153 @@
+.profile-banner {
+  background: {
+    color: #fff;
+    position: center;
+    repeat: no-repeat;
+  }
+  min-height: 360px;
+  @include background-size(auto 100%);
+}
+
+.profile-nav {
+  background-color: #fff;
+  border: {
+    bottom: 1px solid #e6ecf0;
+    top: 1px solid #e6ecf0;    
+  }
+  
+  .container {
+    height: 60px;
+    position: relative;
+  }
+}
+
+.profile-avatar {
+  background-color: #fff;
+  border: 5px solid #fff;
+  bottom: -88px;
+  height: 200px;
+  left: 15px;
+  overflow: hidden;
+  position: absolute;
+  width: 200px;  
+  @include border-radius(12px);
+  @include box-shadow(0 1px 1px rgba(#8899a6, .15));
+  
+  img {
+    max-width: 200px;
+    @include center-vertical;
+  }
+}
+
+.profile-menu {
+  float: left;
+  
+  > .profile-menu-item {
+    float: left;
+    height: 60px;
+    overflow: hidden;
+    
+    .profile-menu-label,
+    .profile-menu-count {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      @include transition(color .15s ease-in-out);
+    }
+    
+    .profile-menu-label {
+      color: #657786;
+      font-size: em(11);
+      letter-spacing: .02em;
+    }
+    
+    .profile-menu-count {    
+      color: #a8a1a2;
+      font-size: em(19);
+      padding-top: 3px;    
+    }
+        
+    > a {
+      border-bottom: 4px solid #A8A1A2;
+      float: left;
+      height: 64px;
+      padding: 14px 15px 7px;  
+      @include transition(height .15s ease-in-out);
+      
+      &:hover {
+        height: 60px;
+        
+        .profile-menu-label {}
+        
+        .profile-menu-count {
+          color: #66757f;
+        }
+      }
+    }
+    
+    &.active {
+      
+      > a {
+        border-bottom: 4px solid #A8A1A2;
+        cursor: default;
+        height: 60px;
+        
+        .profile-menu-count {
+          color: #66757f;
+        }
+      }
+    }    
+  }
+}
+
+.profile-actions {
+  float: right;
+  padding-top: 10px;
+  
+  > li {
+    float: left;
+    
+    > a {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 991px){
+  .profile-avatar {    
+    bottom: 15px;    
+    height: 120px;    
+    width: 120px;  
+    
+    img {
+      max-width: 120px;
+    }
+  }  
+  
+  .profile-menu {
+    
+    > .profile-menu-item {
+
+      .profile-menu-label {
+        font-size: em(10);
+      }
+      
+      .profile-menu-count {
+        font-size: em(16);        
+      }
+          
+      > a {   
+        padding: {
+          left: 10px;
+          right: 10px;
+        }
+      }   
+    }
+  }  
+}
+
+@media(max-width: 420px){
+  .profile-actions {
+    display: none;
+  }
+}

@@ -1,0 +1,37 @@
+.trends {
+  
+  > li {
+    line-height: 17px;
+    margin-top: 10px;    
+    
+    &:first-child {
+      margin-top: 0;
+    }
+    
+    > a {
+      display: block;
+      
+      .trend-hastag,
+      .trend-text {
+        display: block;
+        font-size: em(15);
+      }
+      
+      .trend-hastag {
+        color: #a8a1a2;
+        font-weight: bold;
+      }
+      
+      .trend-text {
+        color: #8899a6;
+      }
+      
+      &:hover {
+
+        .trend-hastag {
+          text-decoration: underline;         
+        }
+      }
+    }
+  }
+}

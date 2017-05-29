@@ -1,0 +1,21 @@
+.medias {
+  
+  > li {
+    display: inline-block;
+    margin: 0 1.5px 5px 0;
+    
+    > a {
+      display: block;
+      height: 83px;
+      overflow: hidden;
+      position: relative;
+      width: 83px;
+      @include border-radius(5px);
+      
+      img {
+        @include center-vertical;
+        width: 83px;
+      }
+    }
+  }
+}
